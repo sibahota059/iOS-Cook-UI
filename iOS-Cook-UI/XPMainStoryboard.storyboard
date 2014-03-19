@@ -1,46 +1,107 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Oy3-uT-b5O">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oAW-TW-oFy">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - UI-->
-        <scene sceneID="NZk-xt-gYV">
+        <!--Table View Controller - UI Category-->
+        <scene sceneID="hNO-XB-s0p">
             <objects>
-                <viewController id="uNG-KY-jcJ" sceneMemberID="viewController">
+                <tableViewController id="CP0-bI-Drw" customClass="XPUITableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="q6f-Ga-g89">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="JHf-Qz-DSm">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JHf-Qz-DSm" id="OFl-cs-Fw4">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="CP0-bI-Drw" id="oSi-82-TPi"/>
+                            <outlet property="delegate" destination="CP0-bI-Drw" id="bsT-pf-7yf"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="UI Category" id="S7g-Pw-hjS"/>
+                    <connections>
+                        <segue destination="sTD-I3-4TX" kind="modal" identifier="pushBlurSlideBarViewController" id="1Jg-g0-Kqi"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rh9-Gh-G1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="-104"/>
+        </scene>
+        <!--Blur Slide Bar View Controller-->
+        <scene sceneID="XSf-xd-sAI">
+            <objects>
+                <viewController id="sTD-I3-4TX" customClass="XPBlurSlideBarViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="FDg-Wp-MHk"/>
-                        <viewControllerLayoutGuide type="bottom" id="uFe-pX-xF5"/>
+                        <viewControllerLayoutGuide type="top" id="nec-1y-w8S"/>
+                        <viewControllerLayoutGuide type="bottom" id="JVg-Rw-PUc"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ejK-hm-rFN">
+                    <view key="view" contentMode="scaleToFill" id="V3k-3n-xp5">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TNk-J4-iV8">
+                                <rect key="frame" x="8" y="20" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="toggle">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleClicked:" destination="sTD-I3-4TX" eventType="touchUpInside" id="OhS-HF-TX4"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blur Slide Bar" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADc-Rq-MWu">
+                                <rect key="frame" x="20" y="72" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is gonna tell how we realise the blur side bar" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="yWv-v9-kv4">
+                                <rect key="frame" x="20" y="101" width="273" height="447"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="UI" id="L0s-FR-xRc"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uc2-kg-I3x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cIF-vQ-NAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="775" y="-125"/>
+            <point key="canvasLocation" x="684" y="-846"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="xyY-ZM-8R1">
+        <scene sceneID="Nw7-aY-XHh">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oy3-uT-b5O" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oAW-TW-oFy" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="i8n-jW-lMT">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YJs-vP-k63">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="uNG-KY-jcJ" kind="relationship" relationship="rootViewController" id="7fK-Ht-agv"/>
+                        <segue destination="CP0-bI-Drw" kind="relationship" relationship="rootViewController" id="KOh-hg-nXI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xho-Yr-OEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="coJ-Fg-p2S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="-125"/>
+            <point key="canvasLocation" x="247" y="-104"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="toggle" width="19" height="17"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

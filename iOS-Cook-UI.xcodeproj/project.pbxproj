@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F607F53D18D898C00062E811 /* UIList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F607F53C18D898C00062E811 /* UIList.plist */; };
+		F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F607F53F18D899D40062E811 /* XPUITableViewController.m */; };
+		F6A9813218D9D397007B4FC4 /* XPBlurSlideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9813118D9D397007B4FC4 /* XPBlurSlideBarViewController.m */; };
+		F6A9813518D9D84C007B4FC4 /* XPBlurSlideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9813418D9D84C007B4FC4 /* XPBlurSlideBarController.m */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
 		F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
 		F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB718D8953800710409 /* UIKit.framework */; };
@@ -33,6 +37,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F607F53C18D898C00062E811 /* UIList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIList.plist; sourceTree = "<group>"; };
+		F607F53E18D899D40062E811 /* XPUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPUITableViewController.h; sourceTree = "<group>"; };
+		F607F53F18D899D40062E811 /* XPUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPUITableViewController.m; sourceTree = "<group>"; };
+		F6A9813018D9D397007B4FC4 /* XPBlurSlideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarViewController.h; sourceTree = "<group>"; };
+		F6A9813118D9D397007B4FC4 /* XPBlurSlideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarViewController.m; sourceTree = "<group>"; };
+		F6A9813318D9D84C007B4FC4 /* XPBlurSlideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarController.h; sourceTree = "<group>"; };
+		F6A9813418D9D84C007B4FC4 /* XPBlurSlideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarController.m; sourceTree = "<group>"; };
 		F6AB8BB018D8953800710409 /* iOS-Cook-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Cook-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AB8BB318D8953800710409 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6AB8BB518D8953800710409 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -76,6 +87,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F6A9812F18D9D379007B4FC4 /* Blur Slide Bar */ = {
+			isa = PBXGroup;
+			children = (
+				F6A9813018D9D397007B4FC4 /* XPBlurSlideBarViewController.h */,
+				F6A9813118D9D397007B4FC4 /* XPBlurSlideBarViewController.m */,
+				F6A9813318D9D84C007B4FC4 /* XPBlurSlideBarController.h */,
+				F6A9813418D9D84C007B4FC4 /* XPBlurSlideBarController.m */,
+			);
+			path = "Blur Slide Bar";
+			sourceTree = "<group>";
+		};
 		F6AB8BA718D8953800710409 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +131,11 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
+				F6A9812F18D9D379007B4FC4 /* Blur Slide Bar */,
 				F6AB8BC218D8953800710409 /* XPAppDelegate.h */,
 				F6AB8BC318D8953800710409 /* XPAppDelegate.m */,
+				F607F53E18D899D40062E811 /* XPUITableViewController.h */,
+				F607F53F18D899D40062E811 /* XPUITableViewController.m */,
 				F6AB8BC518D8953800710409 /* Images.xcassets */,
 				F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */,
 				F6AB8BBA18D8953800710409 /* Supporting Files */,
@@ -125,6 +150,7 @@
 				F6AB8BBC18D8953800710409 /* InfoPlist.strings */,
 				F6AB8BBF18D8953800710409 /* main.m */,
 				F6AB8BC118D8953800710409 /* iOS-Cook-UI-Prefix.pch */,
+				F607F53C18D898C00062E811 /* UIList.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -223,6 +249,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F607F53D18D898C00062E811 /* UIList.plist in Resources */,
 				F6AB8BBE18D8953800710409 /* InfoPlist.strings in Resources */,
 				F6AB8BC618D8953800710409 /* Images.xcassets in Resources */,
 				F6AB8BE318D895D300710409 /* XPMainStoryboard.storyboard in Resources */,
@@ -246,6 +273,9 @@
 			files = (
 				F6AB8BC418D8953800710409 /* XPAppDelegate.m in Sources */,
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
+				F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */,
+				F6A9813218D9D397007B4FC4 /* XPBlurSlideBarViewController.m in Sources */,
+				F6A9813518D9D84C007B4FC4 /* XPBlurSlideBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
