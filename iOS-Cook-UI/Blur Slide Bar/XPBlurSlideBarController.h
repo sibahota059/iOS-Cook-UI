@@ -13,7 +13,7 @@
 - (void)sideBar:(XPBlurSlideBarController *)sideBar willShowOnScreenAnimated:(BOOL)animated;
 - (void)sideBar:(XPBlurSlideBarController *)sideBar didShowOnScreenAnimated:(BOOL)animated;
 - (void)sideBar:(XPBlurSlideBarController *)sideBar willDismissFromScreenAnimated:(BOOL)animated;
-- (void)sideBar:(XPBlurSlideBarController *)sideBar willDidDismissFromScreenAnimated:(BOOL)animated;
+- (void)sideBar:(XPBlurSlideBarController *)sideBar DidDismissFromScreenAnimated:(BOOL)animated;
 - (void)sideBar:(XPBlurSlideBarController *)sideBar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index;
 
 @end
@@ -21,6 +21,8 @@
 @interface XPBlurSlideBarController : UIViewController
 
 @property (nonatomic) BOOL isSingleSelect;
+@property (nonatomic) BOOL showFromRight;
+@property (nonatomic, weak) id<XPBlurSliderBarControllerDelegate> delegate;
 
 - (instancetype)initWithImages:(NSArray *)images selectedIndices:(NSIndexSet *)selectedIndices borderColors:(NSArray *)colors;
 - (void)show;

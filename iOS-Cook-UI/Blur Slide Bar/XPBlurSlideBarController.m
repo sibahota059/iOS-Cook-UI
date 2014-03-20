@@ -8,8 +8,34 @@
 
 #import "XPBlurSlideBarController.h"
 
-#pragma mark - Private Class
+#pragma mark - UIView Category
+@implementation UIView (scroonshot)
 
+- (UIImage *)screenshot{
+    UIGraphicsBeginImageContext(self.bounds.size);
+    if ([self respondsToSelector:@selector(drawViewHierarchyInRect:afterScreenUpdates:)]) {
+        [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:NO];
+    }else{
+        [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    }
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.75);
+    image = [UIImage imageWithData:imageData];
+    return image;
+}
+
+@end
+
+#pragma mark - UIImage Category
+@implementation UIImage (blur)
+
+- (UIImage *)applyBlurWithRadius:(CGFloat)blurRadios tintColor:(UIColor *)tintColor saturationDeltaFactor:(CGFloat)saturationDeltaFactor maskImage:(UIImage *)maskImage{
+}
+
+@end
+
+#pragma mark - Private Class
 @interface SlideBarItemView : UIView
 
 @property (nonatomic, strong) UIImageView *imageView;
@@ -48,10 +74,11 @@ static SlideBarItemView *frostedSlideBlar;
 @property (nonatomic, strong) NSMutableIndexSet *selectedIndices;
 @property (nonatomic, strong) NSArray *borderColors;
 @property (nonatomic, strong) NSArray *images;
+@property (nonatomic, strong) UIImageView *blurView;
 
 @end
 
-
+static XPBlurSlideBarController *frostedMenu;
 
 @implementation XPBlurSlideBarController
 
@@ -136,8 +163,52 @@ static SlideBarItemView *frostedSlideBlar;
 }
 
 - (void)showInViewController:(UIViewController *)controller animated:(BOOL)animated{
-    if (<#condition#>) {
-        <#statements#>
+    if (frostedMenu != nil) {
+        [frostedMenu dismissAnimated:NO completion:nil];
+    }
+    
+    if([self.delegate respondsToSelector:@selector(sideBar:willShowOnScreenAnimated:)]){
+        [self.delegate sideBar:self willShowOnScreenAnimated:animated];
+    }
+    
+    frostedMenu = self;
+    
+    UIImage *blurImage = [controller.view screenshot];
+    blurImage = [blurImage apply]
+}
+
+- (void)dismissAnimated:(BOOL)animated completion:(void (^)(BOOL finished))completion{
+    void (^completionBlock)(BOOL) = ^(BOOL finished){
+        [self beginAppearanceTransition:NO animated:NO];
+        [self willMoveToParentViewController:nil];
+        [self.view removeFromSuperview];
+        [self removeFromParentViewController];
+        [self endAppearanceTransition];
+        
+        if ([self.delegate respondsToSelector:@selector(sideBar:DidDismissFromScreenAnimated:)]) {
+            [self.delegate sideBar:self DidDismissFromScreenAnimated:YES];
+        }
+        if (completion) {
+            completion(finished);
+        }
+    };
+    
+    if (animated) {
+        CGFloat parentWidth = self.view.bounds.size.width;
+        CGRect contentFrame = self.contentView.frame;
+        contentFrame.origin.x = self.showFromRight ? parentWidth : -self.width;
+        
+        CGRect blurFrame = self.blurView.frame;
+        blurFrame.origin.x = self.showFromRight ? parentWidth : 0;
+        blurFrame.size.width = 0;
+        
+        [UIView animateWithDuration:self.animationDuration delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+            self.contentView.frame = contentFrame;
+            self.blurView.frame = blurFrame;
+        } completion:completionBlock];
+    }
+    else{
+        completionBlock(YES);
     }
 }
 
