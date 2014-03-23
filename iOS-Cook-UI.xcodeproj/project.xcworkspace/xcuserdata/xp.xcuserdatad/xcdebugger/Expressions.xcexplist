@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[XPBlurSlideBarController showInViewController:animated:]:XPBlurSlideBarController.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIScrollView *)self-&gt;_contentView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[XPBlurSlideBarViewController toggleClicked:]:XPBlurSlideBarViewController.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[XPBlurSlideBarController layoutItems]:XPBlurSlideBarController.m">
+      </ContextState>
+      <ContextState
+         contextName = "__72-[XPBlurSlideBarController initWithImages:selectedIndices:borderColors:]_block_invoke:XPBlurSlideBarController.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

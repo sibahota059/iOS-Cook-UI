@@ -33,6 +33,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.optionIndices = [NSMutableIndexSet indexSetWithIndex:1];
+    
+    self.navigationController.navigationBar.tintColor = [UIColor darkGrayColor];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,18 +74,29 @@
                         ];
     
     XPBlurSlideBarController *slideBarController = [[XPBlurSlideBarController alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+    slideBarController.delegate = self;
+    slideBarController.showFromRight = YES;
     [slideBarController show];
 
 }
 
 #pragma mark - XPBlurSlideBarController Delegate
-- (void)sideBar:(XPBlurSlideBarController *)sideBar willShowOnScreenAnimated:(BOOL)animated{}
+- (void)slideBar:(XPBlurSlideBarController *)slideBar willShowOnScreenAnimated:(BOOL)animated{}
+- (void)slideBar:(XPBlurSlideBarController *)slideBar didShowOnScreenAnimated:(BOOL)animated{}
+- (void)slideBar:(XPBlurSlideBarController *)slideBar willDismissFromScreenAnimated:(BOOL)animated{}
+- (void)slideBar:(XPBlurSlideBarController *)slideBar DidDismissFromScreenAnimated:(BOOL)animated{}
+- (void)slideBar:(XPBlurSlideBarController *)slideBar didTapItemAtIndex:(NSUInteger)index{
+    if (index == 3) {
+        [slideBar dismiss];
+    }
+}
 
-- (void)sideBar:(XPBlurSlideBarController *)sideBar didShowOnScreenAnimated:(BOOL)animated{}
-
-- (void)sideBar:(XPBlurSlideBarController *)sideBar willDismissFromScreenAnimated:(BOOL)animated{}
-
-- (void)sideBar:(XPBlurSlideBarController *)sideBar willDidDismissFromScreenAnimated:(BOOL)animated{}
-
-- (void)sideBar:(XPBlurSlideBarController *)sideBar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index{}
+- (void)slideBar:(XPBlurSlideBarController *)slideBar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index{
+    if (itemEnabled) {
+        [self.optionIndices addIndex:index];
+    }
+    else {
+        [self.optionIndices removeIndex:index];
+    }
+}
 @end

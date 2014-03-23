@@ -36,6 +36,7 @@ static NSString *CellIdentifier = @"Cell";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationController.navigationBar.tintColor = nil;
     
     NSURL *path = [[NSBundle mainBundle] URLForResource:@"UIList" withExtension:@"plist"];
     self.uiArray = [NSArray arrayWithContentsOfURL:path];
