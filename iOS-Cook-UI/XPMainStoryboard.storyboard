@@ -30,6 +30,7 @@
                     <navigationItem key="navigationItem" title="UI Category" id="S7g-Pw-hjS"/>
                     <connections>
                         <segue destination="sTD-I3-4TX" kind="push" identifier="pushBlurSlideBarViewController" id="HTH-PG-cJD"/>
+                        <segue destination="tuN-9q-ofP" kind="modal" identifier="pushDrawerViewController" id="dUH-g9-8sI"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh9-Gh-G1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -69,6 +70,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cIF-vQ-NAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="684" y="-846"/>
+        </scene>
+        <!--Drawer View Controller - Drawer View Controller-->
+        <scene sceneID="wKY-gB-cVx">
+            <objects>
+                <viewController id="tuN-9q-ofP" customClass="XPDrawerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6ee-7A-yn9"/>
+                        <viewControllerLayoutGuide type="bottom" id="yWF-no-b4q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MxH-ws-Ll9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Drawer View Controller" id="vjj-Gf-gLd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KSF-QW-j18" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1029" y="-846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nw7-aY-XHh">

@@ -77,6 +77,8 @@ static NSString *CellIdentifier = @"Cell";
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Blur Slide Bar"]) {
         [self performSegueWithIdentifier:@"pushBlurSlideBarViewController" sender:self];
+    }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Drawer View Controller"]){
+        [self performSegueWithIdentifier:@"pushDrawerViewController" sender:self];
     }
 }
 

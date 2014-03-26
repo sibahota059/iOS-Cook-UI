@@ -9,8 +9,19 @@
 /* Begin PBXBuildFile section */
 		F607F53D18D898C00062E811 /* UIList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F607F53C18D898C00062E811 /* UIList.plist */; };
 		F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F607F53F18D899D40062E811 /* XPUITableViewController.m */; };
-		F6A9813218D9D397007B4FC4 /* XPBlurSlideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9813118D9D397007B4FC4 /* XPBlurSlideBarViewController.m */; };
-		F6A9813518D9D84C007B4FC4 /* XPBlurSlideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A9813418D9D84C007B4FC4 /* XPBlurSlideBarController.m */; };
+		F66C92BA18E1A5F40070341F /* XPBlurSlideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92B718E1A5F40070341F /* XPBlurSlideBarController.m */; };
+		F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92B918E1A5F40070341F /* XPBlurSlideBarViewController.m */; };
+		F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92BE18E1A6DB0070341F /* XPDrawerViewController.m */; };
+		F66C92C218E1B27D0070341F /* XPLeftDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92C118E1B27D0070341F /* XPLeftDrawerViewController.m */; };
+		F66C92C518E1B28E0070341F /* XPRightDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92C418E1B28E0070341F /* XPRightDrawerViewController.m */; };
+		F66C92C818E1B7050070341F /* XPDrawerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92C718E1B7050070341F /* XPDrawerModel.m */; };
+		F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EDA18E2CD2C00B4F208 /* XPDrawerButton.m */; };
+		F69F1EDE18E2DBB400B4F208 /* XPTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EDD18E2DBB400B4F208 /* XPTopicViewController.m */; };
+		F69F1EE118E2DBD500B4F208 /* XPCommentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE018E2DBD500B4F208 /* XPCommentViewController.m */; };
+		F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE318E2DBF100B4F208 /* XPImageViewController.m */; };
+		F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */; };
+		F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */; };
+		F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
 		F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
 		F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB718D8953800710409 /* UIKit.framework */; };
@@ -41,10 +52,32 @@
 		F607F53C18D898C00062E811 /* UIList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIList.plist; sourceTree = "<group>"; };
 		F607F53E18D899D40062E811 /* XPUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPUITableViewController.h; sourceTree = "<group>"; };
 		F607F53F18D899D40062E811 /* XPUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPUITableViewController.m; sourceTree = "<group>"; };
-		F6A9813018D9D397007B4FC4 /* XPBlurSlideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarViewController.h; sourceTree = "<group>"; };
-		F6A9813118D9D397007B4FC4 /* XPBlurSlideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarViewController.m; sourceTree = "<group>"; };
-		F6A9813318D9D84C007B4FC4 /* XPBlurSlideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarController.h; sourceTree = "<group>"; };
-		F6A9813418D9D84C007B4FC4 /* XPBlurSlideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarController.m; sourceTree = "<group>"; };
+		F66C92B618E1A5F40070341F /* XPBlurSlideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarController.h; sourceTree = "<group>"; };
+		F66C92B718E1A5F40070341F /* XPBlurSlideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarController.m; sourceTree = "<group>"; };
+		F66C92B818E1A5F40070341F /* XPBlurSlideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarViewController.h; sourceTree = "<group>"; };
+		F66C92B918E1A5F40070341F /* XPBlurSlideBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarViewController.m; sourceTree = "<group>"; };
+		F66C92BD18E1A6DB0070341F /* XPDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDrawerViewController.h; sourceTree = "<group>"; };
+		F66C92BE18E1A6DB0070341F /* XPDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDrawerViewController.m; sourceTree = "<group>"; };
+		F66C92C018E1B27D0070341F /* XPLeftDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPLeftDrawerViewController.h; sourceTree = "<group>"; };
+		F66C92C118E1B27D0070341F /* XPLeftDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPLeftDrawerViewController.m; sourceTree = "<group>"; };
+		F66C92C318E1B28E0070341F /* XPRightDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPRightDrawerViewController.h; sourceTree = "<group>"; };
+		F66C92C418E1B28E0070341F /* XPRightDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPRightDrawerViewController.m; sourceTree = "<group>"; };
+		F66C92C618E1B7050070341F /* XPDrawerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDrawerModel.h; sourceTree = "<group>"; };
+		F66C92C718E1B7050070341F /* XPDrawerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDrawerModel.m; sourceTree = "<group>"; };
+		F69F1ED918E2CD2C00B4F208 /* XPDrawerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDrawerButton.h; sourceTree = "<group>"; };
+		F69F1EDA18E2CD2C00B4F208 /* XPDrawerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDrawerButton.m; sourceTree = "<group>"; };
+		F69F1EDC18E2DBB400B4F208 /* XPTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPTopicViewController.h; sourceTree = "<group>"; };
+		F69F1EDD18E2DBB400B4F208 /* XPTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTopicViewController.m; sourceTree = "<group>"; };
+		F69F1EDF18E2DBD500B4F208 /* XPCommentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCommentViewController.h; sourceTree = "<group>"; };
+		F69F1EE018E2DBD500B4F208 /* XPCommentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPCommentViewController.m; sourceTree = "<group>"; };
+		F69F1EE218E2DBF100B4F208 /* XPImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPImageViewController.h; sourceTree = "<group>"; };
+		F69F1EE318E2DBF100B4F208 /* XPImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPImageViewController.m; sourceTree = "<group>"; };
+		F69F1EE518E2DC0F00B4F208 /* XPSubscriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSubscriptionViewController.h; sourceTree = "<group>"; };
+		F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSubscriptionViewController.m; sourceTree = "<group>"; };
+		F69F1EE818E2DC3C00B4F208 /* XPLocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPLocalViewController.h; sourceTree = "<group>"; };
+		F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPLocalViewController.m; sourceTree = "<group>"; };
+		F6A8875718E1F31D00D6E033 /* XPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPNewsViewController.h; sourceTree = "<group>"; };
+		F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPNewsViewController.m; sourceTree = "<group>"; };
 		F6AB8BB018D8953800710409 /* iOS-Cook-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Cook-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AB8BB318D8953800710409 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6AB8BB518D8953800710409 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -91,15 +124,44 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F6A9812F18D9D379007B4FC4 /* Blur Slide Bar */ = {
+		F66C92B518E1A5F40070341F /* BlurSlideBar */ = {
 			isa = PBXGroup;
 			children = (
-				F6A9813018D9D397007B4FC4 /* XPBlurSlideBarViewController.h */,
-				F6A9813118D9D397007B4FC4 /* XPBlurSlideBarViewController.m */,
-				F6A9813318D9D84C007B4FC4 /* XPBlurSlideBarController.h */,
-				F6A9813418D9D84C007B4FC4 /* XPBlurSlideBarController.m */,
+				F66C92B618E1A5F40070341F /* XPBlurSlideBarController.h */,
+				F66C92B718E1A5F40070341F /* XPBlurSlideBarController.m */,
+				F66C92B818E1A5F40070341F /* XPBlurSlideBarViewController.h */,
+				F66C92B918E1A5F40070341F /* XPBlurSlideBarViewController.m */,
 			);
-			path = "Blur Slide Bar";
+			path = BlurSlideBar;
+			sourceTree = "<group>";
+		};
+		F66C92BC18E1A5FA0070341F /* DrawerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F66C92BD18E1A6DB0070341F /* XPDrawerViewController.h */,
+				F66C92BE18E1A6DB0070341F /* XPDrawerViewController.m */,
+				F66C92C018E1B27D0070341F /* XPLeftDrawerViewController.h */,
+				F66C92C118E1B27D0070341F /* XPLeftDrawerViewController.m */,
+				F66C92C318E1B28E0070341F /* XPRightDrawerViewController.h */,
+				F66C92C418E1B28E0070341F /* XPRightDrawerViewController.m */,
+				F66C92C618E1B7050070341F /* XPDrawerModel.h */,
+				F66C92C718E1B7050070341F /* XPDrawerModel.m */,
+				F6A8875718E1F31D00D6E033 /* XPNewsViewController.h */,
+				F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */,
+				F69F1ED918E2CD2C00B4F208 /* XPDrawerButton.h */,
+				F69F1EDA18E2CD2C00B4F208 /* XPDrawerButton.m */,
+				F69F1EDC18E2DBB400B4F208 /* XPTopicViewController.h */,
+				F69F1EDD18E2DBB400B4F208 /* XPTopicViewController.m */,
+				F69F1EDF18E2DBD500B4F208 /* XPCommentViewController.h */,
+				F69F1EE018E2DBD500B4F208 /* XPCommentViewController.m */,
+				F69F1EE218E2DBF100B4F208 /* XPImageViewController.h */,
+				F69F1EE318E2DBF100B4F208 /* XPImageViewController.m */,
+				F69F1EE518E2DC0F00B4F208 /* XPSubscriptionViewController.h */,
+				F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */,
+				F69F1EE818E2DC3C00B4F208 /* XPLocalViewController.h */,
+				F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */,
+			);
+			path = DrawerViewController;
 			sourceTree = "<group>";
 		};
 		F6AB8BA718D8953800710409 = {
@@ -135,8 +197,9 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
+				F66C92BC18E1A5FA0070341F /* DrawerViewController */,
+				F66C92B518E1A5F40070341F /* BlurSlideBar */,
 				F6EBBEAD18DFF6A2001C252C /* Category */,
-				F6A9812F18D9D379007B4FC4 /* Blur Slide Bar */,
 				F6AB8BC218D8953800710409 /* XPAppDelegate.h */,
 				F6AB8BC318D8953800710409 /* XPAppDelegate.m */,
 				F607F53E18D899D40062E811 /* XPUITableViewController.h */,
@@ -286,12 +349,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F69F1EE118E2DBD500B4F208 /* XPCommentViewController.m in Sources */,
+				F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */,
 				F6AB8BC418D8953800710409 /* XPAppDelegate.m in Sources */,
+				F69F1EDE18E2DBB400B4F208 /* XPTopicViewController.m in Sources */,
+				F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */,
+				F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */,
+				F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */,
+				F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */,
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
+				F66C92C818E1B7050070341F /* XPDrawerModel.m in Sources */,
 				F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */,
-				F6A9813218D9D397007B4FC4 /* XPBlurSlideBarViewController.m in Sources */,
-				F6A9813518D9D84C007B4FC4 /* XPBlurSlideBarController.m in Sources */,
 				F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */,
+				F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */,
+				F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */,
+				F66C92C218E1B27D0070341F /* XPLeftDrawerViewController.m in Sources */,
+				F66C92C518E1B28E0070341F /* XPRightDrawerViewController.m in Sources */,
+				F66C92BA18E1A5F40070341F /* XPBlurSlideBarController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
