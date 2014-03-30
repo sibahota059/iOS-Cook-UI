@@ -9,6 +9,15 @@
 /* Begin PBXBuildFile section */
 		F607F53D18D898C00062E811 /* UIList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F607F53C18D898C00062E811 /* UIList.plist */; };
 		F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F607F53F18D899D40062E811 /* XPUITableViewController.m */; };
+		F64FEF2618E863F60012FF82 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1418E863F60012FF82 /* AFHTTPRequestOperation.m */; };
+		F64FEF2718E863F60012FF82 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1618E863F60012FF82 /* AFHTTPRequestOperationManager.m */; };
+		F64FEF2818E863F60012FF82 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1818E863F60012FF82 /* AFHTTPSessionManager.m */; };
+		F64FEF2918E863F60012FF82 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1B18E863F60012FF82 /* AFNetworkReachabilityManager.m */; };
+		F64FEF2A18E863F60012FF82 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1D18E863F60012FF82 /* AFSecurityPolicy.m */; };
+		F64FEF2B18E863F60012FF82 /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1F18E863F60012FF82 /* AFURLConnectionOperation.m */; };
+		F64FEF2C18E863F60012FF82 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF2118E863F60012FF82 /* AFURLRequestSerialization.m */; };
+		F64FEF2D18E863F60012FF82 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF2318E863F60012FF82 /* AFURLResponseSerialization.m */; };
+		F64FEF2E18E863F60012FF82 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF2518E863F60012FF82 /* AFURLSessionManager.m */; };
 		F66C92BA18E1A5F40070341F /* XPBlurSlideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92B718E1A5F40070341F /* XPBlurSlideBarController.m */; };
 		F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92B918E1A5F40070341F /* XPBlurSlideBarViewController.m */; };
 		F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92BE18E1A6DB0070341F /* XPDrawerViewController.m */; };
@@ -21,6 +30,7 @@
 		F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE318E2DBF100B4F208 /* XPImageViewController.m */; };
 		F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */; };
 		F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */; };
+		F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */; };
 		F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
 		F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
@@ -35,6 +45,7 @@
 		F6AB8BD718D8953800710409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BD518D8953800710409 /* InfoPlist.strings */; };
 		F6AB8BD918D8953800710409 /* iOS_Cook_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */; };
 		F6AB8BE318D895D300710409 /* XPMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */; };
+		F6E185EB18E3383A0046F0D3 /* XPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E185EA18E3383A0046F0D3 /* XPHUD.m */; };
 		F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +63,25 @@
 		F607F53C18D898C00062E811 /* UIList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIList.plist; sourceTree = "<group>"; };
 		F607F53E18D899D40062E811 /* XPUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPUITableViewController.h; sourceTree = "<group>"; };
 		F607F53F18D899D40062E811 /* XPUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPUITableViewController.m; sourceTree = "<group>"; };
+		F64FEF1318E863F60012FF82 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F64FEF1418E863F60012FF82 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F64FEF1518E863F60012FF82 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		F64FEF1618E863F60012FF82 /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		F64FEF1718E863F60012FF82 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		F64FEF1818E863F60012FF82 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		F64FEF1918E863F60012FF82 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		F64FEF1A18E863F60012FF82 /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		F64FEF1B18E863F60012FF82 /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		F64FEF1C18E863F60012FF82 /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		F64FEF1D18E863F60012FF82 /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		F64FEF1E18E863F60012FF82 /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F64FEF1F18E863F60012FF82 /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F64FEF2018E863F60012FF82 /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		F64FEF2118E863F60012FF82 /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		F64FEF2218E863F60012FF82 /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		F64FEF2318E863F60012FF82 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		F64FEF2418E863F60012FF82 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		F64FEF2518E863F60012FF82 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
 		F66C92B618E1A5F40070341F /* XPBlurSlideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarController.h; sourceTree = "<group>"; };
 		F66C92B718E1A5F40070341F /* XPBlurSlideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarController.m; sourceTree = "<group>"; };
 		F66C92B818E1A5F40070341F /* XPBlurSlideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarViewController.h; sourceTree = "<group>"; };
@@ -76,6 +106,8 @@
 		F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSubscriptionViewController.m; sourceTree = "<group>"; };
 		F69F1EE818E2DC3C00B4F208 /* XPLocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPLocalViewController.h; sourceTree = "<group>"; };
 		F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPLocalViewController.m; sourceTree = "<group>"; };
+		F6A4A30318E52B7600ADF7BD /* XPHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUDViewController.h; sourceTree = "<group>"; };
+		F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHUDViewController.m; sourceTree = "<group>"; };
 		F6A8875718E1F31D00D6E033 /* XPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPNewsViewController.h; sourceTree = "<group>"; };
 		F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPNewsViewController.m; sourceTree = "<group>"; };
 		F6AB8BB018D8953800710409 /* iOS-Cook-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Cook-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +127,8 @@
 		F6AB8BD618D8953800710409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Cook_UITests.m; sourceTree = "<group>"; };
 		F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XPMainStoryboard.storyboard; sourceTree = "<group>"; };
+		F6E185E918E3383A0046F0D3 /* XPHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUD.h; sourceTree = "<group>"; };
+		F6E185EA18E3383A0046F0D3 /* XPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHUD.m; sourceTree = "<group>"; };
 		F6EBBEAE18DFF6BD001C252C /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
 		F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		F6EBBEB118DFF6EF001C252C /* XPCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCategory.h; sourceTree = "<group>"; };
@@ -124,6 +158,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F64FEF1118E863F60012FF82 /* ImportedLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F64FEF1218E863F60012FF82 /* AFNetworking */,
+			);
+			path = ImportedLibrary;
+			sourceTree = "<group>";
+		};
+		F64FEF1218E863F60012FF82 /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F64FEF1318E863F60012FF82 /* AFHTTPRequestOperation.h */,
+				F64FEF1418E863F60012FF82 /* AFHTTPRequestOperation.m */,
+				F64FEF1518E863F60012FF82 /* AFHTTPRequestOperationManager.h */,
+				F64FEF1618E863F60012FF82 /* AFHTTPRequestOperationManager.m */,
+				F64FEF1718E863F60012FF82 /* AFHTTPSessionManager.h */,
+				F64FEF1818E863F60012FF82 /* AFHTTPSessionManager.m */,
+				F64FEF1918E863F60012FF82 /* AFNetworking.h */,
+				F64FEF1A18E863F60012FF82 /* AFNetworkReachabilityManager.h */,
+				F64FEF1B18E863F60012FF82 /* AFNetworkReachabilityManager.m */,
+				F64FEF1C18E863F60012FF82 /* AFSecurityPolicy.h */,
+				F64FEF1D18E863F60012FF82 /* AFSecurityPolicy.m */,
+				F64FEF1E18E863F60012FF82 /* AFURLConnectionOperation.h */,
+				F64FEF1F18E863F60012FF82 /* AFURLConnectionOperation.m */,
+				F64FEF2018E863F60012FF82 /* AFURLRequestSerialization.h */,
+				F64FEF2118E863F60012FF82 /* AFURLRequestSerialization.m */,
+				F64FEF2218E863F60012FF82 /* AFURLResponseSerialization.h */,
+				F64FEF2318E863F60012FF82 /* AFURLResponseSerialization.m */,
+				F64FEF2418E863F60012FF82 /* AFURLSessionManager.h */,
+				F64FEF2518E863F60012FF82 /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
 		F66C92B518E1A5F40070341F /* BlurSlideBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,6 +265,8 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
+				F64FEF1118E863F60012FF82 /* ImportedLibrary */,
+				F6E185E818E337C90046F0D3 /* HUD */,
 				F66C92BC18E1A5FA0070341F /* DrawerViewController */,
 				F66C92B518E1A5F40070341F /* BlurSlideBar */,
 				F6EBBEAD18DFF6A2001C252C /* Category */,
@@ -239,6 +309,17 @@
 				F6AB8BD518D8953800710409 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6E185E818E337C90046F0D3 /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				F6E185E918E3383A0046F0D3 /* XPHUD.h */,
+				F6E185EA18E3383A0046F0D3 /* XPHUD.m */,
+				F6A4A30318E52B7600ADF7BD /* XPHUDViewController.h */,
+				F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */,
+			);
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		F6EBBEAD18DFF6A2001C252C /* Category */ = {
@@ -350,16 +431,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				F69F1EE118E2DBD500B4F208 /* XPCommentViewController.m in Sources */,
+				F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */,
 				F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */,
 				F6AB8BC418D8953800710409 /* XPAppDelegate.m in Sources */,
+				F64FEF2B18E863F60012FF82 /* AFURLConnectionOperation.m in Sources */,
+				F64FEF2A18E863F60012FF82 /* AFSecurityPolicy.m in Sources */,
 				F69F1EDE18E2DBB400B4F208 /* XPTopicViewController.m in Sources */,
+				F64FEF2818E863F60012FF82 /* AFHTTPSessionManager.m in Sources */,
 				F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */,
 				F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */,
 				F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */,
 				F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */,
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
+				F6E185EB18E3383A0046F0D3 /* XPHUD.m in Sources */,
+				F64FEF2718E863F60012FF82 /* AFHTTPRequestOperationManager.m in Sources */,
 				F66C92C818E1B7050070341F /* XPDrawerModel.m in Sources */,
+				F64FEF2618E863F60012FF82 /* AFHTTPRequestOperation.m in Sources */,
+				F64FEF2E18E863F60012FF82 /* AFURLSessionManager.m in Sources */,
 				F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */,
+				F64FEF2918E863F60012FF82 /* AFNetworkReachabilityManager.m in Sources */,
+				F64FEF2D18E863F60012FF82 /* AFURLResponseSerialization.m in Sources */,
+				F64FEF2C18E863F60012FF82 /* AFURLRequestSerialization.m in Sources */,
 				F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */,
 				F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */,
 				F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */,

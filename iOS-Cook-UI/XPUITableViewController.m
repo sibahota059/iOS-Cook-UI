@@ -79,6 +79,8 @@ static NSString *CellIdentifier = @"Cell";
         [self performSegueWithIdentifier:@"pushBlurSlideBarViewController" sender:self];
     }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Drawer View Controller"]){
         [self performSegueWithIdentifier:@"pushDrawerViewController" sender:self];
+    }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"XPHUD"]){
+        [self performSegueWithIdentifier:@"pushXPHUDViewController" sender:self];
     }
 }
 

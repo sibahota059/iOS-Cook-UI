@@ -31,11 +31,12 @@
                     <connections>
                         <segue destination="sTD-I3-4TX" kind="push" identifier="pushBlurSlideBarViewController" id="HTH-PG-cJD"/>
                         <segue destination="tuN-9q-ofP" kind="modal" identifier="pushDrawerViewController" id="dUH-g9-8sI"/>
+                        <segue destination="cfA-91-oRu" kind="push" identifier="pushXPHUDViewController" id="FUa-g1-lQL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh9-Gh-G1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="684" y="-104"/>
+            <point key="canvasLocation" x="684" y="-144"/>
         </scene>
         <!--Blur Slide Bar View Controller - Blur Slide Bar-->
         <scene sceneID="XSf-xd-sAI">
@@ -89,6 +90,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KSF-QW-j18" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1029" y="-846"/>
+        </scene>
+        <!--View Controller - HUD-->
+        <scene sceneID="zmL-zh-ADo">
+            <objects>
+                <tableViewController id="cfA-91-oRu" customClass="XPHUDViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="C0X-ZU-K1g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="shF-iE-xXG">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="shF-iE-xXG" id="7U9-Gu-T3s">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cfA-91-oRu" id="Ycr-nJ-D6Q"/>
+                            <outlet property="delegate" destination="cfA-91-oRu" id="a1z-zT-Uge"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="HUD" id="5D1-U3-IuC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QQ0-eT-Q0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1386" y="-845"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nw7-aY-XHh">
