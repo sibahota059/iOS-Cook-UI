@@ -65,13 +65,18 @@ static NSString *CellIdentifier = @"Cell";
     switch (indexPath.row) {
         case 0:
         {
-            self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeActiveOnly image:nil];
+            self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeActivityIndicatorOnly image:nil];
             [self.hud showInView:self.view];
             AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+            manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
             [manager GET:@"http://m.weather.com.cn/data/101010100.html" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
                 [self.hud remove];
+                self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Succeed"]];
+                [self.hud showInView:self.view];
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 [self.hud remove];
+                self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Fail"]];
+                [self.hud showInView:self.view];
             }];
         }
             break;

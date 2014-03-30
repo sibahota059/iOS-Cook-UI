@@ -9,9 +9,9 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, XPHUDType){
-    XPHUDTypeActiveOnly = 0,
+    XPHUDTypeActivityIndicatorOnly = 0,
     XPHUDTypeCaptionOnly,
-    XPHUDTypeActiveCaption
+    XPHUDTypeCustomImageOnly
 };
 
 @interface XPHUD : UIView
