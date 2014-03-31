@@ -31,6 +31,7 @@
 		F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */; };
 		F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */; };
 		F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */; };
+		F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */; };
 		F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
 		F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
@@ -108,6 +109,8 @@
 		F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPLocalViewController.m; sourceTree = "<group>"; };
 		F6A4A30318E52B7600ADF7BD /* XPHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUDViewController.h; sourceTree = "<group>"; };
 		F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHUDViewController.m; sourceTree = "<group>"; };
+		F6A7F0F018E9ABC60084DB80 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
+		F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		F6A8875718E1F31D00D6E033 /* XPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPNewsViewController.h; sourceTree = "<group>"; };
 		F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPNewsViewController.m; sourceTree = "<group>"; };
 		F6AB8BB018D8953800710409 /* iOS-Cook-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Cook-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -328,6 +331,8 @@
 				F6EBBEAE18DFF6BD001C252C /* UIColor+Category.h */,
 				F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */,
 				F6EBBEB118DFF6EF001C252C /* XPCategory.h */,
+				F6A7F0F018E9ABC60084DB80 /* UILabel+Category.h */,
+				F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -444,6 +449,7 @@
 				F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */,
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
 				F6E185EB18E3383A0046F0D3 /* XPHUD.m in Sources */,
+				F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */,
 				F64FEF2718E863F60012FF82 /* AFHTTPRequestOperationManager.m in Sources */,
 				F66C92C818E1B7050070341F /* XPDrawerModel.m in Sources */,
 				F64FEF2618E863F60012FF82 /* AFHTTPRequestOperation.m in Sources */,

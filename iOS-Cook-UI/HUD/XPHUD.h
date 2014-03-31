@@ -11,13 +11,15 @@
 typedef NS_ENUM(NSUInteger, XPHUDType){
     XPHUDTypeActivityIndicatorOnly = 0,
     XPHUDTypeCaptionOnly,
-    XPHUDTypeCustomImageOnly
+    XPHUDTypeCustomImageOnly,
+    XPHUDTypeActivityWithCaption
 };
 
 @interface XPHUD : UIView
 
 - (instancetype)initWithTitle:(NSString *)title type:(XPHUDType)type image:(UIImage *)image;
 - (void)showInView:(UIView *)superView;
+- (void)showInView:(UIView *)superView hideAfter:(NSTimeInterval)delay;
 - (void)showWhileExecuting:(SEL)selector onTarget:(id)target withObject:(id)object inView:(UIView *)superView;
 - (void)showWhileExecutingBlock:(dispatch_block_t)block completionBlock:(dispatch_block_t)completion inView:(UIView *)superView;
 - (void)remove;

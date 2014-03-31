@@ -8,4 +8,5 @@
 
 #import <Foundation/Foundation.h>
 
-#import "UIColor+Category"
+#import "UIColor+Category.h"
+#import "UILabel+Category.h"

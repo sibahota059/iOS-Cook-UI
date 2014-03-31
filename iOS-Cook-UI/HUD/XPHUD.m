@@ -7,9 +7,12 @@
 //
 
 #import "XPHUD.h"
+#import "XPCategory.h"
 
 #define kWidthPercent 0.3
+#define kMaxCaptionWidthPercent 0.9
 #define kCaptionHeight 30
+#define kCaptionPadding 5
 
 @interface XPHUD ()
 
@@ -64,9 +67,19 @@
             [self showCustomImageOnly:superView];
         }
             break;
+        case XPHUDTypeActivityWithCaption:
+        {
+            [self showActivityWithCaption:superView];
+        }
+            break;
         default:
             break;
     }
+}
+
+- (void)showInView:(UIView *)superView hideAfter:(NSTimeInterval)delay{
+    [self showInView:superView];
+    [self performSelector:@selector(remove) withObject:nil afterDelay:delay];
 }
 
 - (void)remove{
@@ -121,14 +134,23 @@
 }
 
 - (void)showCaptionOnly:(UIView *)superView{
-    self.frame = CGRectMake(0, 0, superView.bounds.size.width * kWidthPercent, kCaptionHeight);
+    CGFloat textWidth = [UILabel getTextWidth:self.title fontSize:15];
+    CGFloat viewWidth = textWidth + kCaptionPadding * 2;
+    if (viewWidth > superView.bounds.size.width * kMaxCaptionWidthPercent) {
+        viewWidth = superView.bounds.size.width * kMaxCaptionWidthPercent;
+    }
+    self.frame = CGRectMake(0, 0, viewWidth, kCaptionHeight);
     self.layer.cornerRadius = 5;
     self.center = CGPointMake(superView.bounds.size.width * 0.5, superView.bounds.size.height * 0.5);
     self.backgroundColor = [UIColor darkGrayColor];
     [superView addSubview:self];
     UILabel *label = [[UILabel alloc] init];
+    label.lineBreakMode = NSLineBreakByTruncatingTail;
     label.text = self.title;
-    [label sizeToFit];
+    label.font = [UIFont systemFontOfSize:15];
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.frame = CGRectMake(0, 0, textWidth, 20) ;
     label.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
     [self addSubview:label];
 }
@@ -143,6 +165,35 @@
     image.image = self.image;
     [self addSubview:image];
     image.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.width * 0.5);
+}
+
+- (void)showActivityWithCaption:(UIView *)superView{
+    CGFloat textWidth = [UILabel getTextWidth:self.title fontSize:15];
+    CGFloat viewWidth = textWidth + kCaptionPadding * 2;
+    if (viewWidth > superView.bounds.size.width * kMaxCaptionWidthPercent) {
+        viewWidth = superView.bounds.size.width * kMaxCaptionWidthPercent;
+    }
+    
+    self.frame = CGRectMake(0, 0, viewWidth, superView.bounds.size.width * kWidthPercent);
+    self.layer.cornerRadius = 5;
+    self.center = CGPointMake(superView.bounds.size.width * 0.5, superView.bounds.size.height * 0.5);
+    self.backgroundColor = [UIColor darkGrayColor];
+    [superView addSubview:self];
+    
+    UIActivityIndicatorView *activity = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+    [self addSubview:activity];
+    activity.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.width * 0.5 - kCaptionHeight * 2);
+    [activity startAnimating];
+    
+    UILabel *label = [[UILabel alloc] init];
+    label.lineBreakMode = NSLineBreakByTruncatingTail;
+    label.text = self.title;
+    label.font = [UIFont systemFontOfSize:15];
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.frame = CGRectMake(0, 0, textWidth , 20) ;
+    label.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height - kCaptionHeight * 0.5);
+    [self addSubview:label];
 }
 
 @end

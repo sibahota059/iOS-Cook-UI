@@ -35,7 +35,7 @@ static NSString *CellIdentifier = @"Cell";
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:CellIdentifier];
-    self.hudArray = @[@"Show active only",@"Show caption only",@"show active with a caption"];
+    self.hudArray = @[@"Show activity only",@"Show caption only",@"show activity with a caption"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,15 +72,47 @@ static NSString *CellIdentifier = @"Cell";
             [manager GET:@"http://m.weather.com.cn/data/101010100.html" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
                 [self.hud remove];
                 self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Succeed"]];
-                [self.hud showInView:self.view];
+                [self.hud showInView:self.view hideAfter:3.0];
             } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
                 [self.hud remove];
                 self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Fail"]];
-                [self.hud showInView:self.view];
+                [self.hud showInView:self.view hideAfter:3.0];
             }];
         }
             break;
-            
+        case 1:
+        {
+            self.hud = [[XPHUD alloc] initWithTitle:@"正在发起网络请求，请稍等" type:XPHUDTypeCaptionOnly image:nil];
+            [self.hud showInView:self.view];
+            AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+            manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+            [manager GET:@"http://m.weather.com.cn/data/101010100.html" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                [self.hud remove];
+                self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Succeed"]];
+                [self.hud showInView:self.view hideAfter:3.0];
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                [self.hud remove];
+                self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Fail"]];
+                [self.hud showInView:self.view hideAfter:3.0];
+            }];
+        }
+            break;
+        case 2:
+        {
+            self.hud = [[XPHUD alloc] initWithTitle:@"正在发起网络请求，请稍等" type:XPHUDTypeActivityWithCaption image:nil];
+            [self.hud showInView:self.view];
+            AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+            manager.responseSerializer.acceptableContentTypes = [manager.responseSerializer.acceptableContentTypes setByAddingObject:@"text/html"];
+            [manager GET:@"http://m.weather.com.cn/data/101010100.html" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+                [self.hud remove];
+                self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Succeed"]];
+                [self.hud showInView:self.view hideAfter:3.0];
+            } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+                [self.hud remove];
+                self.hud = [[XPHUD alloc] initWithTitle:nil type:XPHUDTypeCustomImageOnly image:[UIImage imageNamed:@"Fail"]];
+                [self.hud showInView:self.view hideAfter:3.0];
+            }];
+        }
         default:
             break;
     }
