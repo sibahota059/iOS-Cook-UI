@@ -91,7 +91,7 @@
             vImageBoxConvolve_ARGB8888(&effectInBuffer, &effectOutBuffer, NULL, 0, 0, (uint32_t)radius, (uint32_t)radius, 0, kvImageEdgeExtend);
         }
         
-        BOOL effectImageBuffersAreSwapped = NO;
+//        BOOL effectImageBuffersAreSwapped = NO;
         if (hasStaturationChange) {
             CGFloat s = saturationDeltaFactor;
             CGFloat floatingPointSaturationMatrix[] = {
@@ -108,7 +108,7 @@
             }
             if (hasBlur) {
                 vImageMatrixMultiply_ARGB8888(&effectOutBuffer, &effectInBuffer, saturationMatrix, divisor, NULL, NULL, kvImageNoFlags);
-                effectImageBuffersAreSwapped = YES;
+//                effectImageBuffersAreSwapped = YES;
             }else{
                 vImageMatrixMultiply_ARGB8888(&effectInBuffer, &effectOutBuffer, saturationMatrix, divisor, NULL, NULL, kvImageNoFlags);
             }

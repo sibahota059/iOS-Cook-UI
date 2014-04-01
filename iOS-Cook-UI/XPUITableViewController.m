@@ -81,6 +81,8 @@ static NSString *CellIdentifier = @"Cell";
         [self performSegueWithIdentifier:@"pushDrawerViewController" sender:self];
     }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"XPHUD"]){
         [self performSegueWithIdentifier:@"pushXPHUDViewController" sender:self];
+    }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Animate Tab View Controller"]){
+        [self performSegueWithIdentifier:@"pushAnimateTabViewController" sender:self];
     }
 }
 

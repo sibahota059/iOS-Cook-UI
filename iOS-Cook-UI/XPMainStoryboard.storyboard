@@ -32,6 +32,7 @@
                         <segue destination="sTD-I3-4TX" kind="push" identifier="pushBlurSlideBarViewController" id="HTH-PG-cJD"/>
                         <segue destination="tuN-9q-ofP" kind="modal" identifier="pushDrawerViewController" id="dUH-g9-8sI"/>
                         <segue destination="cfA-91-oRu" kind="push" identifier="pushXPHUDViewController" id="FUa-g1-lQL"/>
+                        <segue destination="xrs-eS-3UW" kind="modal" identifier="pushAnimateTabViewController" id="vnf-tS-rUt"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh9-Gh-G1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -119,6 +120,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQ0-eT-Q0h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1386" y="-845"/>
+        </scene>
+        <!--Animate Tab View Controller-->
+        <scene sceneID="9bc-QS-G5R">
+            <objects>
+                <viewController id="xrs-eS-3UW" customClass="XPAnimateTabViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3qh-TQ-TRk"/>
+                        <viewControllerLayoutGuide type="bottom" id="FWc-ci-ny1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RVy-KA-xIc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QP0-eG-zjT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="-846"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Nw7-aY-XHh">

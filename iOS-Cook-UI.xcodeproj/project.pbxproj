@@ -18,6 +18,9 @@
 		F64FEF2C18E863F60012FF82 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF2118E863F60012FF82 /* AFURLRequestSerialization.m */; };
 		F64FEF2D18E863F60012FF82 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF2318E863F60012FF82 /* AFURLResponseSerialization.m */; };
 		F64FEF2E18E863F60012FF82 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF2518E863F60012FF82 /* AFURLSessionManager.m */; };
+		F6570E9D18EA8BFA0060B6D0 /* XPAnimateTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6570E9C18EA8BFA0060B6D0 /* XPAnimateTabViewController.m */; };
+		F6570EA018EA8ED30060B6D0 /* XPTabScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6570E9F18EA8ED30060B6D0 /* XPTabScrollView.m */; };
+		F6570EA318EA8F070060B6D0 /* XPContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6570EA218EA8F070060B6D0 /* XPContentScrollView.m */; };
 		F66C92BA18E1A5F40070341F /* XPBlurSlideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92B718E1A5F40070341F /* XPBlurSlideBarController.m */; };
 		F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92B918E1A5F40070341F /* XPBlurSlideBarViewController.m */; };
 		F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92BE18E1A6DB0070341F /* XPDrawerViewController.m */; };
@@ -83,6 +86,12 @@
 		F64FEF2318E863F60012FF82 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		F64FEF2418E863F60012FF82 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		F64FEF2518E863F60012FF82 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		F6570E9B18EA8BFA0060B6D0 /* XPAnimateTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPAnimateTabViewController.h; sourceTree = "<group>"; };
+		F6570E9C18EA8BFA0060B6D0 /* XPAnimateTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPAnimateTabViewController.m; sourceTree = "<group>"; };
+		F6570E9E18EA8ED30060B6D0 /* XPTabScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPTabScrollView.h; sourceTree = "<group>"; };
+		F6570E9F18EA8ED30060B6D0 /* XPTabScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPTabScrollView.m; sourceTree = "<group>"; };
+		F6570EA118EA8F070060B6D0 /* XPContentScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPContentScrollView.h; sourceTree = "<group>"; };
+		F6570EA218EA8F070060B6D0 /* XPContentScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPContentScrollView.m; sourceTree = "<group>"; };
 		F66C92B618E1A5F40070341F /* XPBlurSlideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarController.h; sourceTree = "<group>"; };
 		F66C92B718E1A5F40070341F /* XPBlurSlideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPBlurSlideBarController.m; sourceTree = "<group>"; };
 		F66C92B818E1A5F40070341F /* XPBlurSlideBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPBlurSlideBarViewController.h; sourceTree = "<group>"; };
@@ -195,6 +204,19 @@
 			path = AFNetworking;
 			sourceTree = "<group>";
 		};
+		F6570E9A18EA8A8D0060B6D0 /* AnimateTab */ = {
+			isa = PBXGroup;
+			children = (
+				F6570E9B18EA8BFA0060B6D0 /* XPAnimateTabViewController.h */,
+				F6570E9C18EA8BFA0060B6D0 /* XPAnimateTabViewController.m */,
+				F6570E9E18EA8ED30060B6D0 /* XPTabScrollView.h */,
+				F6570E9F18EA8ED30060B6D0 /* XPTabScrollView.m */,
+				F6570EA118EA8F070060B6D0 /* XPContentScrollView.h */,
+				F6570EA218EA8F070060B6D0 /* XPContentScrollView.m */,
+			);
+			path = AnimateTab;
+			sourceTree = "<group>";
+		};
 		F66C92B518E1A5F40070341F /* BlurSlideBar */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +290,7 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
+				F6570E9A18EA8A8D0060B6D0 /* AnimateTab */,
 				F64FEF1118E863F60012FF82 /* ImportedLibrary */,
 				F6E185E818E337C90046F0D3 /* HUD */,
 				F66C92BC18E1A5FA0070341F /* DrawerViewController */,
@@ -442,6 +465,7 @@
 				F64FEF2B18E863F60012FF82 /* AFURLConnectionOperation.m in Sources */,
 				F64FEF2A18E863F60012FF82 /* AFSecurityPolicy.m in Sources */,
 				F69F1EDE18E2DBB400B4F208 /* XPTopicViewController.m in Sources */,
+				F6570EA018EA8ED30060B6D0 /* XPTabScrollView.m in Sources */,
 				F64FEF2818E863F60012FF82 /* AFHTTPSessionManager.m in Sources */,
 				F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */,
 				F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */,
@@ -461,7 +485,9 @@
 				F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */,
 				F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */,
 				F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */,
+				F6570E9D18EA8BFA0060B6D0 /* XPAnimateTabViewController.m in Sources */,
 				F66C92C218E1B27D0070341F /* XPLeftDrawerViewController.m in Sources */,
+				F6570EA318EA8F070060B6D0 /* XPContentScrollView.m in Sources */,
 				F66C92C518E1B28E0070341F /* XPRightDrawerViewController.m in Sources */,
 				F66C92BA18E1A5F40070341F /* XPBlurSlideBarController.m in Sources */,
 			);
