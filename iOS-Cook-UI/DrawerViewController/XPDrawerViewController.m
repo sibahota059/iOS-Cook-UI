@@ -95,7 +95,6 @@ static XPDrawerViewController *shareController;
         UIViewController *vc = [[c alloc] init];
         vc.view.backgroundColor = [UIColor darkGrayColor];
         controller = [[UINavigationController alloc] initWithRootViewController:vc];
-        controller.navigationBar.barTintColor = [UIColor darkGrayColor];
         UILabel *titleLabel = [[UILabel alloc] init];
         titleLabel.frame = CGRectMake(0, 0, 100, 44);
         titleLabel.textColor = [UIColor whiteColor];

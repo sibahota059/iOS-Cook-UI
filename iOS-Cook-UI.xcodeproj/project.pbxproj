@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F607F53D18D898C00062E811 /* UIList.plist in Resources */ = {isa = PBXBuildFile; fileRef = F607F53C18D898C00062E811 /* UIList.plist */; };
 		F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F607F53F18D899D40062E811 /* XPUITableViewController.m */; };
+		F64EED3018EDA6CA0003A874 /* XPImageBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F64EED2F18EDA6CA0003A874 /* XPImageBrowseViewController.m */; };
 		F64FEF2618E863F60012FF82 /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1418E863F60012FF82 /* AFHTTPRequestOperation.m */; };
 		F64FEF2718E863F60012FF82 /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1618E863F60012FF82 /* AFHTTPRequestOperationManager.m */; };
 		F64FEF2818E863F60012FF82 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F64FEF1818E863F60012FF82 /* AFHTTPSessionManager.m */; };
@@ -34,8 +35,18 @@
 		F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */; };
 		F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */; };
 		F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */; };
+		F6A65C6818F2DAB300FCE300 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */; };
 		F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */; };
 		F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */; };
+		F6AA6A3618F58E36006EB7B4 /* XPPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AA6A3518F58E36006EB7B4 /* XPPhotoBrowser.m */; };
+		F6AA6A4718F58E49006EB7B4 /* photo1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A3718F58E49006EB7B4 /* photo1.jpg */; };
+		F6AA6A4918F58E49006EB7B4 /* photo2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A3918F58E49006EB7B4 /* photo2.jpg */; };
+		F6AA6A4B18F58E49006EB7B4 /* photo3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A3B18F58E49006EB7B4 /* photo3.jpg */; };
+		F6AA6A4D18F58E49006EB7B4 /* photo4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A3D18F58E49006EB7B4 /* photo4.jpg */; };
+		F6AA6A4F18F58E49006EB7B4 /* photo5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A3F18F58E49006EB7B4 /* photo5.jpg */; };
+		F6AA6A5118F58E49006EB7B4 /* photo6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A4118F58E49006EB7B4 /* photo6.jpg */; };
+		F6AA6A5318F58E49006EB7B4 /* photo7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A4318F58E49006EB7B4 /* photo7.jpg */; };
+		F6AA6A5518F58E49006EB7B4 /* photo8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F6AA6A4518F58E49006EB7B4 /* photo8.jpg */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
 		F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
 		F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB718D8953800710409 /* UIKit.framework */; };
@@ -49,6 +60,7 @@
 		F6AB8BD718D8953800710409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BD518D8953800710409 /* InfoPlist.strings */; };
 		F6AB8BD918D8953800710409 /* iOS_Cook_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */; };
 		F6AB8BE318D895D300710409 /* XPMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */; };
+		F6B1C9D618F446F10070E58F /* XPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B1C9D518F446F10070E58F /* XPPhoto.m */; };
 		F6E185EB18E3383A0046F0D3 /* XPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E185EA18E3383A0046F0D3 /* XPHUD.m */; };
 		F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */; };
 /* End PBXBuildFile section */
@@ -67,6 +79,8 @@
 		F607F53C18D898C00062E811 /* UIList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIList.plist; sourceTree = "<group>"; };
 		F607F53E18D899D40062E811 /* XPUITableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPUITableViewController.h; sourceTree = "<group>"; };
 		F607F53F18D899D40062E811 /* XPUITableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPUITableViewController.m; sourceTree = "<group>"; };
+		F64EED2E18EDA6CA0003A874 /* XPImageBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPImageBrowseViewController.h; sourceTree = "<group>"; };
+		F64EED2F18EDA6CA0003A874 /* XPImageBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPImageBrowseViewController.m; sourceTree = "<group>"; };
 		F64FEF1318E863F60012FF82 /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
 		F64FEF1418E863F60012FF82 /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
 		F64FEF1518E863F60012FF82 /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
@@ -118,10 +132,21 @@
 		F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPLocalViewController.m; sourceTree = "<group>"; };
 		F6A4A30318E52B7600ADF7BD /* XPHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUDViewController.h; sourceTree = "<group>"; };
 		F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHUDViewController.m; sourceTree = "<group>"; };
+		F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		F6A7F0F018E9ABC60084DB80 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
 		F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		F6A8875718E1F31D00D6E033 /* XPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPNewsViewController.h; sourceTree = "<group>"; };
 		F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPNewsViewController.m; sourceTree = "<group>"; };
+		F6AA6A3418F58E36006EB7B4 /* XPPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoBrowser.h; sourceTree = "<group>"; };
+		F6AA6A3518F58E36006EB7B4 /* XPPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoBrowser.m; sourceTree = "<group>"; };
+		F6AA6A3718F58E49006EB7B4 /* photo1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo1.jpg; sourceTree = "<group>"; };
+		F6AA6A3918F58E49006EB7B4 /* photo2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo2.jpg; sourceTree = "<group>"; };
+		F6AA6A3B18F58E49006EB7B4 /* photo3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo3.jpg; sourceTree = "<group>"; };
+		F6AA6A3D18F58E49006EB7B4 /* photo4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo4.jpg; sourceTree = "<group>"; };
+		F6AA6A3F18F58E49006EB7B4 /* photo5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo5.jpg; sourceTree = "<group>"; };
+		F6AA6A4118F58E49006EB7B4 /* photo6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo6.jpg; sourceTree = "<group>"; };
+		F6AA6A4318F58E49006EB7B4 /* photo7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo7.jpg; sourceTree = "<group>"; };
+		F6AA6A4518F58E49006EB7B4 /* photo8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = photo8.jpg; sourceTree = "<group>"; };
 		F6AB8BB018D8953800710409 /* iOS-Cook-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Cook-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AB8BB318D8953800710409 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6AB8BB518D8953800710409 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -139,6 +164,8 @@
 		F6AB8BD618D8953800710409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Cook_UITests.m; sourceTree = "<group>"; };
 		F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XPMainStoryboard.storyboard; sourceTree = "<group>"; };
+		F6B1C9D418F446F10070E58F /* XPPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhoto.h; sourceTree = "<group>"; };
+		F6B1C9D518F446F10070E58F /* XPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhoto.m; sourceTree = "<group>"; };
 		F6E185E918E3383A0046F0D3 /* XPHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUD.h; sourceTree = "<group>"; };
 		F6E185EA18E3383A0046F0D3 /* XPHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHUD.m; sourceTree = "<group>"; };
 		F6EBBEAE18DFF6BD001C252C /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
@@ -151,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A65C6818F2DAB300FCE300 /* AssetsLibrary.framework in Frameworks */,
 				F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */,
 				F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */,
 				F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */,
@@ -170,6 +198,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F64EED2C18EDA40D0003A874 /* ImageBrowse */ = {
+			isa = PBXGroup;
+			children = (
+				F6B1C9D718F44A2F0070E58F /* photos */,
+				F6AA6A3418F58E36006EB7B4 /* XPPhotoBrowser.h */,
+				F6AA6A3518F58E36006EB7B4 /* XPPhotoBrowser.m */,
+				F64EED2E18EDA6CA0003A874 /* XPImageBrowseViewController.h */,
+				F64EED2F18EDA6CA0003A874 /* XPImageBrowseViewController.m */,
+				F6B1C9D418F446F10070E58F /* XPPhoto.h */,
+				F6B1C9D518F446F10070E58F /* XPPhoto.m */,
+			);
+			path = ImageBrowse;
+			sourceTree = "<group>";
+		};
+		F64EED2D18EDA5A00003A874 /* Finished */ = {
+			isa = PBXGroup;
+			children = (
+				F6E185E818E337C90046F0D3 /* HUD */,
+				F6EBBEAD18DFF6A2001C252C /* Category */,
+				F66C92B518E1A5F40070341F /* BlurSlideBar */,
+				F66C92BC18E1A5FA0070341F /* DrawerViewController */,
+				F6570E9A18EA8A8D0060B6D0 /* AnimateTab */,
+			);
+			name = Finished;
+			sourceTree = "<group>";
+		};
 		F64FEF1118E863F60012FF82 /* ImportedLibrary */ = {
 			isa = PBXGroup;
 			children = (
@@ -279,6 +333,7 @@
 		F6AB8BB218D8953800710409 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */,
 				F6AB8BB318D8953800710409 /* Foundation.framework */,
 				F6AB8BB518D8953800710409 /* CoreGraphics.framework */,
 				F6AB8BB718D8953800710409 /* UIKit.framework */,
@@ -290,12 +345,9 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
-				F6570E9A18EA8A8D0060B6D0 /* AnimateTab */,
+				F64EED2D18EDA5A00003A874 /* Finished */,
+				F64EED2C18EDA40D0003A874 /* ImageBrowse */,
 				F64FEF1118E863F60012FF82 /* ImportedLibrary */,
-				F6E185E818E337C90046F0D3 /* HUD */,
-				F66C92BC18E1A5FA0070341F /* DrawerViewController */,
-				F66C92B518E1A5F40070341F /* BlurSlideBar */,
-				F6EBBEAD18DFF6A2001C252C /* Category */,
 				F6AB8BC218D8953800710409 /* XPAppDelegate.h */,
 				F6AB8BC318D8953800710409 /* XPAppDelegate.m */,
 				F607F53E18D899D40062E811 /* XPUITableViewController.h */,
@@ -335,6 +387,21 @@
 				F6AB8BD518D8953800710409 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B1C9D718F44A2F0070E58F /* photos */ = {
+			isa = PBXGroup;
+			children = (
+				F6AA6A3718F58E49006EB7B4 /* photo1.jpg */,
+				F6AA6A3918F58E49006EB7B4 /* photo2.jpg */,
+				F6AA6A3B18F58E49006EB7B4 /* photo3.jpg */,
+				F6AA6A3D18F58E49006EB7B4 /* photo4.jpg */,
+				F6AA6A3F18F58E49006EB7B4 /* photo5.jpg */,
+				F6AA6A4118F58E49006EB7B4 /* photo6.jpg */,
+				F6AA6A4318F58E49006EB7B4 /* photo7.jpg */,
+				F6AA6A4518F58E49006EB7B4 /* photo8.jpg */,
+			);
+			path = photos;
 			sourceTree = "<group>";
 		};
 		F6E185E818E337C90046F0D3 /* HUD */ = {
@@ -436,7 +503,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AA6A5118F58E49006EB7B4 /* photo6.jpg in Resources */,
+				F6AA6A4D18F58E49006EB7B4 /* photo4.jpg in Resources */,
+				F6AA6A4718F58E49006EB7B4 /* photo1.jpg in Resources */,
 				F607F53D18D898C00062E811 /* UIList.plist in Resources */,
+				F6AA6A4B18F58E49006EB7B4 /* photo3.jpg in Resources */,
+				F6AA6A5318F58E49006EB7B4 /* photo7.jpg in Resources */,
+				F6AA6A4918F58E49006EB7B4 /* photo2.jpg in Resources */,
+				F6AA6A5518F58E49006EB7B4 /* photo8.jpg in Resources */,
+				F6AA6A4F18F58E49006EB7B4 /* photo5.jpg in Resources */,
 				F6AB8BBE18D8953800710409 /* InfoPlist.strings in Resources */,
 				F6AB8BC618D8953800710409 /* Images.xcassets in Resources */,
 				F6AB8BE318D895D300710409 /* XPMainStoryboard.storyboard in Resources */,
@@ -458,10 +533,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F64EED3018EDA6CA0003A874 /* XPImageBrowseViewController.m in Sources */,
 				F69F1EE118E2DBD500B4F208 /* XPCommentViewController.m in Sources */,
 				F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */,
 				F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */,
 				F6AB8BC418D8953800710409 /* XPAppDelegate.m in Sources */,
+				F6AA6A3618F58E36006EB7B4 /* XPPhotoBrowser.m in Sources */,
 				F64FEF2B18E863F60012FF82 /* AFURLConnectionOperation.m in Sources */,
 				F64FEF2A18E863F60012FF82 /* AFSecurityPolicy.m in Sources */,
 				F69F1EDE18E2DBB400B4F208 /* XPTopicViewController.m in Sources */,
@@ -487,6 +564,7 @@
 				F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */,
 				F6570E9D18EA8BFA0060B6D0 /* XPAnimateTabViewController.m in Sources */,
 				F66C92C218E1B27D0070341F /* XPLeftDrawerViewController.m in Sources */,
+				F6B1C9D618F446F10070E58F /* XPPhoto.m in Sources */,
 				F6570EA318EA8F070060B6D0 /* XPContentScrollView.m in Sources */,
 				F66C92C518E1B28E0070341F /* XPRightDrawerViewController.m in Sources */,
 				F66C92BA18E1A5F40070341F /* XPBlurSlideBarController.m in Sources */,

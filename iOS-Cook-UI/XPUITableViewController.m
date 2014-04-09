@@ -36,7 +36,6 @@ static NSString *CellIdentifier = @"Cell";
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.navigationController.navigationBar.tintColor = nil;
     
     NSURL *path = [[NSBundle mainBundle] URLForResource:@"UIList" withExtension:@"plist"];
     self.uiArray = [NSArray arrayWithContentsOfURL:path];
@@ -83,6 +82,8 @@ static NSString *CellIdentifier = @"Cell";
         [self performSegueWithIdentifier:@"pushXPHUDViewController" sender:self];
     }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Animate Tab View Controller"]){
         [self performSegueWithIdentifier:@"pushAnimateTabViewController" sender:self];
+    }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Image Scan"]){
+        [self performSegueWithIdentifier:@"pushImageBrowseViewController" sender:self];
     }
 }
 
