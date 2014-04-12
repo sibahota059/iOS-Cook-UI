@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "TopViewRight.png"
+      "filename" : "timeline_image_loading.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "TopViewRight-1.png"
+      "filename" : "timeline_image_loading@2x.png"
     }
   ],
   "info" : {
