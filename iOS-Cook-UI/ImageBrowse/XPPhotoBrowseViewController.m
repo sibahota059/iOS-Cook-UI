@@ -75,7 +75,18 @@
 }
 
 - (void)imageTapped:(UITapGestureRecognizer *)tap{
-
+    NSMutableArray *photos = [NSMutableArray array];
+    for (NSString *url in self.photoURLArray) {
+        NSString *URL = [url stringByReplacingOccurrencesOfString:@"thumbnail" withString:@"bmiddle"];
+        XPPhoto *photo = [[XPPhoto alloc] init];
+        photo.url = [NSURL URLWithString:URL];
+        [photos addObject:photo];
+    }
+    
+    XPPhotoBrowser *browser = [[XPPhotoBrowser alloc] init];
+    browser.currentIndex = tap.view.tag;
+    browser.photos = photos;
+    [browser show];
 }
 
 /*

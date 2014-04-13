@@ -33,6 +33,10 @@
 		F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE318E2DBF100B4F208 /* XPImageViewController.m */; };
 		F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */; };
 		F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */; };
+		F6A23BAE18FA24E400FEF468 /* XPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BAD18FA24E400FEF468 /* XPPhoto.m */; };
+		F6A23BB118FA25C700FEF468 /* XPPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BB018FA25C700FEF468 /* XPPhotoBrowser.m */; };
+		F6A23BB418FA2E2B00FEF468 /* XPPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BB318FA2E2B00FEF468 /* XPPhotoToolbar.m */; };
+		F6A23BB718FA323C00FEF468 /* XPPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BB618FA323C00FEF468 /* XPPhotoView.m */; };
 		F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */; };
 		F6A65C6818F2DAB300FCE300 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */; };
 		F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */; };
@@ -132,6 +136,14 @@
 		F69F1EE618E2DC0F00B4F208 /* XPSubscriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSubscriptionViewController.m; sourceTree = "<group>"; };
 		F69F1EE818E2DC3C00B4F208 /* XPLocalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPLocalViewController.h; sourceTree = "<group>"; };
 		F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPLocalViewController.m; sourceTree = "<group>"; };
+		F6A23BAC18FA24E400FEF468 /* XPPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhoto.h; sourceTree = "<group>"; };
+		F6A23BAD18FA24E400FEF468 /* XPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhoto.m; sourceTree = "<group>"; };
+		F6A23BAF18FA25C700FEF468 /* XPPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoBrowser.h; sourceTree = "<group>"; };
+		F6A23BB018FA25C700FEF468 /* XPPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoBrowser.m; sourceTree = "<group>"; };
+		F6A23BB218FA2E2B00FEF468 /* XPPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoToolbar.h; sourceTree = "<group>"; };
+		F6A23BB318FA2E2B00FEF468 /* XPPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoToolbar.m; sourceTree = "<group>"; };
+		F6A23BB518FA323C00FEF468 /* XPPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoView.h; sourceTree = "<group>"; };
+		F6A23BB618FA323C00FEF468 /* XPPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoView.m; sourceTree = "<group>"; };
 		F6A4A30318E52B7600ADF7BD /* XPHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUDViewController.h; sourceTree = "<group>"; };
 		F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHUDViewController.m; sourceTree = "<group>"; };
 		F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
@@ -224,6 +236,14 @@
 			children = (
 				F6DDD22718F9ADA10083D3B2 /* XPPhotoBrowseViewController.h */,
 				F6DDD22818F9ADA10083D3B2 /* XPPhotoBrowseViewController.m */,
+				F6A23BAC18FA24E400FEF468 /* XPPhoto.h */,
+				F6A23BAD18FA24E400FEF468 /* XPPhoto.m */,
+				F6A23BAF18FA25C700FEF468 /* XPPhotoBrowser.h */,
+				F6A23BB018FA25C700FEF468 /* XPPhotoBrowser.m */,
+				F6A23BB218FA2E2B00FEF468 /* XPPhotoToolbar.h */,
+				F6A23BB318FA2E2B00FEF468 /* XPPhotoToolbar.m */,
+				F6A23BB518FA323C00FEF468 /* XPPhotoView.h */,
+				F6A23BB618FA323C00FEF468 /* XPPhotoView.m */,
 			);
 			path = ImageBrowse;
 			sourceTree = "<group>";
@@ -563,10 +583,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6A23BB418FA2E2B00FEF468 /* XPPhotoToolbar.m in Sources */,
 				F69F1EE118E2DBD500B4F208 /* XPCommentViewController.m in Sources */,
 				F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */,
 				F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */,
 				F6DDD24F18F9B5380083D3B2 /* SDWebImageManager.m in Sources */,
+				F6A23BB118FA25C700FEF468 /* XPPhotoBrowser.m in Sources */,
 				F6AB8BC418D8953800710409 /* XPAppDelegate.m in Sources */,
 				F64FEF2B18E863F60012FF82 /* AFURLConnectionOperation.m in Sources */,
 				F6DDD25518F9B5380083D3B2 /* UIImageView+WebCache.m in Sources */,
@@ -585,6 +607,7 @@
 				F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */,
 				F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */,
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
+				F6A23BAE18FA24E400FEF468 /* XPPhoto.m in Sources */,
 				F6E185EB18E3383A0046F0D3 /* XPHUD.m in Sources */,
 				F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */,
 				F64FEF2718E863F60012FF82 /* AFHTTPRequestOperationManager.m in Sources */,
@@ -606,6 +629,7 @@
 				F6DDD25118F9B5380083D3B2 /* UIButton+WebCache.m in Sources */,
 				F6570E9D18EA8BFA0060B6D0 /* XPAnimateTabViewController.m in Sources */,
 				F66C92C218E1B27D0070341F /* XPLeftDrawerViewController.m in Sources */,
+				F6A23BB718FA323C00FEF468 /* XPPhotoView.m in Sources */,
 				F6570EA318EA8F070060B6D0 /* XPContentScrollView.m in Sources */,
 				F6DDD24818F9B5380083D3B2 /* MKAnnotationView+WebCache.m in Sources */,
 				F66C92C518E1B28E0070341F /* XPRightDrawerViewController.m in Sources */,

@@ -1,5 +1,5 @@
 //
-//  XPPhotoBrowseViewController.h
+//  XPPhotoView.h
 //  iOS-Cook-UI
 //
 //  Created by XP on 4/13/14.
@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "XPPhoto.h"
-#import "XPPhotoBrowser.h"
 
-@interface XPPhotoBrowseViewController : UIViewController
+@interface XPPhotoView : UIScrollView<UIScrollViewDelegate>
+
+@property (nonatomic, strong) XPPhoto *photo;
 
 @end
