@@ -9,6 +9,8 @@
 #import "XPPhotoView.h"
 #import "UIImageView+WebCache.h"
 
+#define kMaximumScale 4
+
 @interface XPPhotoView ()
 
 @property (nonatomic, strong) UIImageView *imageView;
@@ -35,16 +37,33 @@
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
         self.scrollEnabled = NO;
         
-        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:nil];
+        UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
         singleTap.delaysTouchesBegan = YES;
         singleTap.numberOfTapsRequired = YES;
         [self addGestureRecognizer:singleTap];
         
-        UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:nil];
+        UITapGestureRecognizer *doubleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleDoubleTap:)];
         doubleTap.numberOfTapsRequired = 2;
         [self addGestureRecognizer:doubleTap];
     }
     return self;
+}
+
+- (void)handleSingleTap:(UITapGestureRecognizer *)tap{
+    
+}
+
+- (void)hide{
+}
+
+- (void)handleDoubleTap:(UITapGestureRecognizer *)tap{
+    CGPoint touchPoint = [tap locationInView:self];
+	if (self.zoomScale == self.maximumZoomScale) {
+		[self setZoomScale:self.minimumZoomScale animated:YES];
+	} else {
+		[self zoomToRect:CGRectMake(touchPoint.x, touchPoint.y, 1, 1) animated:YES];
+        [self centerScrollViewContents];
+	}
 }
 
 - (void)setPhoto:(XPPhoto *)photo{
@@ -59,6 +78,7 @@
                             options:SDWebImageRetryFailed | SDWebImageLowPriority
                            progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType){
                                [photoView adjustFrame];
+                               photoView.scrollEnabled = YES;
                            }];
 }
 
@@ -71,28 +91,54 @@
     CGFloat imageWidth = imageSize.width;
     CGFloat imageHeight = imageSize.height;
     
-    CGFloat minScale = boundsWidth/imageWidth;
-    if (minScale > 1) {
-        minScale = 1.0;
-    }
-    CGFloat maxScale = 2.0;
-    if ([UIScreen instancesRespondToSelector:@selector(scale)]) {
-        maxScale = maxScale / [[UIScreen mainScreen] scale];
-    }
-    self.maximumZoomScale = maxScale;
-    self.minimumZoomScale = minScale;
-    self.zoomScale = minScale;
-    
-    CGRect imageFrame = CGRectMake(0, 0, boundsWidth, imageHeight * boundsWidth / imageWidth);
-    self.contentSize = CGSizeMake(0, imageFrame.size.height);
-    
-    if (imageFrame.size.height < boundsHeight) {
-        imageFrame.origin.y = floorf((boundsHeight - imageFrame.size.height) / 2.0);
+    CGSize imageViewSize = CGSizeZero;
+    if (imageWidth/imageHeight <= boundsWidth/boundsHeight) {
+        CGFloat height = MIN(imageHeight, boundsHeight);
+        CGFloat width = height * (imageWidth/imageHeight);
+        imageViewSize = CGSizeMake(width, height);
+        
     }else{
-        imageFrame.origin.y = 0;
+        CGFloat width = MIN(imageWidth, boundsWidth);
+        CGFloat height = width * (imageHeight/imageWidth);
+        imageViewSize = CGSizeMake(width, height);
     }
     
-    self.imageView.frame = imageFrame;
+    CGFloat maxScale = kMaximumScale / [[UIScreen mainScreen] scale];
+    self.maximumZoomScale = maxScale;
+    self.minimumZoomScale = 1;
+    self.zoomScale = 1;
+    
+    self.contentSize = self.bounds.size;
+    
+    self.imageView.frame = CGRectMake(0, 0, imageViewSize.width, imageViewSize.width);
+    self.imageView.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+}
+
+- (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
+	return self.imageView;
+}
+
+- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale{
+    [self centerScrollViewContents];
+}
+
+- (void)centerScrollViewContents {
+    CGSize boundsSize = self.bounds.size;
+    CGRect contentsFrame = self.imageView.frame;
+    
+    if (contentsFrame.size.width < boundsSize.width) {
+        contentsFrame.origin.x = (boundsSize.width - contentsFrame.size.width) / 2.0f;
+    } else {
+        contentsFrame.origin.x = 0.0f;
+    }
+    
+    if (contentsFrame.size.height < boundsSize.height) {
+        contentsFrame.origin.y = (boundsSize.height - contentsFrame.size.height) / 2.0f;
+    } else {
+        contentsFrame.origin.y = 0.0f;
+    }
+    
+    self.imageView.frame = contentsFrame;
 }
 
 @end

@@ -72,9 +72,9 @@
     self.scrollView.showsHorizontalScrollIndicator = NO;
     self.scrollView.showsVerticalScrollIndicator = NO;
     self.scrollView.backgroundColor = [UIColor clearColor];
-    self.scrollView.contentSize = CGSizeMake(frame.size.width * self.photos.count, 0);
+    self.scrollView.contentSize = CGSizeMake(frame.size.width * self.photos.count, frame.size.height);
     [self.view addSubview:self.scrollView];
-    self.scrollView.contentOffset = CGPointMake(self.currentIndex * self.view.frame.size.width, 0);
+    self.scrollView.contentOffset = CGPointMake(self.currentIndex * frame.size.width, 0);
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,18 +89,33 @@
     [window.rootViewController.view addSubview:self.view];
     [self didMoveToParentViewController:window.rootViewController];
     
-    [self showPhotoAtIndex:self.currentIndex];
+    self.currentIndex = self.scrollView.contentOffset.x / self.scrollView.bounds.size.width;
+    [self showPhotos];
 }
 
-- (void)showPhotoAtIndex:(NSInteger)index{
-    CGRect frame = self.scrollView.bounds;
-    XPPhotoView *photoView = [[XPPhotoView alloc] initWithFrame:frame];
-    frame.size.width -= (2*kPadding);
-    frame.origin.x = (self.view.bounds.size.width * index) + kPadding;
-    photoView.tag = index;
-    XPPhoto *photo = [self.photos objectAtIndex:index];
-    photoView.photo = photo;
+- (void)showPhotos{
+    [self showPhotoAtIndex:self.currentIndex];
+    if (self.currentIndex != 0) {
+        [self showPhotoAtIndex:self.currentIndex - 1];
+    }
+    if (self.currentIndex != self.photos.count - 1) {
+        [self showPhotoAtIndex:self.currentIndex + 1];
+    }
+}
+
+- (void)showPhotoAtIndex:(int)index{
+    XPPhotoView *photoView = [[XPPhotoView alloc] init];
+    CGRect bounds = self.scrollView.bounds;
+    CGRect photoViewFrame = bounds;
+    photoViewFrame.size.width -= (2*kPadding);
+    photoViewFrame.origin.x = (bounds.size.width * index) + kPadding;
     
+    XPPhoto *photo = self.photos[index];
+    photoView.frame = photoViewFrame;
+    photoView.photo = photo;
     [self.scrollView addSubview:photoView];
 }
+
+#pragma mark - UIScrollView delegate
+
 @end

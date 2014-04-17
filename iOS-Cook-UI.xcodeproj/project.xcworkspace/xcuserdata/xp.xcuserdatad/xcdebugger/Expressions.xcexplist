@@ -3,6 +3,14 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "-[XPPhotoView adjustFrame]:XPPhotoView.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "(UIImageView *)self-&gt;_imageView">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "-[XPBlurSlideBarController showInViewController:animated:]:XPBlurSlideBarController.m">
          <PersistentStrings>
             <PersistentString
