@@ -57,12 +57,23 @@
 }
 
 - (void)handleDoubleTap:(UITapGestureRecognizer *)tap{
-    CGPoint touchPoint = [tap locationInView:self];
 	if (self.zoomScale == self.maximumZoomScale) {
 		[self setZoomScale:self.minimumZoomScale animated:YES];
 	} else {
-		[self zoomToRect:CGRectMake(touchPoint.x, touchPoint.y, 1, 1) animated:YES];
-        [self centerScrollViewContents];
+        CGPoint pointInView = [tap locationInView:self.imageView];
+        
+        // 3
+        CGSize scrollViewSize = self.bounds.size;
+        
+        CGFloat w = scrollViewSize.width / self.maximumZoomScale;
+        CGFloat h = scrollViewSize.height / self.maximumZoomScale;
+        CGFloat x = pointInView.x - (w / 2.0f);
+        CGFloat y = pointInView.y - (h / 2.0f);
+        
+        CGRect rectToZoomTo = CGRectMake(x, y, w, h);
+        
+        // 4
+        [self zoomToRect:rectToZoomTo animated:YES];
 	}
 }
 
@@ -118,10 +129,10 @@
 	return self.imageView;
 }
 
-- (void)scrollViewDidEndZooming:(UIScrollView *)scrollView withView:(UIView *)view atScale:(CGFloat)scale{
+- (void)scrollViewDidZoom:(UIScrollView *)scrollView {
+    // The scroll view has zoomed, so you need to re-center the contents
     [self centerScrollViewContents];
 }
-
 - (void)centerScrollViewContents {
     CGSize boundsSize = self.bounds.size;
     CGRect contentsFrame = self.imageView.frame;
