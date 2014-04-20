@@ -35,7 +35,6 @@
 		F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */; };
 		F6A23BAE18FA24E400FEF468 /* XPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BAD18FA24E400FEF468 /* XPPhoto.m */; };
 		F6A23BB118FA25C700FEF468 /* XPPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BB018FA25C700FEF468 /* XPPhotoBrowser.m */; };
-		F6A23BB418FA2E2B00FEF468 /* XPPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BB318FA2E2B00FEF468 /* XPPhotoToolbar.m */; };
 		F6A23BB718FA323C00FEF468 /* XPPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BB618FA323C00FEF468 /* XPPhotoView.m */; };
 		F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */; };
 		F6A65C6818F2DAB300FCE300 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */; };
@@ -71,6 +70,8 @@
 		F6DDD25518F9B5380083D3B2 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD24718F9B5380083D3B2 /* UIImageView+WebCache.m */; };
 		F6E185EB18E3383A0046F0D3 /* XPHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E185EA18E3383A0046F0D3 /* XPHUD.m */; };
 		F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */; };
+		F6FEEED01903DA2500FD9440 /* XPPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FEEECF1903DA2500FD9440 /* XPPhotoLoadingView.m */; };
+		F6FEEED31903DB4300FD9440 /* XPProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FEEED21903DB4300FD9440 /* XPProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -140,8 +141,6 @@
 		F6A23BAD18FA24E400FEF468 /* XPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhoto.m; sourceTree = "<group>"; };
 		F6A23BAF18FA25C700FEF468 /* XPPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoBrowser.h; sourceTree = "<group>"; };
 		F6A23BB018FA25C700FEF468 /* XPPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoBrowser.m; sourceTree = "<group>"; };
-		F6A23BB218FA2E2B00FEF468 /* XPPhotoToolbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoToolbar.h; sourceTree = "<group>"; };
-		F6A23BB318FA2E2B00FEF468 /* XPPhotoToolbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoToolbar.m; sourceTree = "<group>"; };
 		F6A23BB518FA323C00FEF468 /* XPPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoView.h; sourceTree = "<group>"; };
 		F6A23BB618FA323C00FEF468 /* XPPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoView.m; sourceTree = "<group>"; };
 		F6A4A30318E52B7600ADF7BD /* XPHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUDViewController.h; sourceTree = "<group>"; };
@@ -204,6 +203,10 @@
 		F6EBBEAE18DFF6BD001C252C /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
 		F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		F6EBBEB118DFF6EF001C252C /* XPCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCategory.h; sourceTree = "<group>"; };
+		F6FEEECE1903DA2500FD9440 /* XPPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoLoadingView.h; sourceTree = "<group>"; };
+		F6FEEECF1903DA2500FD9440 /* XPPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoLoadingView.m; sourceTree = "<group>"; };
+		F6FEEED11903DB4300FD9440 /* XPProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPProgressView.h; sourceTree = "<group>"; };
+		F6FEEED21903DB4300FD9440 /* XPProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -240,10 +243,12 @@
 				F6A23BAD18FA24E400FEF468 /* XPPhoto.m */,
 				F6A23BAF18FA25C700FEF468 /* XPPhotoBrowser.h */,
 				F6A23BB018FA25C700FEF468 /* XPPhotoBrowser.m */,
-				F6A23BB218FA2E2B00FEF468 /* XPPhotoToolbar.h */,
-				F6A23BB318FA2E2B00FEF468 /* XPPhotoToolbar.m */,
 				F6A23BB518FA323C00FEF468 /* XPPhotoView.h */,
 				F6A23BB618FA323C00FEF468 /* XPPhotoView.m */,
+				F6FEEECE1903DA2500FD9440 /* XPPhotoLoadingView.h */,
+				F6FEEECF1903DA2500FD9440 /* XPPhotoLoadingView.m */,
+				F6FEEED11903DB4300FD9440 /* XPProgressView.h */,
+				F6FEEED21903DB4300FD9440 /* XPProgressView.m */,
 			);
 			path = ImageBrowse;
 			sourceTree = "<group>";
@@ -583,9 +588,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F6A23BB418FA2E2B00FEF468 /* XPPhotoToolbar.m in Sources */,
 				F69F1EE118E2DBD500B4F208 /* XPCommentViewController.m in Sources */,
 				F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */,
+				F6FEEED01903DA2500FD9440 /* XPPhotoLoadingView.m in Sources */,
 				F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */,
 				F6DDD24F18F9B5380083D3B2 /* SDWebImageManager.m in Sources */,
 				F6A23BB118FA25C700FEF468 /* XPPhotoBrowser.m in Sources */,
@@ -594,6 +599,7 @@
 				F6DDD25518F9B5380083D3B2 /* UIImageView+WebCache.m in Sources */,
 				F64FEF2A18E863F60012FF82 /* AFSecurityPolicy.m in Sources */,
 				F6DDD25318F9B5380083D3B2 /* UIImage+MultiFormat.m in Sources */,
+				F6FEEED31903DB4300FD9440 /* XPProgressView.m in Sources */,
 				F69F1EDE18E2DBB400B4F208 /* XPTopicViewController.m in Sources */,
 				F6DDD24D18F9B5380083D3B2 /* SDWebImageDownloader.m in Sources */,
 				F6DDD22918F9ADA10083D3B2 /* XPPhotoBrowseViewController.m in Sources */,

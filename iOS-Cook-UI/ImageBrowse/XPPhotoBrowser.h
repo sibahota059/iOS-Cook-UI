@@ -7,12 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "XPPhotoToolbar.h"
 #import "XPPhoto.h"
 #import "XPPhotoView.h"
 #import "SDWebImageManager.h"
 
-@interface XPPhotoBrowser : UIViewController <UIScrollViewDelegate>
+@interface XPPhotoBrowser : UIViewController <UIScrollViewDelegate, XPPhotoViewDelegate>
 
 @property (nonatomic) NSInteger currentIndex;
 @property (nonatomic, strong) NSArray *photos;

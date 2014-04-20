@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong, readonly) UIImage *holderImage;
+@property (nonatomic, strong) UIImageView *sourceImageView;
 
 @end

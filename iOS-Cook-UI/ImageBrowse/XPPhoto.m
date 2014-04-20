@@ -10,4 +10,9 @@
 
 @implementation XPPhoto
 
+- (void)setSourceImageView:(UIImageView *)sourceImageView{
+    _sourceImageView = sourceImageView;
+    _holderImage = sourceImageView.image;
+}
+
 @end

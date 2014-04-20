@@ -12,6 +12,7 @@
 #define kMargin 8
 #define kPerimeter 70
 #define kNumberOfColumn 4
+#define kImageViewBaseTag 100
 
 @interface XPPhotoBrowseViewController ()
 
@@ -60,7 +61,7 @@
         [self.scrollView addSubview:imageView];
         
         [imageView setImageWithURL:[self.photoURLArray objectAtIndex:i] placeholderImage:holderImage options:SDWebImageRetryFailed | SDWebImageLowPriority];
-        imageView.tag = i;
+        imageView.tag = kImageViewBaseTag + i;
         [imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)]];
         imageView.userInteractionEnabled = YES;
         imageView.clipsToBounds = YES;
@@ -76,15 +77,17 @@
 
 - (void)imageTapped:(UITapGestureRecognizer *)tap{
     NSMutableArray *photos = [NSMutableArray array];
-    for (NSString *url in self.photoURLArray) {
-        NSString *URL = [url stringByReplacingOccurrencesOfString:@"thumbnail" withString:@"bmiddle"];
+    int count = self.photoURLArray.count;
+    for (int i = 0; i< count; i++) {
+        NSString *URL = [self.photoURLArray[i] stringByReplacingOccurrencesOfString:@"thumbnail" withString:@"bmiddle"];
         XPPhoto *photo = [[XPPhoto alloc] init];
         photo.url = [NSURL URLWithString:URL];
+        photo.sourceImageView = (UIImageView *)[self.view viewWithTag:(kImageViewBaseTag + i)];
         [photos addObject:photo];
     }
     
     XPPhotoBrowser *browser = [[XPPhotoBrowser alloc] init];
-    browser.currentIndex = tap.view.tag;
+    browser.currentIndex = tap.view.tag - kImageViewBaseTag;
     browser.photos = photos;
     [browser show];
 }

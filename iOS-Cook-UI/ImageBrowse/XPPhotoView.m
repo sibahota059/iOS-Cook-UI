@@ -8,12 +8,14 @@
 
 #import "XPPhotoView.h"
 #import "UIImageView+WebCache.h"
+#import "XPPhotoLoadingView.h"
 
 #define kMaximumScale 4
 
 @interface XPPhotoView ()
 
 @property (nonatomic, strong) UIImageView *imageView;
+@property (nonatomic, strong) XPPhotoLoadingView *photoLoadingView;
 
 @end
 
@@ -28,6 +30,8 @@
         _imageView = [[UIImageView alloc] init];
         _imageView.contentMode = UIViewContentModeScaleAspectFit;
         [self addSubview:_imageView];
+        
+        self.photoLoadingView = [[XPPhotoLoadingView alloc] init];
         
         self.delegate = self;
         self.backgroundColor=[UIColor clearColor];
@@ -50,7 +54,19 @@
 }
 
 - (void)handleSingleTap:(UITapGestureRecognizer *)tap{
+    [self.photoLoadingView removeFromSuperview];
     
+    [UIView animateWithDuration:0.25
+                     animations:^{
+                         if (self.imageView.image.images) {
+                             self.imageView.image = self.imageView.image.images[0];
+                         }
+                         self.imageView.bounds = CGRectZero;
+                         [self.photoViewDelegate photoViewSingleTap:self];
+                     }
+                     completion:^(BOOL finished){
+                         [self.photoViewDelegate photoViewDidEndZoom:self];
+                     }];
 }
 
 - (void)hide{
@@ -84,13 +100,36 @@
 
 - (void)showImage{
     XPPhotoView * __weak  photoView = self;
+    XPPhotoLoadingView * __weak loadingView = photoView.photoLoadingView;
+    self.imageView.image =  self.photo.holderImage;
+    [self adjustFrame];
+    
+    //show progress
+    self.photoLoadingView.frame = self.bounds;
+    [self.photoLoadingView showLoading];
+    [self addSubview:self.photoLoadingView];
     [self.imageView setImageWithURL:self.photo.url
                    placeholderImage:self.photo.holderImage
-                            options:SDWebImageRetryFailed | SDWebImageLowPriority
-                           progress:nil completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType){
-                               [photoView adjustFrame];
-                               photoView.scrollEnabled = YES;
-                           }];
+                            options:SDWebImageRetryFailed|SDWebImageLowPriority
+                           progress:^(NSInteger receivedSize, NSInteger expectedSize){
+                               if (receivedSize > kMinProgress) {
+                                   loadingView.progress = (float)receivedSize/expectedSize;
+                               }
+                           }
+                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType){
+                              [loadingView removeFromSuperview];
+                              if (image) {
+                                  photoView.imageView.image = image;
+                                  [photoView adjustFrame];
+                                  photoView.scrollEnabled = YES;
+                              }else{
+                                  [photoView addSubview:loadingView];
+                                  [loadingView showFailure];
+                              }
+                              
+                          }];
+    
+    
 }
 
 - (void)adjustFrame{
@@ -121,8 +160,8 @@
     
     self.contentSize = self.bounds.size;
     
-    self.imageView.frame = CGRectMake(0, 0, imageViewSize.width, imageViewSize.width);
-    self.imageView.center = CGPointMake(self.frame.size.width * 0.5, self.frame.size.height * 0.5);
+    self.imageView.bounds = CGRectMake(0, 0, imageViewSize.width, imageViewSize.width);
+    self.imageView.center = CGPointMake(self.bounds.size.width * 0.5, self.bounds.size.height * 0.5);
 }
 
 - (UIView *)viewForZoomingInScrollView:(UIScrollView *)scrollView {
