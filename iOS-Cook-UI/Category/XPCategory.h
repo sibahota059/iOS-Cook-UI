@@ -10,3 +10,4 @@
 
 #import "UIColor+Category.h"
 #import "UILabel+Category.h"
+#import "UIAlertView+Category.h"

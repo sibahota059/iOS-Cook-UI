@@ -38,6 +38,7 @@
 		F6A23BB718FA323C00FEF468 /* XPPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A23BB618FA323C00FEF468 /* XPPhotoView.m */; };
 		F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */; };
 		F6A65C6818F2DAB300FCE300 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */; };
+		F6A6D6AF1907BBE5000C0965 /* UIAlertView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6D6AE1907BBE5000C0965 /* UIAlertView+Category.m */; };
 		F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */; };
 		F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
@@ -146,6 +147,8 @@
 		F6A4A30318E52B7600ADF7BD /* XPHUDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPHUDViewController.h; sourceTree = "<group>"; };
 		F6A4A30418E52B7600ADF7BD /* XPHUDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPHUDViewController.m; sourceTree = "<group>"; };
 		F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		F6A6D6AD1907BBE5000C0965 /* UIAlertView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Category.h"; sourceTree = "<group>"; };
+		F6A6D6AE1907BBE5000C0965 /* UIAlertView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Category.m"; sourceTree = "<group>"; };
 		F6A7F0F018E9ABC60084DB80 /* UILabel+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Category.h"; sourceTree = "<group>"; };
 		F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		F6A8875718E1F31D00D6E033 /* XPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPNewsViewController.h; sourceTree = "<group>"; };
@@ -486,6 +489,8 @@
 				F6EBBEB118DFF6EF001C252C /* XPCategory.h */,
 				F6A7F0F018E9ABC60084DB80 /* UILabel+Category.h */,
 				F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */,
+				F6A6D6AD1907BBE5000C0965 /* UIAlertView+Category.h */,
+				F6A6D6AE1907BBE5000C0965 /* UIAlertView+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -608,6 +613,7 @@
 				F64FEF2818E863F60012FF82 /* AFHTTPSessionManager.m in Sources */,
 				F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */,
 				F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */,
+				F6A6D6AF1907BBE5000C0965 /* UIAlertView+Category.m in Sources */,
 				F6DDD24C18F9B5380083D3B2 /* SDWebImageDecoder.m in Sources */,
 				F6DDD25018F9B5380083D3B2 /* SDWebImagePrefetcher.m in Sources */,
 				F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */,
