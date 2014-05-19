@@ -84,6 +84,8 @@ static NSString *CellIdentifier = @"Cell";
         [self performSegueWithIdentifier:@"pushAnimateTabViewController" sender:self];
     }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Photo Scan"]){
         [self performSegueWithIdentifier:@"pushPhotoBrowseViewController" sender:self];
+    }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Subscribe Menu"]){
+        [self performSegueWithIdentifier:@"pushSubscribeRootViewController" sender:self];
     }
 }
 

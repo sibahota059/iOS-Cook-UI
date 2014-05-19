@@ -77,7 +77,7 @@
 
 - (void)imageTapped:(UITapGestureRecognizer *)tap{
     NSMutableArray *photos = [NSMutableArray array];
-    int count = self.photoURLArray.count;
+    int count = (int)self.photoURLArray.count;
     for (int i = 0; i< count; i++) {
         NSString *URL = [self.photoURLArray[i] stringByReplacingOccurrencesOfString:@"thumbnail" withString:@"bmiddle"];
         XPPhoto *photo = [[XPPhoto alloc] init];

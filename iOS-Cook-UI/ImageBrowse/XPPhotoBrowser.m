@@ -80,12 +80,12 @@
 }
 
 - (void)showPhotos{
-    [self showPhotoAtIndex:self.currentIndex];
+    [self showPhotoAtIndex:(int)self.currentIndex];
     if (self.currentIndex != 0) {
-        [self showPhotoAtIndex:self.currentIndex - 1];
+        [self showPhotoAtIndex:(int)self.currentIndex - 1];
     }
     if (self.currentIndex != self.photos.count - 1) {
-        [self showPhotoAtIndex:self.currentIndex + 1];
+        [self showPhotoAtIndex:(int)self.currentIndex + 1];
     }
 }
 

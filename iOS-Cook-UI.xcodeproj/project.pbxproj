@@ -54,6 +54,11 @@
 		F6AB8BD718D8953800710409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BD518D8953800710409 /* InfoPlist.strings */; };
 		F6AB8BD918D8953800710409 /* iOS_Cook_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */; };
 		F6AB8BE318D895D300710409 /* XPMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */; };
+		F6CF35F419245D9500E25182 /* XPsSubscribeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F319245D9500E25182 /* XPsSubscribeRootViewController.m */; };
+		F6CF35F719245EE200E25182 /* XPSubscribeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F619245EE200E25182 /* XPSubscribeButton.m */; };
+		F6CF35FA1924662400E25182 /* XPSubscribeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F91924662400E25182 /* XPSubscribeMenuViewController.m */; };
+		F6CF35FD19246E6800E25182 /* XPMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35FC19246E6800E25182 /* XPMenu.m */; };
+		F6CF360019249A0E00E25182 /* XPMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35FF19249A0E00E25182 /* XPMenuView.m */; };
 		F6DDD22918F9ADA10083D3B2 /* XPPhotoBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD22818F9ADA10083D3B2 /* XPPhotoBrowseViewController.m */; };
 		F6DDD24818F9B5380083D3B2 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD22C18F9B5380083D3B2 /* MKAnnotationView+WebCache.m */; };
 		F6DDD24918F9B5380083D3B2 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD22E18F9B5380083D3B2 /* NSData+ImageContentType.m */; };
@@ -170,6 +175,16 @@
 		F6AB8BD618D8953800710409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Cook_UITests.m; sourceTree = "<group>"; };
 		F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XPMainStoryboard.storyboard; sourceTree = "<group>"; };
+		F6CF35F219245D9500E25182 /* XPsSubscribeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPsSubscribeRootViewController.h; sourceTree = "<group>"; };
+		F6CF35F319245D9500E25182 /* XPsSubscribeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPsSubscribeRootViewController.m; sourceTree = "<group>"; };
+		F6CF35F519245EE200E25182 /* XPSubscribeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSubscribeButton.h; sourceTree = "<group>"; };
+		F6CF35F619245EE200E25182 /* XPSubscribeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSubscribeButton.m; sourceTree = "<group>"; };
+		F6CF35F81924662400E25182 /* XPSubscribeMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSubscribeMenuViewController.h; sourceTree = "<group>"; };
+		F6CF35F91924662400E25182 /* XPSubscribeMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSubscribeMenuViewController.m; sourceTree = "<group>"; };
+		F6CF35FB19246E6800E25182 /* XPMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMenu.h; sourceTree = "<group>"; };
+		F6CF35FC19246E6800E25182 /* XPMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMenu.m; sourceTree = "<group>"; };
+		F6CF35FE19249A0E00E25182 /* XPMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPMenuView.h; sourceTree = "<group>"; };
+		F6CF35FF19249A0E00E25182 /* XPMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPMenuView.m; sourceTree = "<group>"; };
 		F6DDD22718F9ADA10083D3B2 /* XPPhotoBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoBrowseViewController.h; sourceTree = "<group>"; };
 		F6DDD22818F9ADA10083D3B2 /* XPPhotoBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoBrowseViewController.m; sourceTree = "<group>"; };
 		F6DDD22B18F9B5380083D3B2 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
@@ -259,6 +274,7 @@
 		F64EED2D18EDA5A00003A874 /* Finished */ = {
 			isa = PBXGroup;
 			children = (
+				F64EED2C18EDA40D0003A874 /* ImageBrowse */,
 				F6E185E818E337C90046F0D3 /* HUD */,
 				F6EBBEAD18DFF6A2001C252C /* Category */,
 				F66C92B518E1A5F40070341F /* BlurSlideBar */,
@@ -390,8 +406,8 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
+				F6CF35F11924579200E25182 /* SubscribeMenu */,
 				F64EED2D18EDA5A00003A874 /* Finished */,
-				F64EED2C18EDA40D0003A874 /* ImageBrowse */,
 				F64FEF1118E863F60012FF82 /* ImportedLibrary */,
 				F6AB8BC218D8953800710409 /* XPAppDelegate.h */,
 				F6AB8BC318D8953800710409 /* XPAppDelegate.m */,
@@ -432,6 +448,23 @@
 				F6AB8BD518D8953800710409 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6CF35F11924579200E25182 /* SubscribeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				F6CF35F219245D9500E25182 /* XPsSubscribeRootViewController.h */,
+				F6CF35F319245D9500E25182 /* XPsSubscribeRootViewController.m */,
+				F6CF35F519245EE200E25182 /* XPSubscribeButton.h */,
+				F6CF35F619245EE200E25182 /* XPSubscribeButton.m */,
+				F6CF35F81924662400E25182 /* XPSubscribeMenuViewController.h */,
+				F6CF35F91924662400E25182 /* XPSubscribeMenuViewController.m */,
+				F6CF35FB19246E6800E25182 /* XPMenu.h */,
+				F6CF35FC19246E6800E25182 /* XPMenu.m */,
+				F6CF35FE19249A0E00E25182 /* XPMenuView.h */,
+				F6CF35FF19249A0E00E25182 /* XPMenuView.m */,
+			);
+			path = SubscribeMenu;
 			sourceTree = "<group>";
 		};
 		F6DDD22A18F9B5380083D3B2 /* SDWebImage */ = {
@@ -597,6 +630,7 @@
 				F6A4A30518E52B7600ADF7BD /* XPHUDViewController.m in Sources */,
 				F6FEEED01903DA2500FD9440 /* XPPhotoLoadingView.m in Sources */,
 				F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */,
+				F6CF35FD19246E6800E25182 /* XPMenu.m in Sources */,
 				F6DDD24F18F9B5380083D3B2 /* SDWebImageManager.m in Sources */,
 				F6A23BB118FA25C700FEF468 /* XPPhotoBrowser.m in Sources */,
 				F6AB8BC418D8953800710409 /* XPAppDelegate.m in Sources */,
@@ -613,10 +647,12 @@
 				F64FEF2818E863F60012FF82 /* AFHTTPSessionManager.m in Sources */,
 				F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */,
 				F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */,
+				F6CF360019249A0E00E25182 /* XPMenuView.m in Sources */,
 				F6A6D6AF1907BBE5000C0965 /* UIAlertView+Category.m in Sources */,
 				F6DDD24C18F9B5380083D3B2 /* SDWebImageDecoder.m in Sources */,
 				F6DDD25018F9B5380083D3B2 /* SDWebImagePrefetcher.m in Sources */,
 				F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */,
+				F6CF35FA1924662400E25182 /* XPSubscribeMenuViewController.m in Sources */,
 				F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */,
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
 				F6A23BAE18FA24E400FEF468 /* XPPhoto.m in Sources */,
@@ -629,12 +665,14 @@
 				F64FEF2618E863F60012FF82 /* AFHTTPRequestOperation.m in Sources */,
 				F64FEF2E18E863F60012FF82 /* AFURLSessionManager.m in Sources */,
 				F607F54018D899D40062E811 /* XPUITableViewController.m in Sources */,
+				F6CF35F719245EE200E25182 /* XPSubscribeButton.m in Sources */,
 				F64FEF2918E863F60012FF82 /* AFNetworkReachabilityManager.m in Sources */,
 				F6DDD24E18F9B5380083D3B2 /* SDWebImageDownloaderOperation.m in Sources */,
 				F64FEF2D18E863F60012FF82 /* AFURLResponseSerialization.m in Sources */,
 				F64FEF2C18E863F60012FF82 /* AFURLRequestSerialization.m in Sources */,
 				F6DDD24B18F9B5380083D3B2 /* SDWebImageCompat.m in Sources */,
 				F6DDD24918F9B5380083D3B2 /* NSData+ImageContentType.m in Sources */,
+				F6CF35F419245D9500E25182 /* XPsSubscribeRootViewController.m in Sources */,
 				F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */,
 				F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */,
 				F69F1EE418E2DBF100B4F208 /* XPImageViewController.m in Sources */,
