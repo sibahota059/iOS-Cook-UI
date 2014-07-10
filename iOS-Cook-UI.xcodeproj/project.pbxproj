@@ -41,6 +41,8 @@
 		F6A6D6AF1907BBE5000C0965 /* UIAlertView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A6D6AE1907BBE5000C0965 /* UIAlertView+Category.m */; };
 		F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */; };
 		F6A8875918E1F31D00D6E033 /* XPNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */; };
+		F6A99603193A8A2C00EB4366 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A99602193A8A2C00EB4366 /* UIImage+Category.m */; };
+		F6A99606193A8BC700EB4366 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A99605193A8BC700EB4366 /* UIView+Category.m */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
 		F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
 		F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB718D8953800710409 /* UIKit.framework */; };
@@ -54,6 +56,11 @@
 		F6AB8BD718D8953800710409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BD518D8953800710409 /* InfoPlist.strings */; };
 		F6AB8BD918D8953800710409 /* iOS_Cook_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */; };
 		F6AB8BE318D895D300710409 /* XPMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */; };
+		F6B969F21939F3E4001D5862 /* XPZoneHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B969F11939F3E4001D5862 /* XPZoneHeaderView.m */; };
+		F6B969F61939F486001D5862 /* XPSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B969F51939F486001D5862 /* XPSoundManager.m */; };
+		F6B969F81939F61E001D5862 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B969F71939F61E001D5862 /* AudioToolbox.framework */; };
+		F6B969FB1939FEFF001D5862 /* XPZoneRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B969FA1939FEFF001D5862 /* XPZoneRefreshView.m */; };
+		F6B969FE1939FF2E001D5862 /* XPZoneTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B969FD1939FF2E001D5862 /* XPZoneTableViewController.m */; };
 		F6CF35F419245D9500E25182 /* XPsSubscribeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F319245D9500E25182 /* XPsSubscribeRootViewController.m */; };
 		F6CF35F719245EE200E25182 /* XPSubscribeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F619245EE200E25182 /* XPSubscribeButton.m */; };
 		F6CF35FA1924662400E25182 /* XPSubscribeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F91924662400E25182 /* XPSubscribeMenuViewController.m */; };
@@ -158,6 +165,10 @@
 		F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Category.m"; sourceTree = "<group>"; };
 		F6A8875718E1F31D00D6E033 /* XPNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPNewsViewController.h; sourceTree = "<group>"; };
 		F6A8875818E1F31D00D6E033 /* XPNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPNewsViewController.m; sourceTree = "<group>"; };
+		F6A99601193A8A2C00EB4366 /* UIImage+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Category.h"; sourceTree = "<group>"; };
+		F6A99602193A8A2C00EB4366 /* UIImage+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Category.m"; sourceTree = "<group>"; };
+		F6A99604193A8BC700EB4366 /* UIView+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Category.h"; sourceTree = "<group>"; };
+		F6A99605193A8BC700EB4366 /* UIView+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Category.m"; sourceTree = "<group>"; };
 		F6AB8BB018D8953800710409 /* iOS-Cook-UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Cook-UI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6AB8BB318D8953800710409 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6AB8BB518D8953800710409 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -175,6 +186,15 @@
 		F6AB8BD618D8953800710409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Cook_UITests.m; sourceTree = "<group>"; };
 		F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XPMainStoryboard.storyboard; sourceTree = "<group>"; };
+		F6B969F01939F3E4001D5862 /* XPZoneHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPZoneHeaderView.h; sourceTree = "<group>"; };
+		F6B969F11939F3E4001D5862 /* XPZoneHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPZoneHeaderView.m; sourceTree = "<group>"; };
+		F6B969F41939F486001D5862 /* XPSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSoundManager.h; sourceTree = "<group>"; };
+		F6B969F51939F486001D5862 /* XPSoundManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPSoundManager.m; sourceTree = "<group>"; };
+		F6B969F71939F61E001D5862 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F6B969F91939FEFF001D5862 /* XPZoneRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPZoneRefreshView.h; sourceTree = "<group>"; };
+		F6B969FA1939FEFF001D5862 /* XPZoneRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPZoneRefreshView.m; sourceTree = "<group>"; };
+		F6B969FC1939FF2E001D5862 /* XPZoneTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPZoneTableViewController.h; sourceTree = "<group>"; };
+		F6B969FD1939FF2E001D5862 /* XPZoneTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPZoneTableViewController.m; sourceTree = "<group>"; };
 		F6CF35F219245D9500E25182 /* XPsSubscribeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPsSubscribeRootViewController.h; sourceTree = "<group>"; };
 		F6CF35F319245D9500E25182 /* XPsSubscribeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPsSubscribeRootViewController.m; sourceTree = "<group>"; };
 		F6CF35F519245EE200E25182 /* XPSubscribeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSubscribeButton.h; sourceTree = "<group>"; };
@@ -232,6 +252,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B969F81939F61E001D5862 /* AudioToolbox.framework in Frameworks */,
 				F6A65C6818F2DAB300FCE300 /* AssetsLibrary.framework in Frameworks */,
 				F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */,
 				F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */,
@@ -274,6 +295,7 @@
 		F64EED2D18EDA5A00003A874 /* Finished */ = {
 			isa = PBXGroup;
 			children = (
+				F6B969F31939F467001D5862 /* Manager */,
 				F64EED2C18EDA40D0003A874 /* ImageBrowse */,
 				F6E185E818E337C90046F0D3 /* HUD */,
 				F6EBBEAD18DFF6A2001C252C /* Category */,
@@ -394,6 +416,7 @@
 		F6AB8BB218D8953800710409 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F6B969F71939F61E001D5862 /* AudioToolbox.framework */,
 				F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */,
 				F6AB8BB318D8953800710409 /* Foundation.framework */,
 				F6AB8BB518D8953800710409 /* CoreGraphics.framework */,
@@ -406,6 +429,7 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
+				F6B969EF1939F32E001D5862 /* ZoneRefresh */,
 				F6CF35F11924579200E25182 /* SubscribeMenu */,
 				F64EED2D18EDA5A00003A874 /* Finished */,
 				F64FEF1118E863F60012FF82 /* ImportedLibrary */,
@@ -448,6 +472,28 @@
 				F6AB8BD518D8953800710409 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6B969EF1939F32E001D5862 /* ZoneRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				F6B969F01939F3E4001D5862 /* XPZoneHeaderView.h */,
+				F6B969F11939F3E4001D5862 /* XPZoneHeaderView.m */,
+				F6B969F91939FEFF001D5862 /* XPZoneRefreshView.h */,
+				F6B969FA1939FEFF001D5862 /* XPZoneRefreshView.m */,
+				F6B969FC1939FF2E001D5862 /* XPZoneTableViewController.h */,
+				F6B969FD1939FF2E001D5862 /* XPZoneTableViewController.m */,
+			);
+			path = ZoneRefresh;
+			sourceTree = "<group>";
+		};
+		F6B969F31939F467001D5862 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F6B969F41939F486001D5862 /* XPSoundManager.h */,
+				F6B969F51939F486001D5862 /* XPSoundManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		F6CF35F11924579200E25182 /* SubscribeMenu */ = {
@@ -524,6 +570,10 @@
 				F6A7F0F118E9ABC60084DB80 /* UILabel+Category.m */,
 				F6A6D6AD1907BBE5000C0965 /* UIAlertView+Category.h */,
 				F6A6D6AE1907BBE5000C0965 /* UIAlertView+Category.m */,
+				F6A99601193A8A2C00EB4366 /* UIImage+Category.h */,
+				F6A99602193A8A2C00EB4366 /* UIImage+Category.m */,
+				F6A99604193A8BC700EB4366 /* UIView+Category.h */,
+				F6A99605193A8BC700EB4366 /* UIView+Category.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -631,6 +681,7 @@
 				F6FEEED01903DA2500FD9440 /* XPPhotoLoadingView.m in Sources */,
 				F69F1EDB18E2CD2C00B4F208 /* XPDrawerButton.m in Sources */,
 				F6CF35FD19246E6800E25182 /* XPMenu.m in Sources */,
+				F6B969F21939F3E4001D5862 /* XPZoneHeaderView.m in Sources */,
 				F6DDD24F18F9B5380083D3B2 /* SDWebImageManager.m in Sources */,
 				F6A23BB118FA25C700FEF468 /* XPPhotoBrowser.m in Sources */,
 				F6AB8BC418D8953800710409 /* XPAppDelegate.m in Sources */,
@@ -639,14 +690,17 @@
 				F64FEF2A18E863F60012FF82 /* AFSecurityPolicy.m in Sources */,
 				F6DDD25318F9B5380083D3B2 /* UIImage+MultiFormat.m in Sources */,
 				F6FEEED31903DB4300FD9440 /* XPProgressView.m in Sources */,
+				F6A99606193A8BC700EB4366 /* UIView+Category.m in Sources */,
 				F69F1EDE18E2DBB400B4F208 /* XPTopicViewController.m in Sources */,
 				F6DDD24D18F9B5380083D3B2 /* SDWebImageDownloader.m in Sources */,
 				F6DDD22918F9ADA10083D3B2 /* XPPhotoBrowseViewController.m in Sources */,
 				F6DDD25418F9B5380083D3B2 /* UIImage+WebP.m in Sources */,
 				F6570EA018EA8ED30060B6D0 /* XPTabScrollView.m in Sources */,
+				F6B969F61939F486001D5862 /* XPSoundManager.m in Sources */,
 				F64FEF2818E863F60012FF82 /* AFHTTPSessionManager.m in Sources */,
 				F66C92BF18E1A6DB0070341F /* XPDrawerViewController.m in Sources */,
 				F69F1EEA18E2DC3C00B4F208 /* XPLocalViewController.m in Sources */,
+				F6A99603193A8A2C00EB4366 /* UIImage+Category.m in Sources */,
 				F6CF360019249A0E00E25182 /* XPMenuView.m in Sources */,
 				F6A6D6AF1907BBE5000C0965 /* UIAlertView+Category.m in Sources */,
 				F6DDD24C18F9B5380083D3B2 /* SDWebImageDecoder.m in Sources */,
@@ -657,9 +711,11 @@
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
 				F6A23BAE18FA24E400FEF468 /* XPPhoto.m in Sources */,
 				F6E185EB18E3383A0046F0D3 /* XPHUD.m in Sources */,
+				F6B969FB1939FEFF001D5862 /* XPZoneRefreshView.m in Sources */,
 				F6A7F0F218E9ABC60084DB80 /* UILabel+Category.m in Sources */,
 				F64FEF2718E863F60012FF82 /* AFHTTPRequestOperationManager.m in Sources */,
 				F6DDD25218F9B5380083D3B2 /* UIImage+GIF.m in Sources */,
+				F6B969FE1939FF2E001D5862 /* XPZoneTableViewController.m in Sources */,
 				F66C92C818E1B7050070341F /* XPDrawerModel.m in Sources */,
 				F6DDD24A18F9B5380083D3B2 /* SDImageCache.m in Sources */,
 				F64FEF2618E863F60012FF82 /* AFHTTPRequestOperation.m in Sources */,

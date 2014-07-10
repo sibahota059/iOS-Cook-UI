@@ -11,3 +11,5 @@
 #import "UIColor+Category.h"
 #import "UILabel+Category.h"
 #import "UIAlertView+Category.h"
+#import "UIImage+Category.h"
+#import "UIView+Category.h"

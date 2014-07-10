@@ -86,6 +86,8 @@ static NSString *CellIdentifier = @"Cell";
         [self performSegueWithIdentifier:@"pushPhotoBrowseViewController" sender:self];
     }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Subscribe Menu"]){
         [self performSegueWithIdentifier:@"pushSubscribeRootViewController" sender:self];
+    }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Zone Refresh"]){
+        [self performSegueWithIdentifier:@"pushZoneRefresh" sender:self];
     }
 }
 
