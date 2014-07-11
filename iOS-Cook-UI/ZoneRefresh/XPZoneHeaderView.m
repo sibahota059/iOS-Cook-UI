@@ -23,8 +23,9 @@
 @property (nonatomic, strong) UIImageView *bannerImageViewWithImageEffects;
 @property (nonatomic) CGFloat lightEffectAlpha;
 
-@property (nonatomic) BOOL isTouching;
+@property (nonatomic) BOOL isRefreshing;
 @property (nonatomic) CGFloat offsetY;
+
 
 @end
 
@@ -52,23 +53,35 @@
     [self addSubview:self.bannerView];
     
     self.refrehView = [[XPZoneRefreshView alloc] initWithFrame:CGRectMake(33, CGRectGetHeight(self.bounds) - VIEWHEIGHT, VIEWWIDTH, VIEWHEIGHT)];
+    _refrehView.refreshCircleImage = [UIImage imageNamed:@"refresh"];
     [self addSubview:self.refrehView];
 }
 
+
+- (void)stopRefresh {
+    [_refrehView stopRefresh];
+    self.isRefreshing = NO;
+}
+
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
-    self.isTouching = YES;
+
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
     self.offsetY = scrollView.contentOffset.y;
 }
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate{
-    self.isTouching = NO;
 }
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
-    self.isTouching = NO;
 }
 
 - (void)setOffsetY:(CGFloat)offsetY{
+    if (!self.isRefreshing) {
+        _refrehView.offset = offsetY;
+        if (offsetY > MAXOFFSET) {
+            _isRefreshing = YES;
+        }
+    }
+    
     UIView *bannerView = self.bannerView;
     CGRect bannerFrame = bannerView.frame;
     if (offsetY < 0) {
@@ -92,14 +105,20 @@
     }
 }
 
+- (void)setIsRefreshing:(BOOL)isRefreshing{
+    _isRefreshing = isRefreshing;
+    _refrehView.isRefreshing = isRefreshing;
+}
+
 - (void)setBackgroundImage:(UIImage *)backgroundImage{
     _bannerImageView.image = backgroundImage;
     UIColor *tintColor = [UIColor colorWithWhite:1.0 alpha:0.3];
     _bannerImageViewWithImageEffects.image = [backgroundImage applyBlurWithRadius:30 tintColor:tintColor saturationDeltaFactor:1.8 maskImage:nil];
 }
 
-- (void)setIsTouching:(BOOL)isTouching{
-    _isTouching = isTouching;
+- (void)setHandleRefreshEvent:(void (^)(void))handleRefreshEvent{
+    _handleRefreshEvent = handleRefreshEvent;
+    _refrehView.handleRefreshEvent = handleRefreshEvent;
 }
 
 @end

@@ -56,6 +56,7 @@
 		F6AB8BD718D8953800710409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BD518D8953800710409 /* InfoPlist.strings */; };
 		F6AB8BD918D8953800710409 /* iOS_Cook_UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */; };
 		F6AB8BE318D895D300710409 /* XPMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */; };
+		F6B3D53B196F826B00291E4B /* pullrefresh.aif in Resources */ = {isa = PBXBuildFile; fileRef = F6B3D53A196F826B00291E4B /* pullrefresh.aif */; };
 		F6B969F21939F3E4001D5862 /* XPZoneHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B969F11939F3E4001D5862 /* XPZoneHeaderView.m */; };
 		F6B969F61939F486001D5862 /* XPSoundManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B969F51939F486001D5862 /* XPSoundManager.m */; };
 		F6B969F81939F61E001D5862 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6B969F71939F61E001D5862 /* AudioToolbox.framework */; };
@@ -186,6 +187,7 @@
 		F6AB8BD618D8953800710409 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6AB8BD818D8953800710409 /* iOS_Cook_UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOS_Cook_UITests.m; sourceTree = "<group>"; };
 		F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XPMainStoryboard.storyboard; sourceTree = "<group>"; };
+		F6B3D53A196F826B00291E4B /* pullrefresh.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = pullrefresh.aif; sourceTree = "<group>"; };
 		F6B969F01939F3E4001D5862 /* XPZoneHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPZoneHeaderView.h; sourceTree = "<group>"; };
 		F6B969F11939F3E4001D5862 /* XPZoneHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPZoneHeaderView.m; sourceTree = "<group>"; };
 		F6B969F41939F486001D5862 /* XPSoundManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSoundManager.h; sourceTree = "<group>"; };
@@ -477,6 +479,7 @@
 		F6B969EF1939F32E001D5862 /* ZoneRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				F6B3D53A196F826B00291E4B /* pullrefresh.aif */,
 				F6B969F01939F3E4001D5862 /* XPZoneHeaderView.h */,
 				F6B969F11939F3E4001D5862 /* XPZoneHeaderView.m */,
 				F6B969F91939FEFF001D5862 /* XPZoneRefreshView.h */,
@@ -654,6 +657,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6B3D53B196F826B00291E4B /* pullrefresh.aif in Resources */,
 				F607F53D18D898C00062E811 /* UIList.plist in Resources */,
 				F6AB8BBE18D8953800710409 /* InfoPlist.strings in Resources */,
 				F6AB8BC618D8953800710409 /* Images.xcassets in Resources */,

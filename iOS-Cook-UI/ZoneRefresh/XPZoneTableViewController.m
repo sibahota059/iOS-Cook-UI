@@ -37,6 +37,21 @@ static NSString *CellIdentifier = @"Cell";
     self.headerView.backgroundImage = [UIImage imageNamed:@"headerBackground"];
     self.tableView.tableHeaderView = self.headerView;
     
+    __weak XPZoneTableViewController *wself = self;
+    [_headerView setHandleRefreshEvent:^{
+        [wself refreshing];
+    }];
+    
+}
+
+- (void)refreshing {
+    // refresh your data sources
+    __weak XPZoneTableViewController *wself = self;
+    double delayInSeconds = 4.0;
+    dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+    dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+        [wself.headerView stopRefresh];
+    });
 }
 
 - (void)didReceiveMemoryWarning

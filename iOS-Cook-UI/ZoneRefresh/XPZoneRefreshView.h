@@ -10,14 +10,17 @@
 
 #define RADIUS 5
 #define MAXOFFSET 70
-#define DEFORMATIONLENGTH 0.4
-#define OFFSETHEIGHT 20
+#define LINEHEIGHT 20
 #define VIEWHEIGHT 100
 #define VIEWWIDTH 30
+#define LINEHEIGHTTRANSFORMRADIO 0.3
 
 @interface XPZoneRefreshView : UIView
 
 @property (nonatomic, strong) UIImage *refreshCircleImage;
 @property (nonatomic) BOOL isRefreshing;
+@property (nonatomic) CGFloat offset;
+@property (nonatomic, strong) void(^handleRefreshEvent)(void);
 
+- (void)stopRefresh;
 @end

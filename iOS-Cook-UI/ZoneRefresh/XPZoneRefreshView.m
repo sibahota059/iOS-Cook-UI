@@ -7,12 +7,14 @@
 //
 
 #import "XPZoneRefreshView.h"
+#import "XpSoundManager.h"
 
 @interface XPZoneRefreshView ()
 
 @property (nonatomic, strong) CAShapeLayer *shapeLayer;
 @property (nonatomic, strong) CAShapeLayer *lineLayer;
-@property (nonatomic) CGFloat offset;
+@property (nonatomic, strong) UIImageView *refreshView;
+
 
 @end
 
@@ -55,39 +57,43 @@
         _offset = currentOffset;
         
         if (currentOffset < MAXOFFSET) {
-            float wdiff = currentOffset * 0.2;
-            float top = self.frame.size.height - 20 - RADIUS*2 - currentOffset;
-            
             CGMutablePathRef path = [self createPathWithOffset:currentOffset];
             self.shapeLayer.path = path;
             CGPathRelease(path);
             
             CGMutablePathRef line = CGPathCreateMutable();
-            float lineWidth = ((MAXOFFSET - currentOffset)/MAXOFFSET) + 1;
-            CGPathAddRect(line, NULL, CGRectMake(VIEWWIDTH * 0.5 - lineWidth * 0.5, top + wdiff + RADIUS * 2, lineWidth, currentOffset - wdiff + OFFSETHEIGHT));
+            float lineHeight = LINEHEIGHT + currentOffset * LINEHEIGHTTRANSFORMRADIO;
+            float top = self.frame.size.height - lineHeight - RADIUS*2;
+            float lineWidth = 2;
+            CGPathAddRect(line, NULL, CGRectMake(VIEWWIDTH * 0.5 - lineWidth * 0.5, top + RADIUS * 2, lineWidth, lineHeight));
             self.lineLayer.path = line;
             
-            self.transform = CGAffineTransformMakeScale(0.8 + 0.2 * (lineWidth - 1), 1);
+            self.transform = CGAffineTransformMakeScale(0.7+0.3*(LINEHEIGHT/lineHeight), 1);
         }else{
-
+            self.offset = 0;
+            [[XPSoundManager soundManager] playSound:[[NSBundle mainBundle] URLForResource:@"pullrefresh" withExtension:@"aif"]];
+            if (self.handleRefreshEvent != nil) {
+                self.handleRefreshEvent();
+            }
+            [self startRefreshAnimation];
         }
     }
 }
 
 - (CGMutablePathRef)createPathWithOffset:(float)currentOffset{
     CGMutablePathRef path = CGPathCreateMutable();
-    float top = self.frame.size.height - 20 - RADIUS * 2 -currentOffset;
-    float wdiff = currentOffset * DEFORMATIONLENGTH;
+    
+    float top = self.frame.size.height - LINEHEIGHT - RADIUS * 2 -currentOffset;
     if (currentOffset == 0) {
         CGPathAddEllipseInRect(path, NULL, CGRectMake(VIEWWIDTH * 0.5 - RADIUS, top, RADIUS * 2, RADIUS * 2));
     }else{
         CGPathAddArc(path, NULL, VIEWWIDTH * 0.5, top + RADIUS, RADIUS, 0, M_PI, YES);
-        float bottom = top + wdiff + RADIUS * 2;
+        float bottom = top + RADIUS * 2 + currentOffset - currentOffset * LINEHEIGHTTRANSFORMRADIO;
         if (currentOffset < 10) {
             CGPathAddCurveToPoint(path, NULL, VIEWWIDTH * 0.5 - RADIUS, bottom, VIEWWIDTH * 0.5, bottom, VIEWWIDTH * 0.5, bottom);
             CGPathAddCurveToPoint(path, NULL, VIEWWIDTH * 0.5, bottom, VIEWWIDTH * 0.5 + RADIUS, bottom, VIEWWIDTH * 0.5 + RADIUS, top + RADIUS);
         }else{
-            CGPathAddCurveToPoint(path, NULL, VIEWWIDTH * 0.5, top + RADIUS, VIEWWIDTH * 0.5 - RADIUS, bottom - RADIUS, VIEWWIDTH * 0.5, bottom);
+            CGPathAddCurveToPoint(path, NULL, VIEWWIDTH * 0.5 - RADIUS, top + RADIUS, VIEWWIDTH * 0.5 - RADIUS, bottom - RADIUS, VIEWWIDTH * 0.5, bottom);
             CGPathAddCurveToPoint(path, NULL, VIEWWIDTH * 0.5 + RADIUS, bottom - RADIUS, VIEWWIDTH * 0.5 + RADIUS, top + RADIUS, VIEWWIDTH * 0.5 + RADIUS, top + RADIUS);
         }
     }
@@ -96,17 +102,48 @@
 }
 
 
+- (void)startRefreshAnimation{
+    _isRefreshing = YES;
+    if (self.refreshView == nil) {
+        self.refreshView = [[UIImageView alloc] initWithImage:self.refreshCircleImage];
+        CGRect refreshViewFrame = self.refreshView.frame;
+        refreshViewFrame.size = CGSizeMake(RADIUS*2, RADIUS*2);
+        [self addSubview:self.refreshView];
+    }
+    self.shapeLayer.opacity = 0;
+    
+    _refreshView.center = CGPointMake(self.frame.size.width * 0.5,self.frame.size.height - LINEHEIGHT - RADIUS);
+    [_refreshView.layer removeAllAnimations];
+    _refreshView.layer.opacity = 1;
+    
+    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    animation.duration = 1;
+    animation.fromValue = @0;
+    animation.toValue = @(M_PI * 2);
+    animation.repeatCount = INT_MAX;
+    
+    [_refreshView.layer addAnimation:animation forKey:@"rotation"];
+}
 
-
-
-
-
-
-
-
-
-
-
+- (void)stopRefresh {
+    CABasicAnimation* anim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    anim.fromValue = @(1);
+    anim.toValue = @(0);
+    anim.duration = 0.2;
+    anim.delegate = self;
+    [_refreshView.layer addAnimation:anim forKey:nil];
+    _refreshView.layer.opacity = 0;
+    
+    
+    anim = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    anim.fromValue = @(0);
+    anim.toValue = @(1);
+    anim.beginTime = 0.2;
+    anim.duration = 0.2;
+    anim.delegate = self;
+    [_shapeLayer addAnimation:anim forKey:nil];
+    _shapeLayer.opacity = 1;
+}
 
 
 @end

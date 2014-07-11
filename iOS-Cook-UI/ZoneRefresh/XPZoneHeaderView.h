@@ -11,7 +11,9 @@
 @interface XPZoneHeaderView : UIView
 
 @property (nonatomic, strong) UIImage *backgroundImage;
+@property (nonatomic, strong) void(^handleRefreshEvent)(void);
 
+- (void)stopRefresh;
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView;
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView;
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate;
