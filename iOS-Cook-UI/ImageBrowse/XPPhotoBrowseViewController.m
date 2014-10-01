@@ -60,7 +60,7 @@
         imageView.frame = frame;
         [self.scrollView addSubview:imageView];
         
-        [imageView setImageWithURL:[self.photoURLArray objectAtIndex:i] placeholderImage:holderImage options:SDWebImageRetryFailed | SDWebImageLowPriority];
+        [imageView sd_setImageWithURL:[self.photoURLArray objectAtIndex:i] placeholderImage:holderImage options:SDWebImageRetryFailed | SDWebImageLowPriority];
         imageView.tag = kImageViewBaseTag + i;
         [imageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageTapped:)]];
         imageView.userInteractionEnabled = YES;

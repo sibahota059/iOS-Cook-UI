@@ -108,7 +108,7 @@
     self.photoLoadingView.frame = self.bounds;
     [self.photoLoadingView showLoading];
     [self addSubview:self.photoLoadingView];
-    [self.imageView setImageWithURL:self.photo.url
+    [self.imageView sd_setImageWithURL:self.photo.url
                    placeholderImage:self.photo.holderImage
                             options:SDWebImageRetryFailed|SDWebImageLowPriority
                            progress:^(NSInteger receivedSize, NSInteger expectedSize){
@@ -116,7 +116,7 @@
                                    loadingView.progress = (float)receivedSize/expectedSize;
                                }
                            }
-                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType){
+                          completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
                               [loadingView removeFromSuperview];
                               if (image) {
                                   photoView.imageView.image = image;
@@ -126,7 +126,6 @@
                                   [photoView addSubview:loadingView];
                                   [loadingView showFailure];
                               }
-                              
                           }];
     
     
