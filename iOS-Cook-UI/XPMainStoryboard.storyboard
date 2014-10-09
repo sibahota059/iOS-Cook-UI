@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oAW-TW-oFy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oAW-TW-oFy">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1808" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller - UI Category-->
+        <!--UI Category-->
         <scene sceneID="hNO-XB-s0p">
             <objects>
                 <tableViewController id="CP0-bI-Drw" customClass="XPUITableViewController" sceneMemberID="viewController">
@@ -62,7 +63,7 @@
             </objects>
             <point key="canvasLocation" x="1842" y="-1294"/>
         </scene>
-        <!--Blur Slide Bar View Controller - Blur Slide Bar-->
+        <!--Blur Slide Bar-->
         <scene sceneID="XSf-xd-sAI">
             <objects>
                 <viewController id="sTD-I3-4TX" customClass="XPBlurSlideBarViewController" sceneMemberID="viewController">
@@ -76,7 +77,6 @@
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is gonna tell how we realise the blur side bar" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="273" translatesAutoresizingMaskIntoConstraints="NO" id="yWv-v9-kv4">
                                 <rect key="frame" x="20" y="101" width="273" height="447"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -97,7 +97,7 @@
             </objects>
             <point key="canvasLocation" x="16" y="-1298"/>
         </scene>
-        <!--Drawer View Controller - Drawer View Controller-->
+        <!--Drawer View Controller-->
         <scene sceneID="wKY-gB-cVx">
             <objects>
                 <viewController id="tuN-9q-ofP" customClass="XPDrawerViewController" sceneMemberID="viewController">
@@ -117,7 +117,7 @@
             </objects>
             <point key="canvasLocation" x="365" y="-1298"/>
         </scene>
-        <!--View Controller - HUD-->
+        <!--HUD-->
         <scene sceneID="zmL-zh-ADo">
             <objects>
                 <tableViewController id="cfA-91-oRu" customClass="XPHUDViewController" sceneMemberID="viewController">
@@ -193,7 +193,7 @@
             </objects>
             <point key="canvasLocation" x="1086" y="-597"/>
         </scene>
-        <!--Photo Browse View Controller - Photo Browse-->
+        <!--Photo Browse-->
         <scene sceneID="Z3L-ck-csM">
             <objects>
                 <viewController id="WDT-Kh-0gU" customClass="XPPhotoBrowseViewController" sceneMemberID="viewController">
@@ -207,7 +207,6 @@
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="esq-XS-JDT">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="509"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -244,10 +243,10 @@
     <resources>
         <image name="toggle" width="19" height="17"/>
     </resources>
-    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
 </document>

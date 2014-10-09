@@ -91,6 +91,28 @@
 		F6C2427D199B9E0300158F08 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C24271199B9E0300158F08 /* Icon-Small@2x.png */; };
 		F6C2427E199B9E0300158F08 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C24272199B9E0300158F08 /* Icon.png */; };
 		F6C2427F199B9E0300158F08 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F6C24273199B9E0300158F08 /* Icon@2x.png */; };
+		F6C3E3E319E6F57B00B9632B /* ActionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E3E219E6F57B00B9632B /* ActionViewController.swift */; };
+		F6C3E3E519E6F57B00B9632B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C3E3E419E6F57B00B9632B /* MainInterface.storyboard */; };
+		F6C3E3E819E6F57B00B9632B /* ActionExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6C3E3DE19E6F57B00B9632B /* ActionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6C3E3F819E6F5A400B9632B /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E3F719E6F5A400B9632B /* KeyboardViewController.swift */; };
+		F6C3E3FB19E6F5A400B9632B /* CustomKeyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6C3E3F319E6F5A400B9632B /* CustomKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6C3E40B19E6F5B900B9632B /* DocumentPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E40A19E6F5B900B9632B /* DocumentPickerViewController.swift */; };
+		F6C3E40D19E6F5B900B9632B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C3E40C19E6F5B900B9632B /* MainInterface.storyboard */; };
+		F6C3E41819E6F5B900B9632B /* FileProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E41719E6F5B900B9632B /* FileProvider.swift */; };
+		F6C3E41B19E6F5B900B9632B /* DocumentProviderFileProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6C3E41219E6F5B900B9632B /* DocumentProviderFileProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6C3E42019E6F5B900B9632B /* DocumentProvider.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6C3E40519E6F5B900B9632B /* DocumentProvider.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6C3E42F19E6F5D000B9632B /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C3E42E19E6F5D000B9632B /* PhotosUI.framework */; };
+		F6C3E43119E6F5D000B9632B /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C3E43019E6F5D000B9632B /* Photos.framework */; };
+		F6C3E43619E6F5D000B9632B /* PhotoEditingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E43519E6F5D000B9632B /* PhotoEditingViewController.swift */; };
+		F6C3E43819E6F5D000B9632B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C3E43719E6F5D000B9632B /* MainInterface.storyboard */; };
+		F6C3E43B19E6F5D000B9632B /* PhotoEditing.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6C3E42D19E6F5D000B9632B /* PhotoEditing.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6C3E44A19E6F5E100B9632B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E44919E6F5E100B9632B /* ShareViewController.swift */; };
+		F6C3E44C19E6F5E100B9632B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C3E44B19E6F5E100B9632B /* MainInterface.storyboard */; };
+		F6C3E44F19E6F5E100B9632B /* ShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6C3E44519E6F5E100B9632B /* ShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F6C3E45B19E6F5F300B9632B /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6C3E45A19E6F5F300B9632B /* NotificationCenter.framework */; };
+		F6C3E46019E6F5F300B9632B /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C3E45F19E6F5F300B9632B /* TodayViewController.swift */; };
+		F6C3E46219E6F5F300B9632B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C3E46119E6F5F300B9632B /* MainInterface.storyboard */; };
+		F6C3E46519E6F5F300B9632B /* TodayExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F6C3E45919E6F5F300B9632B /* TodayExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F6CF35F419245D9500E25182 /* XPsSubscribeRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F319245D9500E25182 /* XPsSubscribeRootViewController.m */; };
 		F6CF35F719245EE200E25182 /* XPSubscribeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F619245EE200E25182 /* XPSubscribeButton.m */; };
 		F6CF35FA1924662400E25182 /* XPSubscribeMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CF35F91924662400E25182 /* XPSubscribeMenuViewController.m */; };
@@ -110,7 +132,125 @@
 			remoteGlobalIDString = F6AB8BAF18D8953800710409;
 			remoteInfo = "iOS-Cook-UI";
 		};
+		F6C3E3E619E6F57B00B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E3DD19E6F57B00B9632B;
+			remoteInfo = ActionExtention;
+		};
+		F6C3E3E919E6F57B00B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E3DD19E6F57B00B9632B;
+			remoteInfo = ActionExtention;
+		};
+		F6C3E3F919E6F5A400B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E3F219E6F5A400B9632B;
+			remoteInfo = CustomKeyboard;
+		};
+		F6C3E3FC19E6F5A400B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E3F219E6F5A400B9632B;
+			remoteInfo = CustomKeyboard;
+		};
+		F6C3E41919E6F5B900B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E41119E6F5B900B9632B;
+			remoteInfo = DocumentProviderFileProvider;
+		};
+		F6C3E41C19E6F5B900B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E41119E6F5B900B9632B;
+			remoteInfo = DocumentProviderFileProvider;
+		};
+		F6C3E41E19E6F5B900B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E40419E6F5B900B9632B;
+			remoteInfo = DocumentProvider;
+		};
+		F6C3E42119E6F5B900B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E40419E6F5B900B9632B;
+			remoteInfo = DocumentProvider;
+		};
+		F6C3E43919E6F5D000B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E42C19E6F5D000B9632B;
+			remoteInfo = PhotoEditing;
+		};
+		F6C3E43C19E6F5D000B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E42C19E6F5D000B9632B;
+			remoteInfo = PhotoEditing;
+		};
+		F6C3E44D19E6F5E100B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E44419E6F5E100B9632B;
+			remoteInfo = ShareExtention;
+		};
+		F6C3E45019E6F5E100B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E44419E6F5E100B9632B;
+			remoteInfo = ShareExtention;
+		};
+		F6C3E46319E6F5F300B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E45819E6F5F300B9632B;
+			remoteInfo = TodayExtension;
+		};
+		F6C3E46619E6F5F300B9632B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6AB8BA818D8953800710409 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6C3E45819E6F5F300B9632B;
+			remoteInfo = TodayExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F6C3E3EE19E6F57B00B9632B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F6C3E43B19E6F5D000B9632B /* PhotoEditing.appex in Embed App Extensions */,
+				F6C3E42019E6F5B900B9632B /* DocumentProvider.appex in Embed App Extensions */,
+				F6C3E3FB19E6F5A400B9632B /* CustomKeyboard.appex in Embed App Extensions */,
+				F6C3E44F19E6F5E100B9632B /* ShareExtension.appex in Embed App Extensions */,
+				F6C3E46519E6F5F300B9632B /* TodayExtension.appex in Embed App Extensions */,
+				F6C3E3E819E6F57B00B9632B /* ActionExtension.appex in Embed App Extensions */,
+				F6C3E41B19E6F5B900B9632B /* DocumentProviderFileProvider.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F607F53C18D898C00062E811 /* UIList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = UIList.plist; sourceTree = "<group>"; };
@@ -258,6 +398,38 @@
 		F6C24271199B9E0300158F08 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small@2x.png"; sourceTree = "<group>"; };
 		F6C24272199B9E0300158F08 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		F6C24273199B9E0300158F08 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		F6C3E3D819E6DAA400B9632B /* iOS-Cook-UI-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "iOS-Cook-UI-Bridging-Header.h"; sourceTree = "<group>"; };
+		F6C3E3DE19E6F57B00B9632B /* ActionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ActionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3E3E119E6F57B00B9632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3E3E219E6F57B00B9632B /* ActionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionViewController.swift; sourceTree = "<group>"; };
+		F6C3E3E419E6F57B00B9632B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F6C3E3F319E6F5A400B9632B /* CustomKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CustomKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3E3F619E6F5A400B9632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3E3F719E6F5A400B9632B /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		F6C3E40519E6F5B900B9632B /* DocumentProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3E40819E6F5B900B9632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3E40919E6F5B900B9632B /* DocumentProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocumentProvider.entitlements; sourceTree = "<group>"; };
+		F6C3E40A19E6F5B900B9632B /* DocumentPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentPickerViewController.swift; sourceTree = "<group>"; };
+		F6C3E40C19E6F5B900B9632B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F6C3E41219E6F5B900B9632B /* DocumentProviderFileProvider.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = DocumentProviderFileProvider.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3E41519E6F5B900B9632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3E41619E6F5B900B9632B /* DocumentProviderFileProvider.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DocumentProviderFileProvider.entitlements; sourceTree = "<group>"; };
+		F6C3E41719E6F5B900B9632B /* FileProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileProvider.swift; sourceTree = "<group>"; };
+		F6C3E42D19E6F5D000B9632B /* PhotoEditing.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PhotoEditing.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3E42E19E6F5D000B9632B /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		F6C3E43019E6F5D000B9632B /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		F6C3E43419E6F5D000B9632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3E43519E6F5D000B9632B /* PhotoEditingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoEditingViewController.swift; sourceTree = "<group>"; };
+		F6C3E43719E6F5D000B9632B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F6C3E44519E6F5E100B9632B /* ShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3E44819E6F5E100B9632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3E44919E6F5E100B9632B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		F6C3E44B19E6F5E100B9632B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
+		F6C3E45919E6F5F300B9632B /* TodayExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TodayExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6C3E45A19E6F5F300B9632B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		F6C3E45E19E6F5F300B9632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6C3E45F19E6F5F300B9632B /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		F6C3E46119E6F5F300B9632B /* MainInterface.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainInterface.storyboard; sourceTree = "<group>"; };
 		F6CF35F219245D9500E25182 /* XPsSubscribeRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPsSubscribeRootViewController.h; sourceTree = "<group>"; };
 		F6CF35F319245D9500E25182 /* XPsSubscribeRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPsSubscribeRootViewController.m; sourceTree = "<group>"; };
 		F6CF35F519245EE200E25182 /* XPSubscribeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPSubscribeButton.h; sourceTree = "<group>"; };
@@ -299,6 +471,58 @@
 				F6AB8BCD18D8953800710409 /* XCTest.framework in Frameworks */,
 				F6AB8BCF18D8953800710409 /* UIKit.framework in Frameworks */,
 				F6AB8BCE18D8953800710409 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E3DB19E6F57B00B9632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E3F019E6F5A400B9632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E40219E6F5B900B9632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E40F19E6F5B900B9632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E42A19E6F5D000B9632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E42F19E6F5D000B9632B /* PhotosUI.framework in Frameworks */,
+				F6C3E43119E6F5D000B9632B /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E44219E6F5E100B9632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E45619E6F5F300B9632B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E45B19E6F5F300B9632B /* NotificationCenter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +698,13 @@
 			children = (
 				F6AB8BB918D8953800710409 /* iOS-Cook-UI */,
 				F6AB8BD218D8953800710409 /* iOS-Cook-UITests */,
+				F6C3E3DF19E6F57B00B9632B /* ActionExtension */,
+				F6C3E3F419E6F5A400B9632B /* CustomKeyboard */,
+				F6C3E40619E6F5B900B9632B /* DocumentProvider */,
+				F6C3E41319E6F5B900B9632B /* DocumentProviderFileProvider */,
+				F6C3E43219E6F5D000B9632B /* PhotoEditing */,
+				F6C3E44619E6F5E100B9632B /* ShareExtension */,
+				F6C3E45C19E6F5F300B9632B /* TodayExtension */,
 				F6AB8BB218D8953800710409 /* Frameworks */,
 				F6AB8BB118D8953800710409 /* Products */,
 			);
@@ -484,6 +715,13 @@
 			children = (
 				F6AB8BB018D8953800710409 /* iOS-Cook-UI.app */,
 				F6AB8BCB18D8953800710409 /* iOS-Cook-UITests.xctest */,
+				F6C3E3DE19E6F57B00B9632B /* ActionExtension.appex */,
+				F6C3E3F319E6F5A400B9632B /* CustomKeyboard.appex */,
+				F6C3E40519E6F5B900B9632B /* DocumentProvider.appex */,
+				F6C3E41219E6F5B900B9632B /* DocumentProviderFileProvider.appex */,
+				F6C3E42D19E6F5D000B9632B /* PhotoEditing.appex */,
+				F6C3E44519E6F5E100B9632B /* ShareExtension.appex */,
+				F6C3E45919E6F5F300B9632B /* TodayExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -497,6 +735,9 @@
 				F6AB8BB518D8953800710409 /* CoreGraphics.framework */,
 				F6AB8BB718D8953800710409 /* UIKit.framework */,
 				F6AB8BCC18D8953800710409 /* XCTest.framework */,
+				F6C3E42E19E6F5D000B9632B /* PhotosUI.framework */,
+				F6C3E43019E6F5D000B9632B /* Photos.framework */,
+				F6C3E45A19E6F5F300B9632B /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -504,6 +745,7 @@
 		F6AB8BB918D8953800710409 /* iOS-Cook-UI */ = {
 			isa = PBXGroup;
 			children = (
+				F6C3E3C319E6823C00B9632B /* CustomLibrary */,
 				F64EED2D18EDA5A00003A874 /* Finished */,
 				F64FEF1118E863F60012FF82 /* ImportedLibrary */,
 				F6AB8BC218D8953800710409 /* XPAppDelegate.h */,
@@ -513,6 +755,7 @@
 				F6AB8BC518D8953800710409 /* Images.xcassets */,
 				F6AB8BE218D895D300710409 /* XPMainStoryboard.storyboard */,
 				F6AB8BBA18D8953800710409 /* Supporting Files */,
+				F6C3E3D819E6DAA400B9632B /* iOS-Cook-UI-Bridging-Header.h */,
 			);
 			path = "iOS-Cook-UI";
 			sourceTree = "<group>";
@@ -598,6 +841,149 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		F6C3E3C319E6823C00B9632B /* CustomLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E3C419E6828300B9632B /* Ison */,
+			);
+			path = CustomLibrary;
+			sourceTree = "<group>";
+		};
+		F6C3E3C419E6828300B9632B /* Ison */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ison;
+			sourceTree = "<group>";
+		};
+		F6C3E3DF19E6F57B00B9632B /* ActionExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E3E219E6F57B00B9632B /* ActionViewController.swift */,
+				F6C3E3E419E6F57B00B9632B /* MainInterface.storyboard */,
+				F6C3E3E019E6F57B00B9632B /* Supporting Files */,
+			);
+			name = ActionExtension;
+			path = ActionExtention;
+			sourceTree = "<group>";
+		};
+		F6C3E3E019E6F57B00B9632B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E3E119E6F57B00B9632B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C3E3F419E6F5A400B9632B /* CustomKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E3F719E6F5A400B9632B /* KeyboardViewController.swift */,
+				F6C3E3F519E6F5A400B9632B /* Supporting Files */,
+			);
+			path = CustomKeyboard;
+			sourceTree = "<group>";
+		};
+		F6C3E3F519E6F5A400B9632B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E3F619E6F5A400B9632B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C3E40619E6F5B900B9632B /* DocumentProvider */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E40A19E6F5B900B9632B /* DocumentPickerViewController.swift */,
+				F6C3E40C19E6F5B900B9632B /* MainInterface.storyboard */,
+				F6C3E40719E6F5B900B9632B /* Supporting Files */,
+			);
+			path = DocumentProvider;
+			sourceTree = "<group>";
+		};
+		F6C3E40719E6F5B900B9632B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E40819E6F5B900B9632B /* Info.plist */,
+				F6C3E40919E6F5B900B9632B /* DocumentProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C3E41319E6F5B900B9632B /* DocumentProviderFileProvider */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E41719E6F5B900B9632B /* FileProvider.swift */,
+				F6C3E41419E6F5B900B9632B /* Supporting Files */,
+			);
+			path = DocumentProviderFileProvider;
+			sourceTree = "<group>";
+		};
+		F6C3E41419E6F5B900B9632B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E41519E6F5B900B9632B /* Info.plist */,
+				F6C3E41619E6F5B900B9632B /* DocumentProviderFileProvider.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C3E43219E6F5D000B9632B /* PhotoEditing */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E43519E6F5D000B9632B /* PhotoEditingViewController.swift */,
+				F6C3E43719E6F5D000B9632B /* MainInterface.storyboard */,
+				F6C3E43319E6F5D000B9632B /* Supporting Files */,
+			);
+			path = PhotoEditing;
+			sourceTree = "<group>";
+		};
+		F6C3E43319E6F5D000B9632B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E43419E6F5D000B9632B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C3E44619E6F5E100B9632B /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E44919E6F5E100B9632B /* ShareViewController.swift */,
+				F6C3E44B19E6F5E100B9632B /* MainInterface.storyboard */,
+				F6C3E44719E6F5E100B9632B /* Supporting Files */,
+			);
+			name = ShareExtension;
+			path = ShareExtention;
+			sourceTree = "<group>";
+		};
+		F6C3E44719E6F5E100B9632B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E44819E6F5E100B9632B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6C3E45C19E6F5F300B9632B /* TodayExtension */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E45F19E6F5F300B9632B /* TodayViewController.swift */,
+				F6C3E46119E6F5F300B9632B /* MainInterface.storyboard */,
+				F6C3E45D19E6F5F300B9632B /* Supporting Files */,
+			);
+			path = TodayExtension;
+			sourceTree = "<group>";
+		};
+		F6C3E45D19E6F5F300B9632B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6C3E45E19E6F5F300B9632B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F6CF35F11924579200E25182 /* SubscribeMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -653,10 +1039,25 @@
 				F6AB8BAC18D8953800710409 /* Sources */,
 				F6AB8BAD18D8953800710409 /* Frameworks */,
 				F6AB8BAE18D8953800710409 /* Resources */,
+				F6C3E3EE19E6F57B00B9632B /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F6C3E3E719E6F57B00B9632B /* PBXTargetDependency */,
+				F6C3E3EA19E6F57B00B9632B /* PBXTargetDependency */,
+				F6C3E3FA19E6F5A400B9632B /* PBXTargetDependency */,
+				F6C3E3FD19E6F5A400B9632B /* PBXTargetDependency */,
+				F6C3E41A19E6F5B900B9632B /* PBXTargetDependency */,
+				F6C3E41D19E6F5B900B9632B /* PBXTargetDependency */,
+				F6C3E41F19E6F5B900B9632B /* PBXTargetDependency */,
+				F6C3E42219E6F5B900B9632B /* PBXTargetDependency */,
+				F6C3E43A19E6F5D000B9632B /* PBXTargetDependency */,
+				F6C3E43D19E6F5D000B9632B /* PBXTargetDependency */,
+				F6C3E44E19E6F5E100B9632B /* PBXTargetDependency */,
+				F6C3E45119E6F5E100B9632B /* PBXTargetDependency */,
+				F6C3E46419E6F5F300B9632B /* PBXTargetDependency */,
+				F6C3E46719E6F5F300B9632B /* PBXTargetDependency */,
 			);
 			name = "iOS-Cook-UI";
 			productName = "iOS-Cook-UI";
@@ -681,6 +1082,125 @@
 			productReference = F6AB8BCB18D8953800710409 /* iOS-Cook-UITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F6C3E3DD19E6F57B00B9632B /* ActionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C3E3EB19E6F57B00B9632B /* Build configuration list for PBXNativeTarget "ActionExtension" */;
+			buildPhases = (
+				F6C3E3DA19E6F57B00B9632B /* Sources */,
+				F6C3E3DB19E6F57B00B9632B /* Frameworks */,
+				F6C3E3DC19E6F57B00B9632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ActionExtension;
+			productName = ActionExtention;
+			productReference = F6C3E3DE19E6F57B00B9632B /* ActionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F6C3E3F219E6F5A400B9632B /* CustomKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C3E3FE19E6F5A400B9632B /* Build configuration list for PBXNativeTarget "CustomKeyboard" */;
+			buildPhases = (
+				F6C3E3EF19E6F5A400B9632B /* Sources */,
+				F6C3E3F019E6F5A400B9632B /* Frameworks */,
+				F6C3E3F119E6F5A400B9632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomKeyboard;
+			productName = CustomKeyboard;
+			productReference = F6C3E3F319E6F5A400B9632B /* CustomKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F6C3E40419E6F5B900B9632B /* DocumentProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C3E42619E6F5B900B9632B /* Build configuration list for PBXNativeTarget "DocumentProvider" */;
+			buildPhases = (
+				F6C3E40119E6F5B900B9632B /* Sources */,
+				F6C3E40219E6F5B900B9632B /* Frameworks */,
+				F6C3E40319E6F5B900B9632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentProvider;
+			productName = DocumentProvider;
+			productReference = F6C3E40519E6F5B900B9632B /* DocumentProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F6C3E41119E6F5B900B9632B /* DocumentProviderFileProvider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C3E42319E6F5B900B9632B /* Build configuration list for PBXNativeTarget "DocumentProviderFileProvider" */;
+			buildPhases = (
+				F6C3E40E19E6F5B900B9632B /* Sources */,
+				F6C3E40F19E6F5B900B9632B /* Frameworks */,
+				F6C3E41019E6F5B900B9632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DocumentProviderFileProvider;
+			productName = DocumentProviderFileProvider;
+			productReference = F6C3E41219E6F5B900B9632B /* DocumentProviderFileProvider.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F6C3E42C19E6F5D000B9632B /* PhotoEditing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C3E43E19E6F5D000B9632B /* Build configuration list for PBXNativeTarget "PhotoEditing" */;
+			buildPhases = (
+				F6C3E42919E6F5D000B9632B /* Sources */,
+				F6C3E42A19E6F5D000B9632B /* Frameworks */,
+				F6C3E42B19E6F5D000B9632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoEditing;
+			productName = PhotoEditing;
+			productReference = F6C3E42D19E6F5D000B9632B /* PhotoEditing.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F6C3E44419E6F5E100B9632B /* ShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C3E45219E6F5E100B9632B /* Build configuration list for PBXNativeTarget "ShareExtension" */;
+			buildPhases = (
+				F6C3E44119E6F5E100B9632B /* Sources */,
+				F6C3E44219E6F5E100B9632B /* Frameworks */,
+				F6C3E44319E6F5E100B9632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareExtension;
+			productName = ShareExtention;
+			productReference = F6C3E44519E6F5E100B9632B /* ShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		F6C3E45819E6F5F300B9632B /* TodayExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6C3E46819E6F5F300B9632B /* Build configuration list for PBXNativeTarget "TodayExtension" */;
+			buildPhases = (
+				F6C3E45519E6F5F300B9632B /* Sources */,
+				F6C3E45619E6F5F300B9632B /* Frameworks */,
+				F6C3E45719E6F5F300B9632B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TodayExtension;
+			productName = TodayExtension;
+			productReference = F6C3E45919E6F5F300B9632B /* TodayExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -693,6 +1213,27 @@
 				TargetAttributes = {
 					F6AB8BCA18D8953800710409 = {
 						TestTargetID = F6AB8BAF18D8953800710409;
+					};
+					F6C3E3DD19E6F57B00B9632B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F6C3E3F219E6F5A400B9632B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F6C3E40419E6F5B900B9632B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F6C3E41119E6F5B900B9632B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F6C3E42C19E6F5D000B9632B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F6C3E44419E6F5E100B9632B = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					F6C3E45819E6F5F300B9632B = {
+						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
 			};
@@ -711,6 +1252,13 @@
 			targets = (
 				F6AB8BAF18D8953800710409 /* iOS-Cook-UI */,
 				F6AB8BCA18D8953800710409 /* iOS-Cook-UITests */,
+				F6C3E3DD19E6F57B00B9632B /* ActionExtension */,
+				F6C3E3F219E6F5A400B9632B /* CustomKeyboard */,
+				F6C3E40419E6F5B900B9632B /* DocumentProvider */,
+				F6C3E41119E6F5B900B9632B /* DocumentProviderFileProvider */,
+				F6C3E42C19E6F5D000B9632B /* PhotoEditing */,
+				F6C3E44419E6F5E100B9632B /* ShareExtension */,
+				F6C3E45819E6F5F300B9632B /* TodayExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -745,6 +1293,60 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6AB8BD718D8953800710409 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E3DC19E6F57B00B9632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E3E519E6F57B00B9632B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E3F119E6F5A400B9632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E40319E6F5B900B9632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E40D19E6F5B900B9632B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E41019E6F5B900B9632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E42B19E6F5D000B9632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E43819E6F5D000B9632B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E44319E6F5E100B9632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E44C19E6F5E100B9632B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E45719E6F5F300B9632B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E46219E6F5F300B9632B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -832,6 +1434,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F6C3E3DA19E6F57B00B9632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E3E319E6F57B00B9632B /* ActionViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E3EF19E6F5A400B9632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E3F819E6F5A400B9632B /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E40119E6F5B900B9632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E40B19E6F5B900B9632B /* DocumentPickerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E40E19E6F5B900B9632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E41819E6F5B900B9632B /* FileProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E42919E6F5D000B9632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E43619E6F5D000B9632B /* PhotoEditingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E44119E6F5E100B9632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E44A19E6F5E100B9632B /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6C3E45519E6F5F300B9632B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6C3E46019E6F5F300B9632B /* TodayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -839,6 +1497,76 @@
 			isa = PBXTargetDependency;
 			target = F6AB8BAF18D8953800710409 /* iOS-Cook-UI */;
 			targetProxy = F6AB8BD018D8953800710409 /* PBXContainerItemProxy */;
+		};
+		F6C3E3E719E6F57B00B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E3DD19E6F57B00B9632B /* ActionExtension */;
+			targetProxy = F6C3E3E619E6F57B00B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E3EA19E6F57B00B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E3DD19E6F57B00B9632B /* ActionExtension */;
+			targetProxy = F6C3E3E919E6F57B00B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E3FA19E6F5A400B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E3F219E6F5A400B9632B /* CustomKeyboard */;
+			targetProxy = F6C3E3F919E6F5A400B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E3FD19E6F5A400B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E3F219E6F5A400B9632B /* CustomKeyboard */;
+			targetProxy = F6C3E3FC19E6F5A400B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E41A19E6F5B900B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E41119E6F5B900B9632B /* DocumentProviderFileProvider */;
+			targetProxy = F6C3E41919E6F5B900B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E41D19E6F5B900B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E41119E6F5B900B9632B /* DocumentProviderFileProvider */;
+			targetProxy = F6C3E41C19E6F5B900B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E41F19E6F5B900B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E40419E6F5B900B9632B /* DocumentProvider */;
+			targetProxy = F6C3E41E19E6F5B900B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E42219E6F5B900B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E40419E6F5B900B9632B /* DocumentProvider */;
+			targetProxy = F6C3E42119E6F5B900B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E43A19E6F5D000B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E42C19E6F5D000B9632B /* PhotoEditing */;
+			targetProxy = F6C3E43919E6F5D000B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E43D19E6F5D000B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E42C19E6F5D000B9632B /* PhotoEditing */;
+			targetProxy = F6C3E43C19E6F5D000B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E44E19E6F5E100B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E44419E6F5E100B9632B /* ShareExtension */;
+			targetProxy = F6C3E44D19E6F5E100B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E45119E6F5E100B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E44419E6F5E100B9632B /* ShareExtension */;
+			targetProxy = F6C3E45019E6F5E100B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E46419E6F5F300B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E45819E6F5F300B9632B /* TodayExtension */;
+			targetProxy = F6C3E46319E6F5F300B9632B /* PBXContainerItemProxy */;
+		};
+		F6C3E46719E6F5F300B9632B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6C3E45819E6F5F300B9632B /* TodayExtension */;
+			targetProxy = F6C3E46619E6F5F300B9632B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -937,11 +1665,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Cook-UI/iOS-Cook-UI-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Cook-UI/iOS-Cook-UI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Cook-UI/iOS-Cook-UI-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -951,11 +1683,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Cook-UI/iOS-Cook-UI-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Cook-UI/iOS-Cook-UI-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "iOS-Cook-UI/iOS-Cook-UI-Bridging-Header.h";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1000,6 +1735,241 @@
 			};
 			name = Release;
 		};
+		F6C3E3EC19E6F57B00B9632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ActionExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C3E3ED19E6F57B00B9632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = ActionExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6C3E3FF19E6F5A400B9632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C3E40019E6F5A400B9632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = CustomKeyboard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6C3E42419E6F5B900B9632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderFileProvider/DocumentProviderFileProvider.entitlements;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DocumentProviderFileProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C3E42519E6F5B900B9632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = DocumentProviderFileProvider/DocumentProviderFileProvider.entitlements;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = DocumentProviderFileProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6C3E42719E6F5B900B9632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = DocumentProvider/DocumentProvider.entitlements;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DocumentProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C3E42819E6F5B900B9632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CODE_SIGN_ENTITLEMENTS = DocumentProvider/DocumentProvider.entitlements;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = DocumentProvider/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6C3E43F19E6F5D000B9632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhotoEditing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C3E44019E6F5D000B9632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = PhotoEditing/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6C3E45319E6F5E100B9632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ShareExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C3E45419E6F5E100B9632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = ShareExtention/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F6C3E46919E6F5F300B9632B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F6C3E46A19E6F5F300B9632B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = TodayExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1029,6 +1999,62 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F6C3E3EB19E6F57B00B9632B /* Build configuration list for PBXNativeTarget "ActionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C3E3EC19E6F57B00B9632B /* Debug */,
+				F6C3E3ED19E6F57B00B9632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C3E3FE19E6F5A400B9632B /* Build configuration list for PBXNativeTarget "CustomKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C3E3FF19E6F5A400B9632B /* Debug */,
+				F6C3E40019E6F5A400B9632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C3E42319E6F5B900B9632B /* Build configuration list for PBXNativeTarget "DocumentProviderFileProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C3E42419E6F5B900B9632B /* Debug */,
+				F6C3E42519E6F5B900B9632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C3E42619E6F5B900B9632B /* Build configuration list for PBXNativeTarget "DocumentProvider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C3E42719E6F5B900B9632B /* Debug */,
+				F6C3E42819E6F5B900B9632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C3E43E19E6F5D000B9632B /* Build configuration list for PBXNativeTarget "PhotoEditing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C3E43F19E6F5D000B9632B /* Debug */,
+				F6C3E44019E6F5D000B9632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C3E45219E6F5E100B9632B /* Build configuration list for PBXNativeTarget "ShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C3E45319E6F5E100B9632B /* Debug */,
+				F6C3E45419E6F5E100B9632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F6C3E46819E6F5F300B9632B /* Build configuration list for PBXNativeTarget "TodayExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6C3E46919E6F5F300B9632B /* Debug */,
+				F6C3E46A19E6F5F300B9632B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};

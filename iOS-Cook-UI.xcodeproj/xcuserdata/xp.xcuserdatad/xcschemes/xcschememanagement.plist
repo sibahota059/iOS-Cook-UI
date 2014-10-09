@@ -4,6 +4,41 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>ActionExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>CustomKeyboard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>DocumentProvider.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>DocumentProviderFileProvider.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>PhotoEditing.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>ShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>TodayExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
 		<key>iOS-Cook-UI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +53,41 @@
 			<true/>
 		</dict>
 		<key>F6AB8BCA18D8953800710409</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C3E3DD19E6F57B00B9632B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C3E3F219E6F5A400B9632B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C3E40419E6F5B900B9632B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C3E41119E6F5B900B9632B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C3E42C19E6F5D000B9632B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C3E44419E6F5E100B9632B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F6C3E45819E6F5F300B9632B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
