@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface XPsSubscribeRootViewController : UIViewController
+@interface XPSubscribeRootViewController : UIViewController
 
 @end

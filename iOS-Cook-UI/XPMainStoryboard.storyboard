@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="oAW-TW-oFy">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -29,7 +28,9 @@
                             <outlet property="delegate" destination="CP0-bI-Drw" id="bsT-pf-7yf"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="UI Category" id="S7g-Pw-hjS"/>
+                    <navigationItem key="navigationItem" title="UI Category" id="S7g-Pw-hjS">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="rAs-lT-TU2"/>
+                    </navigationItem>
                     <connections>
                         <segue destination="sTD-I3-4TX" kind="push" identifier="pushBlurSlideBarViewController" id="HTH-PG-cJD"/>
                         <segue destination="tuN-9q-ofP" kind="modal" identifier="pushDrawerViewController" id="dUH-g9-8sI"/>
@@ -38,16 +39,51 @@
                         <segue destination="WDT-Kh-0gU" kind="push" identifier="pushPhotoBrowseViewController" id="bdB-lL-gkf"/>
                         <segue destination="Kcg-KV-fFa" kind="push" identifier="pushSubscribeRootViewController" id="Yzi-9L-yJq"/>
                         <segue destination="CfQ-O6-mOk" kind="push" identifier="pushZoneRefresh" id="Zrc-ZU-cKY"/>
+                        <segue destination="cqP-NB-fst" kind="push" identifier="pushWalkThroughViewController" id="yQL-kT-YJ9"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rh9-Gh-G1p" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="684" y="-144"/>
         </scene>
-        <!--Ps Subscribe Root View Controller-->
+        <!--Walk Through-->
+        <scene sceneID="qTb-r3-Zxe">
+            <objects>
+                <viewController id="cqP-NB-fst" customClass="XPWalkThroughViewController" customModule="iOS_Cook_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4eo-Mt-Ttd"/>
+                        <viewControllerLayoutGuide type="bottom" id="crj-Az-GQM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WxE-rm-YOl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pU-i0-7Dh">
+                                <rect key="frame" x="73" y="237" width="174" height="30"/>
+                                <state key="normal" title="Show Walk Through">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showBtnClicked:" destination="cqP-NB-fst" eventType="touchUpInside" id="kU6-mQ-IF5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="0pU-i0-7Dh" secondAttribute="centerX" id="JBb-zk-Wvo"/>
+                            <constraint firstAttribute="centerY" secondItem="0pU-i0-7Dh" secondAttribute="centerY" id="NmT-t2-Nya"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Walk Through" id="bvF-gI-WT6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHf-Pv-tTc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458" y="-597"/>
+        </scene>
+        <!--Subscribe Menu-->
         <scene sceneID="Ef0-DY-1Na">
             <objects>
-                <viewController id="Kcg-KV-fFa" customClass="XPsSubscribeRootViewController" sceneMemberID="viewController">
+                <viewController id="Kcg-KV-fFa" customClass="XPSubscribeRootViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="eVS-v7-vtd"/>
                         <viewControllerLayoutGuide type="bottom" id="62I-Oe-Jc4"/>
@@ -57,7 +93,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="1xb-h3-y6S"/>
+                    <navigationItem key="navigationItem" title="Subscribe Menu" id="1xb-h3-y6S"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqb-Xi-aAD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -164,7 +200,7 @@
             </objects>
             <point key="canvasLocation" x="1086" y="-1298"/>
         </scene>
-        <!--Zone Table View Controller-->
+        <!--Zone-->
         <scene sceneID="LzO-8X-Jvu">
             <objects>
                 <tableViewController id="CfQ-O6-mOk" customClass="XPZoneTableViewController" sceneMemberID="viewController">
@@ -187,7 +223,7 @@
                             <outlet property="delegate" destination="CfQ-O6-mOk" id="RBx-IT-4bi"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="Gu1-L8-K88"/>
+                    <navigationItem key="navigationItem" title="Zone" id="Gu1-L8-K88"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G88-Ze-gBD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

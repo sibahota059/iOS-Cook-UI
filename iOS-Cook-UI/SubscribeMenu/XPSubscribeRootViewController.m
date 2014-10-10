@@ -6,17 +6,17 @@
 //  Copyright (c) 2014 newland. All rights reserved.
 //
 
-#import "XPsSubscribeRootViewController.h"
+#import "XPSubscribeRootViewController.h"
 #import "XPSubscribeButton.h"
 #import "XPSubscribeMenuViewController.h"
 #import "XPMenuView.h"
 #import "XPMenu.h"
 
-@interface XPsSubscribeRootViewController ()
+@interface XPSubscribeRootViewController ()
 
 @end
 
-@implementation XPsSubscribeRootViewController
+@implementation XPSubscribeRootViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
