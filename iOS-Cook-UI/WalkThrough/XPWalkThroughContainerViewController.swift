@@ -81,7 +81,7 @@ class XPWalkThroughContainerViewController: UIViewController, UIScrollViewDelega
         
         let metricDict = ["w":vc.view.bounds.size.width,"h":vc.view.bounds.size.height];
         
-        vc.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view(h)]", options:nil, metrics: metricDict, views: ["view":vc.view]));
+        vc.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(" |-50-[purpleBox]-50-|", options:nil, metrics: metricDict, views: ["view":vc.view]));
         vc.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[view(w)]", options:nil, metrics: metricDict, views: ["view":vc.view]));
         scrollView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[view]|", options:nil, metrics: nil, views: ["view":vc.view]));
         
