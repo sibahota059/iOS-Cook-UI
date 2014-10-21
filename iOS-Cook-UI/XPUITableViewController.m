@@ -78,14 +78,10 @@ static NSString *CellIdentifier = @"Cell";
         [self performSegueWithIdentifier:@"pushBlurSlideBarViewController" sender:self];
     }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Drawer View Controller"]){
         [self performSegueWithIdentifier:@"pushDrawerViewController" sender:self];
-    }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"XPHUD"]){
-        [self performSegueWithIdentifier:@"pushXPHUDViewController" sender:self];
     }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Animate Tab View Controller"]){
         [self performSegueWithIdentifier:@"pushAnimateTabViewController" sender:self];
     }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Photo Scan"]){
         [self performSegueWithIdentifier:@"pushPhotoBrowseViewController" sender:self];
-    }else if ([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Subscribe Menu"]){
-        [self performSegueWithIdentifier:@"pushSubscribeRootViewController" sender:self];
     }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Zone Refresh"]){
         [self performSegueWithIdentifier:@"pushZoneRefresh" sender:self];
     }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Walk Through"]){
