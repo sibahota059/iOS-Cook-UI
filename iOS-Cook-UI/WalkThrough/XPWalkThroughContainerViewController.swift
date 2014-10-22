@@ -42,6 +42,7 @@ class XPWalkThroughContainerViewController: UIViewController, UIScrollViewDelega
         scrollView.showsHorizontalScrollIndicator = false;
         scrollView.showsVerticalScrollIndicator = false;
         scrollView.pagingEnabled = true;
+        scrollView.scrollEnabled = true;
         
         controllers = Array();
     }
@@ -54,7 +55,7 @@ class XPWalkThroughContainerViewController: UIViewController, UIScrollViewDelega
         scrollView.setTranslatesAutoresizingMaskIntoConstraints(false);
         view.insertSubview(scrollView, atIndex: 0);
         view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[scrollview]-0-|", options:nil, metrics: nil, views: ["scrollview":scrollView]));
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[scrollview]-0-|", options:nil, metrics: nil, views: ["scrollview":scrollView]))
+        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[scrollview]-0-|", options:nil, metrics: nil, views: ["scrollview":scrollView]));
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -81,9 +82,9 @@ class XPWalkThroughContainerViewController: UIViewController, UIScrollViewDelega
         
         let metricDict = ["w":vc.view.bounds.size.width,"h":vc.view.bounds.size.height];
         
-        vc.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat(" |-50-[purpleBox]-50-|", options:nil, metrics: metricDict, views: ["view":vc.view]));
         vc.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[view(w)]", options:nil, metrics: metricDict, views: ["view":vc.view]));
-        scrollView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[view]|", options:nil, metrics: nil, views: ["view":vc.view]));
+        vc.view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[view(h)]", options:nil, metrics: metricDict, views: ["view":vc.view]));
+        scrollView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-0-[view]", options:nil, metrics: nil, views: ["view":vc.view]));
         
         if(controllers.count == 1){
             scrollView.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-0-[view]", options: nil, metrics: nil, views: ["view":vc.view]));
@@ -95,7 +96,7 @@ class XPWalkThroughContainerViewController: UIViewController, UIScrollViewDelega
             if let cst = lastViewConstraint{
                 scrollView.removeConstraints(cst);
             }
-            lastViewConstraint = NSLayoutConstraint.constraintsWithVisualFormat("H:[view]-|", options:nil, metrics: nil, views: ["view":vc.view])
+            lastViewConstraint = NSLayoutConstraint.constraintsWithVisualFormat("H:[view]-0-|", options:nil, metrics: nil, views: ["view":vc.view])
             scrollView.addConstraints(lastViewConstraint!);
         }
     }

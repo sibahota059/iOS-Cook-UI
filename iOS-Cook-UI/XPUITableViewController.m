@@ -86,6 +86,8 @@ static NSString *CellIdentifier = @"Cell";
         [self performSegueWithIdentifier:@"pushZoneRefresh" sender:self];
     }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Walk Through"]){
         [self performSegueWithIdentifier:@"pushWalkThroughViewController" sender:self];
+    }else if([[self.uiArray objectAtIndex:indexPath.row] isEqualToString:@"Image Processing"]){
+        [self performSegueWithIdentifier:@"pushImageProcessingViewController" sender:self];
     }
 }
 
