@@ -3,11 +3,11 @@
 <plist version="1.0">
 <array>
 	<string>Blur Slide Bar</string>
-	<string>Drawer View Controller</string>
-	<string>Animate Tab View Controller</string>
+	<string>Drawer View</string>
+	<string>Animate Tab</string>
 	<string>Photo Scan</string>
 	<string>Zone Refresh</string>
 	<string>Walk Through</string>
-	<string>Image Processing</string>
+	<string>Table Refresh</string>
 </array>
 </plist>

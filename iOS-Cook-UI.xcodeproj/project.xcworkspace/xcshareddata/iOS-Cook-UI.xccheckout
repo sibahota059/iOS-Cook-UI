@@ -14,7 +14,7 @@
 		<string>https://github.com/xp19870106/iOS-Cook-UI.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOS-Cook-UI.xcodeproj/project.xcworkspace</string>
+	<string>iOS-Cook-UI.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>F4800FEE8193E60E90E640F368E47A61E9226958</key>
