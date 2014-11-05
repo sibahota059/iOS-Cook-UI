@@ -22,10 +22,10 @@ class XPRefreshCommonAnimationView: XPRefreshAnimationBaseView {
     let XPRefreshFooterStatusTextSuccess:String = "succeed";
     let XPRefreshFooterStatusTextFailure:String = "failed";
     
-    var _statusLabel:UILabel;
-    var _arrowImageView:UIImageView;
-    var _activityView:UIActivityIndicatorView;
-    var _lastUpdateTimeLabel:UILabel;
+    var _statusLabel:UILabel!;
+    var _arrowImageView:UIImageView!;
+    var _activityView:UIActivityIndicatorView!;
+    var _lastUpdateTimeLabel:UILabel!;
     
     
     convenience init(){
@@ -44,7 +44,7 @@ class XPRefreshCommonAnimationView: XPRefreshAnimationBaseView {
         _lastUpdateTimeLabel = UILabel();
         _lastUpdateTimeLabel.autoresizingMask = UIViewAutoresizing.FlexibleWidth;
         _lastUpdateTimeLabel.font=UIFont.boldSystemFontOfSize(13);
-        _lastUpdateTimeLabel.textColor = UIColor.lightTextColor();
+        _lastUpdateTimeLabel.textColor = UIColor.grayColor();
         _lastUpdateTimeLabel.backgroundColor = UIColor.clearColor();
         _lastUpdateTimeLabel.textAlignment = NSTextAlignment.Center;
         
@@ -86,7 +86,87 @@ class XPRefreshCommonAnimationView: XPRefreshAnimationBaseView {
     }
 
     
+    //MARK: XPWalkthroughPageDelegate
+    //下拉时候的动画
+    override func refreshViewAniToBePulling(){
+        switch (self.refreshViewType!) {
+            case XPRefreshViewType.Header:
+                _statusLabel.text = XPRefreshHeaderStatusTextPulling;
+                UIView.animateWithDuration(XPRefreshTableViewConfig.XPRefreshFastAnimationDuration, animations:{[weak self] ()->() in
+                    if let strongSelf = self{
+                        strongSelf._arrowImageView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI));
+                    }
+                });
+            case XPRefreshViewType.Footer:
+                _statusLabel.text = XPRefreshFooterStatusTextPulling;
+                UIView.animateWithDuration(XPRefreshTableViewConfig.XPRefreshFastAnimationDuration, animations:{[weak self]()->() in
+                    if let strongSelf = self{
+                        strongSelf._arrowImageView.transform = CGAffineTransformIdentity;
+                    }
+                });
+        }
+    }
     
+    //普通状态时的动画
+    override func refreshViewAniToBeNormal(){
+        switch (self.refreshViewType!) {
+            case XPRefreshViewType.Header:
+                _statusLabel.text = XPRefreshHeaderStatusTextNormal;
+                UIView.animateWithDuration(XPRefreshTableViewConfig.XPRefreshFastAnimationDuration, animations:{()->() in
+                    self._arrowImageView.transform = CGAffineTransformIdentity;
+                });
+            case XPRefreshViewType.Footer:
+                _statusLabel.text = XPRefreshFooterStatusTextNormal;
+                UIView.animateWithDuration(XPRefreshTableViewConfig.XPRefreshFastAnimationDuration, animations:{()->() in
+                    self._arrowImageView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI));
+                });
+        }
+    }
+    
+    //开始刷新
+    override func refreshViewBeginRefreshing(){
+        switch (self.refreshViewType!) {
+        case XPRefreshViewType.Header:
+            _statusLabel.text = XPRefreshHeaderStatusTextRefreshing;
+        case XPRefreshViewType.Footer:
+            _statusLabel.text = XPRefreshFooterStatusTextRefreshing;
+        }
+        _arrowImageView.hidden=true;
+        _activityView.startAnimating();
+    }
+    
+    //结束刷新
+    override func refreshViewEndRefreshing(result:XPRefreshResult){
+        switch self.refreshViewType! {
+            case XPRefreshViewType.Header:
+                switch result{
+                    case XPRefreshResult.None:
+                        _statusLabel.text = XPRefreshHeaderStatusTextNormal;
+                    case XPRefreshResult.Success:
+                        _statusLabel.text = XPRefreshHeaderStatusTextSuccess;
+                        XPRefreshTableViewConfig.updateLastUpdateTimeWithRefreshViewId(self.refreshViewId);
+                    case XPRefreshResult.Failure:
+                        _statusLabel.text = XPRefreshHeaderStatusTextFailure;
+                };
+                _arrowImageView.transform = CGAffineTransformIdentity;
+            case XPRefreshViewType.Footer:
+                switch result{
+                    case XPRefreshResult.None:
+                        _statusLabel.text = XPRefreshFooterStatusTextNormal;
+                    case XPRefreshResult.Success:
+                        _statusLabel.text = XPRefreshFooterStatusTextSuccess;
+//                        XPRefreshTableViewConfig.updateLastUpdateTimeWithRefreshViewId(self.refreshViewId);
+                    case XPRefreshResult.Failure:
+                        _statusLabel.text = XPRefreshFooterStatusTextFailure;
+                }
+                _arrowImageView.transform = CGAffineTransformMakeRotation(CGFloat(M_PI));
+        }
+        
+        _lastUpdateTimeLabel.text = XPRefreshTableViewConfig.getLastUpdateTimeWithRefreshViewID(self.refreshViewId);
+        
+        _activityView.stopAnimating();
+        _arrowImageView.hidden = false;
+    }
     
     
     

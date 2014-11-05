@@ -10,7 +10,7 @@ import UIKit
 
 class XPUITableViewController: UITableViewController {
     
-    var uiArray:[String]?;
+    var uiArray:[String]!;
     let reuseIdentifier = "reuseIdentifier";
 
     required init(coder aDecoder: NSCoder) {

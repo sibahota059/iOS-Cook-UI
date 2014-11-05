@@ -24,6 +24,7 @@
 		F6229B3A19DB89D700C3D986 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F6229B2819DB89D700C3D986 /* UIImageView+HighlightedWebCache.m */; };
 		F6229B3B19DB89D700C3D986 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = F6229B2A19DB89D700C3D986 /* UIImageView+WebCache.m */; };
 		F6229B3C19DB89D700C3D986 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F6229B2C19DB89D700C3D986 /* UIView+WebCacheOperation.m */; };
+		F62573811A090E30006BADE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
 		F6570E9D18EA8BFA0060B6D0 /* XPAnimateTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6570E9C18EA8BFA0060B6D0 /* XPAnimateTabViewController.m */; };
 		F6570EA018EA8ED30060B6D0 /* XPTabScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6570E9F18EA8ED30060B6D0 /* XPTabScrollView.m */; };
 		F6570EA318EA8F070060B6D0 /* XPContentScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6570EA218EA8F070060B6D0 /* XPContentScrollView.m */; };
@@ -49,7 +50,6 @@
 		F6A99603193A8A2C00EB4366 /* UIImage+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A99602193A8A2C00EB4366 /* UIImage+Category.m */; };
 		F6A99606193A8BC700EB4366 /* UIView+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A99605193A8BC700EB4366 /* UIView+Category.m */; };
 		F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB318D8953800710409 /* Foundation.framework */; };
-		F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB518D8953800710409 /* CoreGraphics.framework */; };
 		F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AB8BB718D8953800710409 /* UIKit.framework */; };
 		F6AB8BBE18D8953800710409 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6AB8BBC18D8953800710409 /* InfoPlist.strings */; };
 		F6AB8BC018D8953800710409 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6AB8BBF18D8953800710409 /* main.m */; };
@@ -169,6 +169,7 @@
 		F66C92C418E1B28E0070341F /* XPRightDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPRightDrawerViewController.m; sourceTree = "<group>"; };
 		F66C92C618E1B7050070341F /* XPDrawerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDrawerModel.h; sourceTree = "<group>"; };
 		F66C92C718E1B7050070341F /* XPDrawerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDrawerModel.m; sourceTree = "<group>"; };
+		F685B4E81A090EC7003C30E2 /* CarrierBundleUtilities.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CarrierBundleUtilities.dylib; path = usr/lib/CarrierBundleUtilities.dylib; sourceTree = SDKROOT; };
 		F69F1ED918E2CD2C00B4F208 /* XPDrawerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDrawerButton.h; sourceTree = "<group>"; };
 		F69F1EDA18E2CD2C00B4F208 /* XPDrawerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDrawerButton.m; sourceTree = "<group>"; };
 		F69F1EDC18E2DBB400B4F208 /* XPTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPTopicViewController.h; sourceTree = "<group>"; };
@@ -267,7 +268,7 @@
 			files = (
 				F6B969F81939F61E001D5862 /* AudioToolbox.framework in Frameworks */,
 				F6A65C6818F2DAB300FCE300 /* AssetsLibrary.framework in Frameworks */,
-				F6AB8BB618D8953800710409 /* CoreGraphics.framework in Frameworks */,
+				F62573811A090E30006BADE2 /* CoreGraphics.framework in Frameworks */,
 				F6AB8BB818D8953800710409 /* UIKit.framework in Frameworks */,
 				F6AB8BB418D8953800710409 /* Foundation.framework in Frameworks */,
 			);
@@ -446,6 +447,7 @@
 		F6AB8BB218D8953800710409 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F685B4E81A090EC7003C30E2 /* CarrierBundleUtilities.dylib */,
 				F6B969F71939F61E001D5862 /* AudioToolbox.framework */,
 				F6A65C6718F2DAB300FCE300 /* AssetsLibrary.framework */,
 				F6AB8BB318D8953800710409 /* Foundation.framework */,
@@ -886,6 +888,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Cook-UI/iOS-Cook-UI-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Cook-UI/iOS-Cook-UI-Info.plist";
@@ -908,6 +914,10 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOS-Cook-UI/iOS-Cook-UI-Prefix.pch";
 				INFOPLIST_FILE = "iOS-Cook-UI/iOS-Cook-UI-Info.plist";

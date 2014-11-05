@@ -9,9 +9,10 @@
 import UIKit
 
 class XPRefreshTableViewController: UITableViewController {
-    var header:XPRefreshHeaderView?;
-    var footer:XPRefreshFooterView?;
+    var header:XPRefreshHeaderView!;
+    var footer:XPRefreshFooterView!;
     let reuseIdentifier:String = "reuseIdentifier";
+    var rowCount:Int!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,45 +35,54 @@ class XPRefreshTableViewController: UITableViewController {
     }
     
     func configTableView(){
+        self.rowCount = 10;
         self.tableView.registerClass(UITableViewCell.self,forCellReuseIdentifier:self.reuseIdentifier);
         self.addRefreshHeaderViewWithAnimationView(XPRefreshCommonAnimationView(), beginRefresh: { () -> () in
-            return;
-        })
+            let delay = 2.0 * Double(NSEC_PER_SEC)
+            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay));
+            weak var weakSelf = self
+            dispatch_after(dispatchTime, dispatch_get_main_queue(), {()->() in
+                if let strongSelf = weakSelf {
+                    strongSelf.rowCount = 20;
+                    strongSelf.tableView.reloadData();
+                    strongSelf.header.endRefreshingWithResult(XPRefreshResult.Success);
+                }
+            })
+        });
         self.addRefreshFooterViewWithAnimationView(XPRefreshCommonAnimationView(), beginRefresh: { () -> () in
-            return;
+            let delay = 2.0 * Double(NSEC_PER_SEC)
+            var dispatchTime = dispatch_time(DISPATCH_TIME_NOW, Int64(delay));
+            weak var weakSelf = self
+            dispatch_after(dispatchTime, dispatch_get_main_queue(), {()->() in
+                if let strongSelf = weakSelf {
+                    strongSelf.rowCount = strongSelf.rowCount + 10;
+                    strongSelf.tableView.reloadData();
+                    strongSelf.footer.endRefreshingWithResult(XPRefreshResult.Success);
+                }
+            })
         });
     }
     
     
     //MARK: config tableview
     func addRefreshHeaderViewWithAnimationView(animationView:XPRefreshAnimationBaseView, beginRefresh:()->()){
-        if (self.header==nil){
             var headerView:XPRefreshHeaderView = XPRefreshHeaderView();
             headerView.beginRefreshingClosure = beginRefresh;
             self.tableView.addSubview(headerView);
             self.header = headerView;
-            if let animationview = headerView.animationView{
-                animationView.removeFromSuperview();
-            }
             headerView.animationView = animationView;
             headerView.addSubview(animationView);
-        }
     }
     
     func addRefreshFooterViewWithAnimationView(animationView:XPRefreshAnimationBaseView, beginRefresh:()->()){
-        if (self.footer==nil){
             var footerView:XPRefreshFooterView = XPRefreshFooterView();
             footerView.beginRefreshingClosure = beginRefresh;
             self.tableView.addSubview(footerView);
             self.footer = footerView;
-            if let animationview = footerView.animationView{
-                animationView.removeFromSuperview();
-            }
             footerView.animationView = animationView;
             footerView.addSubview(animationView);
-        }
-        
     }
+
     
     //MARK: table delegate
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
@@ -84,7 +94,7 @@ class XPRefreshTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
-        return 20
+        return self.rowCount;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {

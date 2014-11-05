@@ -21,8 +21,5 @@ protocol XPRefreshViewProtocol {
     
     //结束刷新
     func refreshViewEndRefreshing(result:XPRefreshResult);
-    
-    //拖拽到对应的位置
-    func refreshViewPullingToPosition(position:CGFloat);
        
 }

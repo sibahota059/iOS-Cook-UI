@@ -42,31 +42,19 @@ class XPRefreshFooterView: XPRefreshBaseView {
         
         if(keyPath == XPRefreshTableViewConfig.XPRefreshContentOffset){
             self.changeStateWithContentOffset();
-            
-//            if let animation = self.animationView{
-//                if(animation.respondsToSelector(Selector("refreshViewPullingToPosition:"))){
-//                    if let scroll = self.scrollView{
-//                        var position:CGFloat = scroll.contentOffset.y + scroll.bounds.size.height - scroll.contentSize.height - scroll.contentInset.bottom;
-//                        if(position < 0 || position > XPRefreshTableViewConfig.XPRefreshViewHeight){
-//                            return;
-//                        }
-//                        animation.refreshViewPullingToPosition(position);
-//                    }
-//                }
-//            }
         }
     }
     
     func changeStateWithContentOffset(){
-        if let scroll = self.scrollView{
-            var currentOffsetY:CGFloat = scroll.contentOffset.y;
-            var releaseToRefreshOffsetY = scroll.contentSize.height - scroll.bounds.size.height + scroll.contentInset.bottom;
+
+            var currentOffsetY:CGFloat = self.scrollView.contentOffset.y;
+            var releaseToRefreshOffsetY = self.scrollView.contentSize.height - self.scrollView.bounds.size.height + self.scrollView.contentInset.bottom;
             if(currentOffsetY <= releaseToRefreshOffsetY){
                 return;
             }
             
             releaseToRefreshOffsetY += XPRefreshTableViewConfig.XPRefreshViewHeight;
-            if(scroll.dragging){
+            if(self.scrollView.dragging){
                 if(self.state == XPRefreshState.Normal && currentOffsetY > releaseToRefreshOffsetY){
                     self.state = XPRefreshState.Pulling;
                 }else if(self.state == XPRefreshState.Pulling && currentOffsetY <= releaseToRefreshOffsetY){
@@ -77,8 +65,6 @@ class XPRefreshFooterView: XPRefreshBaseView {
                     self.state = XPRefreshState.Refreshing;
                 }
             }
-        }
-        
     }
     
     func adjustFooterView(){
@@ -87,5 +73,14 @@ class XPRefreshFooterView: XPRefreshBaseView {
             var scrollHeight:CGFloat = scrollView.frame.size.height;
             self.frame.origin.y = max(contentSizeHeight, scrollHeight);
         }
+    }
+    
+    override func setRefreshingContentInset(){
+        //wait to be override
+        self.scrollView.contentInset.bottom += XPRefreshTableViewConfig.XPRefreshViewHeight;
+    }
+    
+    override func resumeContentInset() {
+        self.scrollView.contentInset.bottom -= XPRefreshTableViewConfig.XPRefreshViewHeight;
     }
 }

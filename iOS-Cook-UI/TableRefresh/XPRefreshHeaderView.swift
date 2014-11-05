@@ -37,16 +37,15 @@ class XPRefreshHeaderView: XPRefreshBaseView {
     }
     
     func changeStateWithContentOffset(){
-        if let scroll = self.scrollView{
-            var currentOffsetY:CGFloat = scroll.contentOffset.y;
-            var releaseToRefreshOffsetY = -scroll.contentInset.top;
+            var currentOffsetY:CGFloat = self.scrollView.contentOffset.y;
+            var releaseToRefreshOffsetY = -self.scrollView.contentInset.top;
             
             if(currentOffsetY > releaseToRefreshOffsetY){
                 return;
             }
             releaseToRefreshOffsetY -= self.frame.size.height;
             
-            if(scroll.dragging){
+            if(self.scrollView.dragging){
                 if(self.state == XPRefreshState.Normal && currentOffsetY < releaseToRefreshOffsetY){
                     self.state = XPRefreshState.Pulling;
                 }else if(self.state == XPRefreshState.Pulling && currentOffsetY >= releaseToRefreshOffsetY){
@@ -55,7 +54,15 @@ class XPRefreshHeaderView: XPRefreshBaseView {
             }else if(self.state == XPRefreshState.Pulling){
                 self.state = XPRefreshState.Refreshing;
             }
-        }
+    }
+    
+    override func setRefreshingContentInset(){
+        //wait to be override
+        self.scrollView.contentInset.top += XPRefreshTableViewConfig.XPRefreshViewHeight;
+    }
+    
+    override func resumeContentInset() {
+        self.scrollView.contentInset.top -= XPRefreshTableViewConfig.XPRefreshViewHeight;
     }
     
 }

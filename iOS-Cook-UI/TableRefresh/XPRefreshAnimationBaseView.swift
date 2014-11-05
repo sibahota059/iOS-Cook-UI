@@ -9,8 +9,8 @@
 import UIKit
 
 class XPRefreshAnimationBaseView: UIView, XPRefreshViewProtocol {
-    var refreshViewType:XPRefreshViewType?;
-    var refreshViewId:Int?;
+    var refreshViewType:XPRefreshViewType!;
+    var refreshViewId:Int;
     
     required convenience init(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -21,6 +21,7 @@ class XPRefreshAnimationBaseView: UIView, XPRefreshViewProtocol {
     }
     
     override required init(frame: CGRect) {
+        refreshViewId = 0;
         super.init(frame: frame);
         self.autoresizingMask = UIViewAutoresizing.FlexibleWidth;
     }
@@ -49,9 +50,6 @@ class XPRefreshAnimationBaseView: UIView, XPRefreshViewProtocol {
     
     //结束刷新
     func refreshViewEndRefreshing(result:XPRefreshResult){}
-    
-    //拖拽到对应的位置
-    func refreshViewPullingToPosition(position:CGFloat){}
 
     
 }
