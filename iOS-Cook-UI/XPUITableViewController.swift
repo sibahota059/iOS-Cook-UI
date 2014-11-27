@@ -79,6 +79,10 @@ class XPUITableViewController: UITableViewController {
         if(cell.textLabel.text == "Table Refresh"){
             var refreshTable:XPRefreshTableViewController = XPRefreshTableViewController();
             self.navigationController?.pushViewController(refreshTable, animated: true);
+        }else if(cell.textLabel.text == "View Transition"){
+            var transitionview = XPViewTransitionController();
+            transitionview.view.backgroundColor = UIColor.redColor();
+            self.navigationController?.pushViewController(transitionview, animated: true);
         }
     }
 
