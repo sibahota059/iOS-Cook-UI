@@ -105,7 +105,7 @@ class XPRefreshTableViewController: UITableViewController {
             tableCell = UITableViewCell(style: UITableViewCellStyle.Default,reuseIdentifier: self.reuseIdentifier);
         }
         // Configure the cell...
-        tableCell.textLabel.text = "aa";
+        tableCell.textLabel?.text = "aa";
         return tableCell
     }
     

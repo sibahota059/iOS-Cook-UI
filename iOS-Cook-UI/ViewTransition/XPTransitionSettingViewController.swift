@@ -10,8 +10,8 @@ import UIKit
 
 class XPTransitionSettingViewController: UITableViewController {
     
-    let animationControllers = ["None", "Portal", "Cards", "Fold", "Explode", "Flip", "Turn", "Crossfade", "NatGeo", "Cube","Pan"];
-    let interationControllers = ["None", "HorizontalSwipe" ,"VerticalSwipe", "Pinch"];
+    let _animationControllers = ["None", "Portal", "Cards", "Fold", "Explode", "Flip", "Turn", "Crossfade", "NatGeo", "Cube","Pan"];
+    let _interactionControllers = ["None", "HorizontalSwipe" ,"VerticalSwipe", "Pinch"];
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +28,19 @@ class XPTransitionSettingViewController: UITableViewController {
     func initDoneButton(){
         var doneButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.Done, target: self, action: Selector("dismiss"));
         self.navigationItem.rightBarButtonItem = doneButton;
+    }
+    
+    func classToTransitionName(obj:AnyObject?) -> String{
+        if let object: AnyObject = obj{
+            var animationClass = NSStringFromClass(object_getClass(object));
+            var transitionName:NSMutableString = NSMutableString(string: animationClass);
+            transitionName.replaceOccurrencesOfString("XP", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSMakeRange(0, transitionName.length));
+            transitionName.replaceOccurrencesOfString("AnimationController", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSMakeRange(0, transitionName.length));
+            transitionName.replaceOccurrencesOfString("InteractionController", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: NSMakeRange(0, transitionName.length));
+            return transitionName;
+        }else{
+            return "None";
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,9 +64,9 @@ class XPTransitionSettingViewController: UITableViewController {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
         if(section < 2){
-            return animationControllers.count;
+            return _animationControllers.count;
         }else{
-            return interationControllers.count;
+            return _interactionControllers.count;
         }
     }
     
@@ -79,11 +92,15 @@ class XPTransitionSettingViewController: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-        var transitionName = cell.textLabel.text;
-        var currentTransition:AnyObject;
+        var transitionName = cell.textLabel?.text;
+        var currentTransition:AnyObject?;
         if(indexPath.section < 2){
-            currentTransition = indexPath.section == 0 ? 
+            currentTransition = (indexPath.section == 0 ? XPTransitionPreference.shareInstance().navigationControllerAnimationController : XPTransitionPreference.shareInstance().settingsAnimationController);
+        }else{
+            currentTransition = (indexPath.section == 2 ? XPTransitionPreference.shareInstance().navigationControllerInteractionCotroller : XPTransitionPreference.shareInstance().settingsInteractionController);
         }
+        var transitionClassName = self.classToTransitionName(currentTransition);
+        cell.accessoryType = transitionName == transitionClassName ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None;
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -92,10 +109,50 @@ class XPTransitionSettingViewController: UITableViewController {
             cell = UITableViewCell();
         }
         if(indexPath.section < 2){
-            cell?.textLabel.text = animationControllers[indexPath.row];
+            cell?.textLabel?.text = _animationControllers[indexPath.row];
         }else{
-            cell?.textLabel.text = interationControllers[indexPath.row];
+            cell?.textLabel?.text = _interactionControllers[indexPath.row];
         }
         return cell!;
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if (indexPath.section < 2) {
+            // an animation controller was selected
+            var transitionName = _animationControllers[indexPath.row];
+            var transitionObject:NSObject = NSNull();
+            if(transitionName.lowercaseString != "none"){
+                var className = "XP" + transitionName + "AnimationController";
+                let transitionClass: AnyClass! = NSClassFromString(className);
+                var transitionType:NSObject.Type! = transitionClass as NSObject.Type;
+                transitionObject = transitionType() as NSObject;
+            }
+            
+            
+            if (indexPath.section == 0) {
+                XPTransitionPreference.shareInstance().navigationControllerAnimationController = transitionObject as? XPReversibleAnimationController;
+            }
+            if (indexPath.section == 1) {
+                XPTransitionPreference.shareInstance().settingsAnimationController = transitionObject as? XPReversibleAnimationController;
+            }
+        } else {
+            // an interaction cntroller was selected
+            var transitionName = _interactionControllers[indexPath.row];
+            var transitionObject:NSObject = NSNull();
+            if(transitionName.lowercaseString == "none"){
+                var className = "XP" + transitionName + "@InteractionController";
+                let transitionClass:AnyClass! = NSClassFromString(className);
+                var transitionType:NSObject.Type = transitionClass as NSObject.Type;
+                transitionObject = transitionType() as NSObject;
+            }
+            
+            if (indexPath.section == 2) {
+                XPTransitionPreference.shareInstance().navigationControllerInteractionCotroller = transitionObject as? XPBaseInteractionController;
+            }
+            if (indexPath.section == 3) {
+                XPTransitionPreference.shareInstance().settingsInteractionController = transitionObject as? XPBaseInteractionController;
+            }
+        }
+        self.tableView.reloadData();
     }
 }

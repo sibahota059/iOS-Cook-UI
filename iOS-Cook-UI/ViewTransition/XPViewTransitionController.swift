@@ -26,6 +26,7 @@ class XPViewTransitionController: UIViewController, UIViewControllerTransitionin
     
     func showSettingViewController(){
         var navigation = UINavigationController(rootViewController: XPTransitionSettingViewController());
+        navigation.transitioningDelegate = self;
         self.presentViewController(navigation, animated: true, completion: nil);
     }
     
@@ -47,15 +48,20 @@ class XPViewTransitionController: UIViewController, UIViewControllerTransitionin
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    //MARK: - UIViewControllerTransitioningDelegate
+    func animationControllerForPresentedController(presented: UIViewController, presentingController presenting: UIViewController, sourceController source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        if let settingsInteractionController = XPTransitionPreference.shareInstance().settingsInteractionController{
+            settingsInteractionController.wireToViewController(presented, forOperation: XPInteractionOperation.Dismiss)
+        }
+        
+        XPTransitionPreference.shareInstance().settingsAnimationController?.reverse = false;
+        return XPTransitionPreference.shareInstance().settingsAnimationController?;
     }
-    */
+    
+    func animationControllerForDismissedController(dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        XPTransitionPreference.shareInstance().settingsAnimationController?.reverse = true;
+        return XPTransitionPreference.shareInstance().settingsAnimationController?;
+    }
 
 }

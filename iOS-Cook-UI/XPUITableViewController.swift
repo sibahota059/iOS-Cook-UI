@@ -66,7 +66,7 @@ class XPUITableViewController: UITableViewController {
         }else{
             tableCell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: reuseIdentifier);
         }
-        tableCell.textLabel.text = self.uiArray?[indexPath.row];
+        tableCell.textLabel?.text = self.uiArray?[indexPath.row];
 
         // Configure the cell...
 
@@ -76,10 +76,10 @@ class XPUITableViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true);
         var cell:UITableViewCell = tableView.cellForRowAtIndexPath(indexPath)!;
-        if(cell.textLabel.text == "Table Refresh"){
+        if(cell.textLabel?.text == "Table Refresh"){
             var refreshTable:XPRefreshTableViewController = XPRefreshTableViewController();
             self.navigationController?.pushViewController(refreshTable, animated: true);
-        }else if(cell.textLabel.text == "View Transition"){
+        }else if(cell.textLabel?.text == "View Transition"){
             var transitionview = XPViewTransitionController();
             transitionview.view.backgroundColor = UIColor.redColor();
             self.navigationController?.pushViewController(transitionview, animated: true);

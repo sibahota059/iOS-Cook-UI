@@ -8,9 +8,23 @@
 
 import UIKit
 
-class XPTransitionPreference: NSObject {
-    class var settingsAnimationController:XPReversibleAnimationController;
-    class var navigationControllerAnimationController:XPReversibleAnimationController;
-    class var navigationControllerInteractionCotroller:XPBaseInteractionController;
-    class var settingsInteractionController:XPBaseInteractionController;
+//define keys for ViewTransition Settings
+
+class XPTransitionPreference:NSObject {
+    class func shareInstance()->XPTransitionPreference{
+        struct XPSingleton{
+            static var predicate:dispatch_once_t = 0
+            static var instance:XPTransitionPreference? = nil
+        }
+        dispatch_once(&XPSingleton.predicate,{
+            XPSingleton.instance=XPTransitionPreference()
+            }
+        )
+        return XPSingleton.instance!
+    }
+    
+    var settingsAnimationController:XPReversibleAnimationController?;
+    var navigationControllerAnimationController:XPReversibleAnimationController?;
+    var navigationControllerInteractionCotroller:XPBaseInteractionController?;
+    var settingsInteractionController:XPBaseInteractionController?;
 }

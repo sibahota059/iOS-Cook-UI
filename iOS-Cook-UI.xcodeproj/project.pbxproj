@@ -36,6 +36,7 @@
 		F66C92C218E1B27D0070341F /* XPLeftDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92C118E1B27D0070341F /* XPLeftDrawerViewController.m */; };
 		F66C92C518E1B28E0070341F /* XPRightDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92C418E1B28E0070341F /* XPRightDrawerViewController.m */; };
 		F66C92C818E1B7050070341F /* XPDrawerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66C92C718E1B7050070341F /* XPDrawerModel.m */; };
+		F678FD9C1A30461000885821 /* XPPortalAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678FD9B1A30461000885821 /* XPPortalAnimationController.swift */; };
 		F68C55701A24227E007E1397 /* XPReversibleAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C556F1A24227E007E1397 /* XPReversibleAnimationController.swift */; };
 		F68C55721A2422B9007E1397 /* XPBaseInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C55711A2422B9007E1397 /* XPBaseInteractionController.swift */; };
 		F68C55741A242995007E1397 /* XPTransitionPreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C55731A242995007E1397 /* XPTransitionPreference.swift */; };
@@ -176,6 +177,7 @@
 		F66C92C418E1B28E0070341F /* XPRightDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPRightDrawerViewController.m; sourceTree = "<group>"; };
 		F66C92C618E1B7050070341F /* XPDrawerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPDrawerModel.h; sourceTree = "<group>"; };
 		F66C92C718E1B7050070341F /* XPDrawerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPDrawerModel.m; sourceTree = "<group>"; };
+		F678FD9B1A30461000885821 /* XPPortalAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPPortalAnimationController.swift; sourceTree = "<group>"; };
 		F685B4E81A090EC7003C30E2 /* CarrierBundleUtilities.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = CarrierBundleUtilities.dylib; path = usr/lib/CarrierBundleUtilities.dylib; sourceTree = SDKROOT; };
 		F68C556F1A24227E007E1397 /* XPReversibleAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPReversibleAnimationController.swift; sourceTree = "<group>"; };
 		F68C55711A2422B9007E1397 /* XPBaseInteractionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPBaseInteractionController.swift; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 		F625495F1A230A4200DFAD6E /* ViewTransition */ = {
 			isa = PBXGroup;
 			children = (
+				F678FD9A1A30461000885821 /* AnimationControllers */,
 				F62549601A230A8B00DFAD6E /* XPViewTransitionController.swift */,
 				F62549621A23288500DFAD6E /* XPTransitionSettingViewController.swift */,
 				F68C556F1A24227E007E1397 /* XPReversibleAnimationController.swift */,
@@ -446,6 +449,14 @@
 				F69F1EE918E2DC3C00B4F208 /* XPLocalViewController.m */,
 			);
 			path = DrawerViewController;
+			sourceTree = "<group>";
+		};
+		F678FD9A1A30461000885821 /* AnimationControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F678FD9B1A30461000885821 /* XPPortalAnimationController.swift */,
+			);
+			path = AnimationControllers;
 			sourceTree = "<group>";
 		};
 		F6AB8BA718D8953800710409 = {
@@ -758,6 +769,7 @@
 				F6A6D6AF1907BBE5000C0965 /* UIAlertView+Category.m in Sources */,
 				F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */,
 				F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */,
+				F678FD9C1A30461000885821 /* XPPortalAnimationController.swift in Sources */,
 				F6C0739B1A037AA700EF2B0A /* XPRefreshTableViewController.swift in Sources */,
 				F6AB8BC018D8953800710409 /* main.m in Sources */,
 				F6229B3119DB89D700C3D986 /* SDWebImageDecoder.m in Sources */,
@@ -914,7 +926,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -927,7 +939,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e360d07a-6bc7-45eb-97f3-2841ca4e50c9";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = app;
@@ -940,7 +952,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -953,7 +965,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "e360d07a-6bc7-45eb-97f3-2841ca4e50c9";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				WRAPPER_EXTENSION = app;
 			};

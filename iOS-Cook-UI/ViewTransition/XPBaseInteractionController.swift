@@ -8,6 +8,15 @@
 
 import UIKit
 
+enum XPInteractionOperation{
+    case Pop
+    case Dismiss
+    case Tab
+}
+
 class XPBaseInteractionController: NSObject {
-   
+    
+    func wireToViewController(viewController:UIViewController, forOperation:XPInteractionOperation){
+        //this has to be override;
+    }
 }
