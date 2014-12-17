@@ -95,6 +95,7 @@
 		F6DBB97D19E6DF4000062F56 /* XPWalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBB97C19E6DF4000062F56 /* XPWalkThroughViewController.swift */; };
 		F6DDD22918F9ADA10083D3B2 /* XPPhotoBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD22818F9ADA10083D3B2 /* XPPhotoBrowseViewController.m */; };
 		F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */; };
+		F6F358C91A41166B00B52F01 /* XPCardsAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6F358C81A41166B00B52F01 /* XPCardsAnimationController.swift */; };
 		F6FEEED01903DA2500FD9440 /* XPPhotoLoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FEEECF1903DA2500FD9440 /* XPPhotoLoadingView.m */; };
 		F6FEEED31903DB4300FD9440 /* XPProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FEEED21903DB4300FD9440 /* XPProgressView.m */; };
 /* End PBXBuildFile section */
@@ -267,6 +268,7 @@
 		F6EBBEAE18DFF6BD001C252C /* UIColor+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Category.h"; sourceTree = "<group>"; };
 		F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Category.m"; sourceTree = "<group>"; };
 		F6EBBEB118DFF6EF001C252C /* XPCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPCategory.h; sourceTree = "<group>"; };
+		F6F358C81A41166B00B52F01 /* XPCardsAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPCardsAnimationController.swift; sourceTree = "<group>"; };
 		F6FEEECE1903DA2500FD9440 /* XPPhotoLoadingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoLoadingView.h; sourceTree = "<group>"; };
 		F6FEEECF1903DA2500FD9440 /* XPPhotoLoadingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoLoadingView.m; sourceTree = "<group>"; };
 		F6FEEED11903DB4300FD9440 /* XPProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPProgressView.h; sourceTree = "<group>"; };
@@ -455,6 +457,7 @@
 			isa = PBXGroup;
 			children = (
 				F678FD9B1A30461000885821 /* XPPortalAnimationController.swift */,
+				F6F358C81A41166B00B52F01 /* XPCardsAnimationController.swift */,
 			);
 			path = AnimationControllers;
 			sourceTree = "<group>";
@@ -762,6 +765,7 @@
 				F6C8F5451A00CF91005D01AE /* XPUITableViewController.swift in Sources */,
 				F6229B3419DB89D700C3D986 /* SDWebImageManager.m in Sources */,
 				F6A99603193A8A2C00EB4366 /* UIImage+Category.m in Sources */,
+				F6F358C91A41166B00B52F01 /* XPCardsAnimationController.swift in Sources */,
 				F6229B3819DB89D700C3D986 /* UIImage+MultiFormat.m in Sources */,
 				F62549611A230A8B00DFAD6E /* XPViewTransitionController.swift in Sources */,
 				F6229B3519DB89D700C3D986 /* SDWebImagePrefetcher.m in Sources */,
