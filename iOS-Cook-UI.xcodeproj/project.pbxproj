@@ -92,6 +92,7 @@
 		F6C24266199B86B600158F08 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = F6C24265199B86B600158F08 /* MBProgressHUD.m */; };
 		F6C8F5451A00CF91005D01AE /* XPUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6C8F5441A00CF91005D01AE /* XPUITableViewController.swift */; };
 		F6C8F5471A00DA55005D01AE /* XPMainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6C8F5461A00DA55005D01AE /* XPMainStoryboard.storyboard */; };
+		F6D877DB1A42C87900333779 /* XPFoldAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D877DA1A42C87900333779 /* XPFoldAnimationController.swift */; };
 		F6DBB97D19E6DF4000062F56 /* XPWalkThroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6DBB97C19E6DF4000062F56 /* XPWalkThroughViewController.swift */; };
 		F6DDD22918F9ADA10083D3B2 /* XPPhotoBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DDD22818F9ADA10083D3B2 /* XPPhotoBrowseViewController.m */; };
 		F6EBBEB018DFF6BD001C252C /* UIColor+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = F6EBBEAF18DFF6BD001C252C /* UIColor+Category.m */; };
@@ -262,6 +263,7 @@
 		F6C3E45A19E6F5F300B9632B /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 		F6C8F5441A00CF91005D01AE /* XPUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPUITableViewController.swift; sourceTree = "<group>"; };
 		F6C8F5461A00DA55005D01AE /* XPMainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XPMainStoryboard.storyboard; sourceTree = "<group>"; };
+		F6D877DA1A42C87900333779 /* XPFoldAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPFoldAnimationController.swift; sourceTree = "<group>"; };
 		F6DBB97C19E6DF4000062F56 /* XPWalkThroughViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XPWalkThroughViewController.swift; sourceTree = "<group>"; };
 		F6DDD22718F9ADA10083D3B2 /* XPPhotoBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPPhotoBrowseViewController.h; sourceTree = "<group>"; };
 		F6DDD22818F9ADA10083D3B2 /* XPPhotoBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPPhotoBrowseViewController.m; sourceTree = "<group>"; };
@@ -458,6 +460,7 @@
 			children = (
 				F678FD9B1A30461000885821 /* XPPortalAnimationController.swift */,
 				F6F358C81A41166B00B52F01 /* XPCardsAnimationController.swift */,
+				F6D877DA1A42C87900333779 /* XPFoldAnimationController.swift */,
 			);
 			path = AnimationControllers;
 			sourceTree = "<group>";
@@ -770,6 +773,7 @@
 				F62549611A230A8B00DFAD6E /* XPViewTransitionController.swift in Sources */,
 				F6229B3519DB89D700C3D986 /* SDWebImagePrefetcher.m in Sources */,
 				F6229B3B19DB89D700C3D986 /* UIImageView+WebCache.m in Sources */,
+				F6D877DB1A42C87900333779 /* XPFoldAnimationController.swift in Sources */,
 				F6A6D6AF1907BBE5000C0965 /* UIAlertView+Category.m in Sources */,
 				F69F1EE718E2DC0F00B4F208 /* XPSubscriptionViewController.m in Sources */,
 				F66C92BB18E1A5F40070341F /* XPBlurSlideBarViewController.m in Sources */,
